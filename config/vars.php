@@ -148,9 +148,9 @@ if($domain == "melissa.test"){
 	$base_url = "https://melissa.test";
 }else{
     $servername = "localhost";
-    $username = "melissap_melissapsychic";
-    $password = ";w[#i&[zcrm?";
-    $dbname = "melissap_website";
+    $username = "soulmate_user";
+    $password = "zcV7_CuxEPDB";
+    $dbname = "soulmate_shop";
 	$base_url = "https://soul-mate.shop";
 }
 
