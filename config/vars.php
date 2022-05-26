@@ -140,12 +140,12 @@ function splitNames($name) {
 
 //START Database Configuration
 $domain = $_SERVER['HTTP_HOST'];
-if($domain == "melissa.test"){
+if($domain == "soulmate.test"){
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "melissap_melissa";
-	$base_url = "https://melissa.test";
+    $dbname = "soulmate";
+	$base_url = "https://soulmate.test";
 }else{
     $servername = "localhost";
     $username = "soulmate_user";

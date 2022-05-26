@@ -123,6 +123,10 @@ setTimeout(function(){ var el = document.getElementById('ust_body_style'); el &&
 					<li class="men_2_2"> <a href="/twin-drawing.php">Twin Flame Drawing</a> </li>
 					<li class="men_2_3"> <a href="/FutureHusband.php">Future Husband/Wife Drawing</a> </li>
 					<li class="men_2_4"> <a href="/baby-drawing.php">Future Baby Drawing</a> </li>
+
+          <li class="men_2_3"> <a href="/FutureHusband.php">Future Husband/Wife Drawing</a> </li>
+					<li class="men_2_4"> <a href="/baby-drawing.php">Future Baby Drawing</a> </li>
+					<li class="men_2_4"> <a href="/baby-drawing.php">Future Baby Drawing</a> </li>
                  </ul>
 
                  <li class="men_3_0"> <a href="/about.php"><i class="fa fa-star fa-lg"></i>About Melissa</a> </li>
