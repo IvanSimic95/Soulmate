@@ -21,6 +21,7 @@ $lastOrderID = $_SESSION['lastorder'];
 $sql = "SELECT * FROM `orders` WHERE `order_id` = '$lastOrderID' ORDER BY `order_id` DESC LIMIT 1";
 $result = $conn->query($sql);
 $count = $result->num_rows;
+$row = $result->fetch_assoc();
 
 //If order is found input data from BG and update status to paid
 if($result->num_rows != 0) {
@@ -28,6 +29,9 @@ if($result->num_rows != 0) {
   $affid = $row['affid'];
   $s1 = $row['s1'];
   $s2 = $row['s2'];
+
+  $TTproduct = $row['order_product'];
+  $TTprice = $row['order_price'];
 
   if($affid == 1){
     $fireIframe = 1;
@@ -125,6 +129,11 @@ text-align:center;
 
 <div class="general_section upsale_page">
   <div class="container">
+
+  
+  <iframe src="https://<?php echo $domain; ?>/pixel-tt.php?product=<?php echo $TTproduct; ?>&price=<?php echo $TTprice; ?>" scrolling="no" frameborder="0" width="1" height="1"></iframe>
+
+
   <div class="white-wrapper col-md-10 offset-md-2"> <h1>You Unlocked a Special Service!</h1>
       <h3>THIS IS AN EXCLUSIVE SERVICE WHICH I'M ONLY OFFERING A FEW TIMES A YEAR! </h3>
     <center> <img src="/assets/img/sitee91.jpg" alt="upsell"> </center>

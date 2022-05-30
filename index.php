@@ -35,6 +35,16 @@
     [data-timed-style='fade']{display:none}[data-timed-style='scale']{display:none}
   </style>
 <link rel='icon' type='image/png' href='https://img.icons8.com/emoji/344/couple-with-heart.png'></link>
+<script>
+//part1
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+
+//part2
+  ttq.load('{CAACE4JC77U9LQHLMVKG}');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
 </head>
 <script type="text/javascript">function init(){for(var t=document.getElementsByTagName("img"),e=0;e<t.length;e++){var i=t[e].getAttribute("data-src");if(i){for(var n=t[e].parentElement,a=0;0==a&&n;)a=n.scrollWidth,n=n.parentElement;a&&0<i.indexOf("images.clickfunnels.com")&&(i="//www.happyme123.com/hosted/images/cdn-cgi/image/fit=scale-down,width="+a+",quality=75/"+i),t[e].setAttribute("src",i)}}}window.addEventListener("load",init);</script><body data-affiliate-param="affiliate_id" data-show-progress="true">
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none !important">
