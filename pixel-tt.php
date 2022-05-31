@@ -24,7 +24,7 @@ if(isset($_GET['price'])){
 </script>
 
 <script type="text/javascript">
-    ttq.track('PlaceAnOrder',{  
+    ttq.track('CompletePayment',{  
     content_id: '<?php echo $product; ?>',
     quantity: 1,
     price: <?php echo $price; ?>,
