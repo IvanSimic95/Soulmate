@@ -78,7 +78,7 @@ a:visited {
   </main>
   <footer class="pt-5 my-5 text-muted border-top">
   <ul style="text-align:center;">    
-<li class="nav1 nodoNavItem" style="display: inline-block;padding-right: 30px;"><a href="https://soul-mate.shop/about.html" class="nav1link nodoNavLink" target="_blank" style="color: rgb(255, 255, 255);">About Us</a></li>
+<li class="nav1 nodoNavItem" style="display: inline-block;padding-right: 30px;"><a href="https://soul-mate.shop/about-us.html" class="nav1link nodoNavLink" target="_blank" style="color: rgb(255, 255, 255);">About Us</a></li>
 <li class="nav2 nodoNavItem" style="display: inline-block;padding-right: 30px;"><a href="https://www.soul-mate.shop/privacy-policy.html" class="nav2link nodoNavLink" target="_blank" style="color: rgb(255, 255, 255);"> Privacy Policy</a></li>
 <li class="nav3 nodoNavItem" style="display: inline-block;padding-right: 30px;"><a href="https://www.soul-mate.shop/terms.html" class="nav3link nodoNavLink" target="_blank" style="color: rgb(255, 255, 255);"> Terms &amp; Conditions</a></li>
 </ul>
