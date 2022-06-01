@@ -71,18 +71,16 @@ a:visited {
       <div class="col-6">
       <img src="index/female.jpg" class="img-thumbnail" alt="Female">
       </div>
-      <a href="#" type="button" class="btn btn-danger btn-block" style="font-size:3rem;font-weight:bold;">Yes, I Want My Soulmate!</a>
+      <a href="https://www.etsy.com/listing/1010143936/custom-wedding-portrait-personalised?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=husband+portrait&ref=sc_gallery-1-7&frs=1&sts=1&plkey=5a79ad49370ff13ea089d5d8053faf014b24f980%3A1010143936" type="button" class="btn btn-danger btn-block" style="font-size:3rem;font-weight:bold;">Yes, I Want My Soulmate!</a>
     </div>
 
     </div>
   </main>
   <footer class="pt-5 my-5 text-muted border-top">
   <ul style="text-align:center;">    
-<li class="nav1 nodoNavItem" style="display: inline-block;padding-right: 30px;"><a href="https://www.soul-mate.shop/about-us%09" class="nav1link nodoNavLink" target="_blank" style="color: rgb(255, 255, 255);">About Us</a></li>
-<li class="nav2 nodoNavItem" style="display: inline-block;padding-right: 30px;"><a href="https://www.soul-mate.shop/privacy-policy%09" class="nav2link nodoNavLink" target="_blank" style="color: rgb(255, 255, 255);"> Privacy Policy</a></li>
-<li class="nav3 nodoNavItem" style="display: inline-block;padding-right: 30px;"><a href="https://www.soul-mate.shop/terms-and-conditions%09" class="nav3link nodoNavLink" target="_blank" style="color: rgb(255, 255, 255);"> Terms &amp; Conditions</a></li>
-<li class="nav4 nodoNavItem" style="display: inline-block;padding-right: 30px;"><a href="https://www.soul-mate.shop/earning-disclaimer" class="nav4link nodoNavLink" target="_blank" style="color: rgb(255, 255, 255);">Earnings Disclaimer</a></li>
-<li class="nav5 nodoNavItem" style="display: inline-block;"><a href="https://www.soul-mate.shop/contact-us" class="nav5link nodoNavLink" target="_blank" style="color: rgb(255, 255, 255);"> Contact Us</a></li>
+<li class="nav1 nodoNavItem" style="display: inline-block;padding-right: 30px;"><a href="https://soul-mate.shop/ab.html" class="nav1link nodoNavLink" target="_blank" style="color: rgb(255, 255, 255);">About Us</a></li>
+<li class="nav2 nodoNavItem" style="display: inline-block;padding-right: 30px;"><a href="https://www.soul-mate.shop/privacy-policy.html" class="nav2link nodoNavLink" target="_blank" style="color: rgb(255, 255, 255);"> Privacy Policy</a></li>
+<li class="nav3 nodoNavItem" style="display: inline-block;padding-right: 30px;"><a href="https://www.soul-mate.shop/terms.html" class="nav3link nodoNavLink" target="_blank" style="color: rgb(255, 255, 255);"> Terms &amp; Conditions</a></li>
 </ul>
   </footer>
 </div>
