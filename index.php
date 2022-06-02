@@ -71,7 +71,7 @@ a:visited {
       <div class="col-6">
       <img src="index/female.jpg" class="img-thumbnail" alt="Female">
       </div>
-      <a href="https://www.etsy.com/listing/1010143936/custom-wedding-portrait-personalised?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=husband+portrait&ref=sc_gallery-1-7&frs=1&sts=1&plkey=5a79ad49370ff13ea089d5d8053faf014b24f980%3A1010143936" type="button" class="btn btn-danger btn-block" style="font-size:3rem;font-weight:bold;">Yes, I Want My Soulmate!</a>
+      <a href="https://soul-mate.shop/soulmate-drawing.php" type="button" class="btn btn-danger btn-block" style="font-size:3rem;font-weight:bold;">Yes, I Want My Soulmate!</a>
     </div>
 
     </div>
