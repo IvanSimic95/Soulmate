@@ -57,7 +57,7 @@ $userGenderAcc = $findGenderFunc['0']['accuracy'];
 if($userGender=="male"){$partnerGender = "female";}
 if($userGender=="female"){$partnerGender = "male";}
 
-$returnURL = "https://soul-mate.shop/success-reading.php";
+$returnURL = "https://soulmate-artist.com/success-reading.php";
 $returnEncoded = base64_encode($returnURL);
 
 if($cookie_id) {

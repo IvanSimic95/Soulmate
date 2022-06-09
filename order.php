@@ -64,7 +64,7 @@ if($userGender=="female"){$partnerGender = "male";}
 $_SESSION['userGender'] = $userGender;
 $_SESSION['partnerGender'] = $partnerGender;
 
-$returnURL = "https://soul-mate.shop/success.php";
+$returnURL = "https://soulmate-artist.com/success.php";
 $returnEncoded = base64_encode($returnURL);
 
 $order_product_nice = "";

@@ -8,8 +8,8 @@ $metatags
         ->title($title)
         ->description($description)
         ->meta('author', 'Melissa Psychic')
-        ->image('https://soul-mate.shop/assets/img/products/'.$t_product_form_name.'.jpg')
-        ->mobile('https://soul-mate.shop/assets/img/products/'.$t_product_form_name.'.jpg');
+        ->image('https://soulmate-artist.com/assets/img/products/'.$t_product_form_name.'.jpg')
+        ->mobile('https://soulmate-artist.com/assets/img/products/'.$t_product_form_name.'.jpg');
 
 
 }else{
@@ -18,8 +18,8 @@ $metatags
           ->title($title)
           ->description($description)
           ->meta('author', 'Melissa Psychic')
-          ->image('https://soul-mate.shop/assets/img/good-logo.jpg')
-          ->mobile('https://soul-mate.shop/assets/img/good-logo.jpg');
+          ->image('https://soulmate-artist.com/assets/img/good-logo.jpg')
+          ->mobile('https://soulmate-artist.com/assets/img/good-logo.jpg');
 }
 ?>
 <!DOCTYPE html>
@@ -94,7 +94,7 @@ setTimeout(function(){ var el = document.getElementById('ust_body_style'); el &&
         <div class="container">
           <div class="sides">
             <div class="left">
-              <a href="mailto:contact@soul-mate.shop"><i class="fas fa-envelope"></i> contact@soul-mate.shop</a>
+              <a href="mailto:contact@soulmate-artist.com"><i class="fas fa-envelope"></i> contact@soulmate-artist.com</a>
             </div>
             <div class="right">
                 <a href="#"><i class="fab fa-facebook"></i></a>
