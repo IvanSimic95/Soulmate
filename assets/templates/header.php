@@ -45,7 +45,7 @@ $metatags
 
     <!-- Verification Tags -->
     <meta name="google-site-verification" content="08uItPxLqgddTP0orZfHcGBG_3QXJ8rzjGcRodl60dE" />
-    <meta name="facebook-domain-verification" content="pnd39b2n6q4mvif6jzpt86uhft5loa" />
+    <meta name="facebook-domain-verification" content="ibdhldwno4hhu1p6xh51xuwm0okz99" />
 
     <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
 
