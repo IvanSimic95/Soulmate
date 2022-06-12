@@ -20,7 +20,9 @@ $fbAccessToken = $accessToken1.$accessToken2;
 
 $FBPixel = "3687138444845960";
 
-$data = array(
+$data = array( // main object
+        "data" => array( // data array
+            array(
                 "event_name" => "Purchase",
                 "event_time" => time(),
                 "event_id" => $ForderID,
@@ -47,37 +49,22 @@ $data = array(
                 ),
                 "action_source" => "website",
                 "event_source_url"  => $domain,
-              );
-
-private $apiUrl = "https://graph.facebook.com/v12.0";
-private $pixelId = $FBPixel;
-private $token = $fbAccessToken;
-private $testEventCode = "TEST89589";
-
-public function sendData(array $data)
-{
-    $fields = [
-        'access_token' => $this->token,
-        'test_event_code' => $this->testEventCode,
-        'data' => [$data],
-    ];
-
-    $ch = curl_init();
-    curl_setopt_array($ch, [
-        CURLOPT_URL => "{$this->apiUrl}/{$this->pixelId}/events",
-        CURLOPT_RETURNTRANSFER => true,
-        CURLOPT_CUSTOMREQUEST => "POST",
-        CURLOPT_POSTFIELDS => json_encode($fields),
-        CURLOPT_HTTPHEADER => [
-            "cache-control: no-cache",
-            "accept: application/json",
-            "content-type: application/json",
-        ],
-    ]);
-
-    echo curl_exec($ch);
-}
+           ),
+        ),
+          "test_event_code" => "TEST89589",
+          "access_token" => $fbAccessToken
+        );  
         
         
-     
+        $dataString = json_encode($data);                                                                                                              
+        $ch = curl_init('https://graph.facebook.com/v11.0/'.$FBPixel.'/events');                                                                      
+        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $dataString);                                                                  
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                      
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                                          
+            'Content-Type: application/json',                                                                                
+            'Content-Length: ' . strlen($dataString))                                                                       
+        );                                                                                                                                                                       
+        $response = curl_exec($ch);
+        echo $response;
   ?>
