@@ -39,10 +39,8 @@ $data = array( // main object
                     "fbp" => $fbp,
                     "external_id" => hash('sha256', $ForderID),
                 ),
-                "contents" => array(
-                    "id" => $Fproduct,
-                    "quantity" => 1
-                ),
+                "content_ids" => $Fproduct,
+                "order_id" => $ForderID,
                 "custom_data" => array(
                     "currency" => "USD",
                     "value"    => $price,
