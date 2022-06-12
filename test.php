@@ -4,6 +4,7 @@ date_default_timezone_set('Europe/Bucharest');
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
+$error = "";
 //Save to order log function
 function f($array) {
     $dataToLog = $array;
@@ -14,12 +15,14 @@ function f($array) {
     if ($success === TRUE){
       echo "log saved";
     }
-  }
+}
 
 $action = $_POST['action_type'];
 $product_codename = $_POST['product_codename'];
 $customer_emailaddress = $_POST['customer_emailaddress'];
 $customer_phone = $_POST['customer_phone'];
+$price = $_POST['product_price'];
+$bgOrderID = $_POST['order_id_global'];
 
 isset($_POST['action_type']) ? $action = $_POST['action_type'] : $action = "NONE";
 
@@ -36,17 +39,75 @@ if (str_contains($subid5, '|')) {
   $c1       = $clean[2];
   $c2       = $clean[3];
   $c3       = $clean[4];
+}else{
+  $error = "ERROR WITH SUBID5: ".$action. " | " .$product_codename. " | " .$customer_emailaddress. " | " .$customer_phone. " | " .$subid3. " | " .$subid4. " | " .$subid5;
+  f($error);
 }
 
-#$ = $_POST[''];
-#$ = $_POST[''];
-#$ = $_POST[''];
+if(str_contains($product_codename, 'soulmate')) {
+  $checkCookie = $c1;
+}elseif(str_contains($product_codename, 'twinflame')) {
+  $checkCookie = $c1;
+}elseif(str_contains($product_codename, 'husband')) {
+  $checkCookie = $c1;
+}elseif(str_contains($product_codename, 'xreadings')) {
+  $checkCookie = $c2;
+}elseif(str_contains($product_codename, 'baby')) {
+  $checkCookie = $c3;
+}else{
+  $error = "ERROR UPDATING THIS ORDER: ".$action. " | " .$product_codename. " | " .$customer_emailaddress. " | " .$customer_phone. " | " .$subid3. " | " .$subid4. " | " .$orderID. " | " .$domain. " | " .$c1. " | " .$c2. " | " .$c3;
+  f($error);
+}
+
+//
+if($action == "neworder" && $error == ""){
+  if(isset($checkCookie)) {
+  //Find Correct Order
+  $sql = "SELECT * FROM `orders` WHERE `cookie_id` = '$checkCookie' ORDER BY  `order_id` DESC LIMIT 1";
+  $result = $conn->query($sql);
+  $count = $result->num_rows;
+
+    //If order is found input data from BG and update status to paid
+    if($result->num_rows != 0) {
+      $row = $result->fetch_assoc();
+      $ForderID = $row['order_id'];
+      $Ffirst_name = $row['first_name'];
+      $Fproduct = $row['order_product'];
+      $FgenderAcc = $row['genderAcc'];
+      $Faffid = $row['affid'];
+      $Fs1 = $row['s1'];
+      $Fs2 = $row['s2'];
+      $Forder_product_nice = $row['order_product_nice'];
+
+      $sql = "UPDATE `orders` SET `order_email`='$customer_emailaddress', `order_price`='$price', `buygoods_order_id`='$bgOrderID', `order_status`='paid' WHERE order_id='$ForderID'";
+      $result = $conn->query($sql);
+
+    //Error Handling for not finding order with this Cookie ID
+    }else{
+      $error = "ORDER WITH THIS COOKIE ID NOT FOUND: ".$action. " | " .$product_codename. " | " .$customer_emailaddress. " | " .$customer_phone. " | " .$subid3. " | " .$subid4. " | " .$orderID. " | " .$domain. " | " .$c1. " | " .$c2. " | " .$c3;
+      f($error);
+    }
+  //Error Handling for check cookie variable not being set due to some error
+  }else{
+    $error = "CHECK COOKIE VARIABLE WASNT SET: ".$action. " | " .$product_codename. " | " .$customer_emailaddress. " | " .$customer_phone. " | " .$subid3. " | " .$subid4. " | " .$orderID. " | " .$domain. " | " .$c1. " | " .$c2. " | " .$c3;
+    f($error);
+  }
+
+//Error Handling for action type and empty error variable
+}else{
+  $error = "ACTION WASNT NEWORDER OR ERROR VARIABLE WASNT EMPTY: ".$action. " | " .$product_codename. " | " .$customer_emailaddress. " | " .$customer_phone. " | " .$subid3. " | " .$subid4. " | " .$subid5;
+  f($error);
+}
 
 
+//REMOVE THIS AFTER TEST, or keep for LOG
 $save = $action. " | " .$product_codename. " | " .$customer_emailaddress. " | " .$customer_phone. " | " .$subid3. " | " .$subid4. " | " .$orderID. " | " .$domain. " | " .$c1. " | " .$c2. " | " .$c3;
 
 if($action != "NONE"){
     f($save);
     echo $save;
 }
+//REMOVE THIS AFTER TEST, or keep for LOG
+
+
   ?>
