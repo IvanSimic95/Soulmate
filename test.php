@@ -55,13 +55,14 @@ $data = array( // main object
           "access_token" => $fbAccessToken
         );  
         
+        print_r($data);
         
         $dataString = $data;                                                                                                              
         $ch = curl_init('https://graph.facebook.com/v11.0/'.$FBPixel.'/events');                                                                      
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
         curl_setopt($ch, CURLOPT_POSTFIELDS, $dataString);                                                                  
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                      
-        curl_setopt($ch, CURLOPT_HTTPHEADER, 'Content-Type: application/json');                                                                                                                                                                       
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));                                                                                                                                                                       
         $response = curl_exec($ch);
         echo $response;
   ?>
