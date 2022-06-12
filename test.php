@@ -54,6 +54,8 @@ $data = array( // main object
           "test_event_code" => "TEST89589",
           "access_token" => $fbAccessToken,
         );  
+
+        dump($data);
         
         
         $dataString = $data;                                                                                                              
