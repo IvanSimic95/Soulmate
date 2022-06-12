@@ -41,7 +41,7 @@ $data = array( // main object
                 ),
                 "contents" => array(
                     "id" => $Fproduct,
-                    "quantity" => 1
+                    "quantity" => 1,
                 ),
                 "custom_data" => array(
                     "currency" => "USD",
@@ -52,10 +52,9 @@ $data = array( // main object
            ),
         ),
           "test_event_code" => "TEST89589",
-          "access_token" => $fbAccessToken
+          "access_token" => $fbAccessToken,
         );  
         
-        print_r($data);
         
         $dataString = $data;                                                                                                              
         $ch = curl_init('https://graph.facebook.com/v11.0/'.$FBPixel.'/events');                                                                      
