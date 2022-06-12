@@ -30,7 +30,6 @@ $bgOrderID              = $d[5];
 $subid3                 = $d[6];
 $subid4                 = $d[7];
 $subid5                 = base64_decode($d[8]);
-echo "<br>".$subid5."<br>";
 
 if (str_contains($subid5, '|')) { 
   $clean = explode("|", $subid5);
