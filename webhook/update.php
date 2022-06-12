@@ -17,7 +17,8 @@ function f($array) {
     }
 }
 if(isset($_GET['data'])){
-$d = explode("|", $_GET['data']);
+$dDecode = base64_decode($_GET['data']);
+$d = explode("|", $dDecode);
 
 //Assing variables by splitting up data received from main server
 $action                 = $d[0];
