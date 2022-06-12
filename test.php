@@ -10,7 +10,7 @@ $fixedBirthday = "19950329";
 $Fsex = "male";
 $fbc = "";
 $fbp = "";
-$Fproduct = "soulmate";
+$Fproduct = "['soulmate']";
 $price = "49.99";
 $domain = "soulmate-artist.com";
 
