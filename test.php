@@ -42,6 +42,7 @@ if (str_contains($subid5, '|')) {
 }else{
   $error = "ERROR WITH SUBID5: ".$action. " | " .$product_codename. " | " .$customer_emailaddress. " | " .$customer_phone. " | " .$subid3. " | " .$subid4. " | " .$subid5;
   f($error);
+  echo $error;
 }
 
 if(str_contains($product_codename, 'soulmate')) {
@@ -57,6 +58,7 @@ if(str_contains($product_codename, 'soulmate')) {
 }else{
   $error = "ERROR UPDATING THIS ORDER: ".$action. " | " .$product_codename. " | " .$customer_emailaddress. " | " .$customer_phone. " | " .$subid3. " | " .$subid4. " | " .$orderID. " | " .$domain. " | " .$c1. " | " .$c2. " | " .$c3;
   f($error);
+  echo $error;
 }
 
 //
@@ -82,32 +84,27 @@ if($action == "neworder" && $error == ""){
       $sql = "UPDATE `orders` SET `order_email`='$customer_emailaddress', `order_price`='$price', `buygoods_order_id`='$bgOrderID', `order_status`='paid' WHERE order_id='$ForderID'";
       $result = $conn->query($sql);
 
+      echo "order updated";
+
     //Error Handling for not finding order with this Cookie ID
     }else{
       $error = "ORDER WITH THIS COOKIE ID NOT FOUND: ".$action. " | " .$product_codename. " | " .$customer_emailaddress. " | " .$customer_phone. " | " .$subid3. " | " .$subid4. " | " .$orderID. " | " .$domain. " | " .$c1. " | " .$c2. " | " .$c3;
       f($error);
+      echo $error;
     }
   //Error Handling for check cookie variable not being set due to some error
   }else{
     $error = "CHECK COOKIE VARIABLE WASNT SET: ".$action. " | " .$product_codename. " | " .$customer_emailaddress. " | " .$customer_phone. " | " .$subid3. " | " .$subid4. " | " .$orderID. " | " .$domain. " | " .$c1. " | " .$c2. " | " .$c3;
     f($error);
+    echo $error;
   }
 
 //Error Handling for action type and empty error variable
 }else{
   $error = "ACTION WASNT NEWORDER OR ERROR VARIABLE WASNT EMPTY: ".$action. " | " .$product_codename. " | " .$customer_emailaddress. " | " .$customer_phone. " | " .$subid3. " | " .$subid4. " | " .$subid5;
   f($error);
+  echo $error;
 }
-
-
-//REMOVE THIS AFTER TEST, or keep for LOG
-$save = $action. " | " .$product_codename. " | " .$customer_emailaddress. " | " .$customer_phone. " | " .$subid3. " | " .$subid4. " | " .$orderID. " | " .$domain. " | " .$c1. " | " .$c2. " | " .$c3;
-
-if($action != "NONE"){
-    f($save);
-    echo $save;
-}
-//REMOVE THIS AFTER TEST, or keep for LOG
 
 
   ?>
