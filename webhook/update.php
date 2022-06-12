@@ -16,6 +16,17 @@ function f($array) {
       echo "log saved";
     }
 }
+//Save to order log function
+function fb($array) {
+  $dataToLog = $array;
+  $data = $dataToLog;
+  $data .= PHP_EOL;
+  $pathToFile = $_SERVER['DOCUMENT_ROOT']."/logs/fb.log";
+  $success = file_put_contents($pathToFile, $data, FILE_APPEND);
+  if ($success === TRUE){
+    echo "log saved";
+  }
+}
 if(isset($_GET['data'])){
 $dDecode = base64_decode($_GET['data']);
 $d = explode("|", $dDecode);
@@ -149,6 +160,7 @@ if($action == "neworder" && $error == ""){
             'Content-Length: ' . strlen($dataString))                                                                       
         );                                                                                                                                                                       
         $response = curl_exec($ch);
+        fb($response);
     }
 
 
