@@ -10,7 +10,7 @@ $fixedBirthday = "19950329";
 $Fsex = "male";
 $fbc = "";
 $fbp = "";
-$Fproduct = "['soulmate']";
+$Fproduct = array('soulmate');
 $price = "49.99";
 $domain = "soulmate-artist.com";
 
@@ -41,7 +41,7 @@ $data = array( // main object
                 ),
                 "contents" => array(
                     "id" => $Fproduct,
-                    "quantity" => 1,
+                    "quantity" => 1
                 ),
                 "custom_data" => array(
                     "currency" => "USD",
@@ -52,18 +52,19 @@ $data = array( // main object
            ),
         ),
           "test_event_code" => "TEST89589",
-          "access_token" => $fbAccessToken,
+          "access_token" => $fbAccessToken
         );  
-
-        echo json_encode($data);
         
         
-        $dataString = $data;                                                                                                              
+        $dataString = json_encode($data);                                                                                                              
         $ch = curl_init('https://graph.facebook.com/v11.0/'.$FBPixel.'/events');                                                                      
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
         curl_setopt($ch, CURLOPT_POSTFIELDS, $dataString);                                                                  
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                      
-        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));                                                                                                                                                                       
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                                          
+            'Content-Type: application/json',                                                                                
+            'Content-Length: ' . strlen($dataString))                                                                       
+        );                                                                                                                                                                       
         $response = curl_exec($ch);
         echo $response;
   ?>
