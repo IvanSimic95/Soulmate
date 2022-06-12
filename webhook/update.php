@@ -79,13 +79,19 @@ if($action == "neworder" && $error == ""){
       $Fs1 = $row['s1'];
       $Fs2 = $row['s2'];
       $Forder_product_nice = $row['order_product_nice'];
+      $Fstatus = $row['order_status'];
 
+      if($Fstatus == "pending"){
       $sql = "UPDATE `orders` SET `order_email`='$customer_emailaddress', `order_price`='$price', `buygoods_order_id`='$bgOrderID', `order_status`='paid' WHERE order_id='$ForderID'";
       $result = $conn->query($sql);
       $success = "Order #".$ForderID." status updated to Paid";
       f($success);
       echo $success;
-
+    }else{
+      $success = "Order #".$ForderID." NOT updated, status: ".$Fstatus;
+      f($success);
+      echo $success;
+    }
     //Error Handling for not finding order with this Cookie ID
     }else{
       $error = "ORDER WITH THIS COOKIE ID NOT FOUND: ".$action. " | " .$product_codename. " | " .$customer_emailaddress. " | " .$customer_phone. " | " .$subid3. " | " .$subid4. " | " .$orderID. " | " .$domain. " | " .$c1. " | " .$c2. " | " .$c3;
