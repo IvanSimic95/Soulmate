@@ -55,7 +55,7 @@ $data = array( // main object
           "access_token" => $fbAccessToken,
         );  
 
-        dump($data);
+        echo json_encode($data);
         
         
         $dataString = $data;                                                                                                              
