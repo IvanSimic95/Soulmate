@@ -7,7 +7,7 @@ $showSuccess = 1;
 
 $p  = $_SESSION['UserEmail'];
 $pieces = explode("@", $p);
-echo $pieces[0];
+
 
 
 
