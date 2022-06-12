@@ -1,7 +1,7 @@
 <?php
 $ForderID = "testorder";
-$ip = "1.1.1.1";
-$agent = "chrome";
+$ip = "62.4.34.122";
+$agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0";
 $Ffirst_name = "ivan";
 $Flast_name = "test";
 $customer_emailaddress = "email@isimic.com";
