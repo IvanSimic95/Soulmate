@@ -88,7 +88,7 @@ if($action == "neworder" && $error == ""){
       f($success);
       echo $success;
     }else{
-      $success = "Order #".$ForderID." NOT updated, status: ".$Fstatus;
+      $success = "Order #".$ForderID." NOT updated - Status: ".$Fstatus;
       f($success);
       echo $success;
     }
