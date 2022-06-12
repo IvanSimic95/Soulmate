@@ -140,7 +140,7 @@ if($action == "neworder" && $error == ""){
         
         
         $dataString = json_encode($data);                                                                                                              
-        $ch = curl_init('https://graph.facebook.com/v11.0/{PIxel ID}/events');                                                                      
+        $ch = curl_init('https://graph.facebook.com/v11.0/'.$FBPixel.'/events');                                                                      
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
         curl_setopt($ch, CURLOPT_POSTFIELDS, $dataString);                                                                  
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                      
