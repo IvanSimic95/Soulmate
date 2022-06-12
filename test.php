@@ -83,8 +83,9 @@ if($action == "neworder" && $error == ""){
 
       $sql = "UPDATE `orders` SET `order_email`='$customer_emailaddress', `order_price`='$price', `buygoods_order_id`='$bgOrderID', `order_status`='paid' WHERE order_id='$ForderID'";
       $result = $conn->query($sql);
-
-      echo "order updated";
+      $success = "Order #".$ForderID." status updated to Paid";
+      f($success);
+      echo $success;
 
     //Error Handling for not finding order with this Cookie ID
     }else{
