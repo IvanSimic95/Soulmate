@@ -50,7 +50,8 @@ $data = array( // main object
                 "action_source" => "website",
                 "event_source_url"  => $domain,
            ),
-          );
+          ),
+        );  
 
 /** @var string url to accede to Facebook API */
 private $apiUrl = "https://graph.facebook.com/v12.0";
