@@ -66,5 +66,4 @@ $data = array( // main object
             'Content-Length: ' . strlen($dataString))                                                                       
         );                                                                                                                                                                       
         $response = curl_exec($ch);
-    }
   ?>
