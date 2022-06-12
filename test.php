@@ -20,9 +20,7 @@ $fbAccessToken = $accessToken1.$accessToken2;
 
 $FBPixel = "3687138444845960";
 
-$data = array( // main object
-        "data" => array( // data array
-            array(
+$data = array(
                 "event_name" => "Purchase",
                 "event_time" => time(),
                 "event_id" => $ForderID,
@@ -49,28 +47,13 @@ $data = array( // main object
                 ),
                 "action_source" => "website",
                 "event_source_url"  => $domain,
-           ),
-          ),
-        );  
+              );
 
-/** @var string url to accede to Facebook API */
 private $apiUrl = "https://graph.facebook.com/v12.0";
-
-/** @var int id of pixel used with Facebook API */
 private $pixelId = $FBPixel;
-
-/** @var string token to accede to Facebook API */
 private $token = $fbAccessToken;
-
-/** @var string|null code to specify test to Facebook API */
 private $testEventCode = "TEST89589";
 
-/** Send datas to Facebook's API
- *
- * @param array datas to send like ['event_name' => 'ViewContent', ... ]
- *
- * @return string|bool
- */
 public function sendData(array $data)
 {
     $fields = [
