@@ -56,7 +56,7 @@ $data = array( // main object
         );  
         
         
-        $dataString = json_encode($data);                                                                                                              
+        $dataString = $data;                                                                                                              
         $ch = curl_init('https://graph.facebook.com/v11.0/'.$FBPixel.'/events');                                                                      
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
         curl_setopt($ch, CURLOPT_POSTFIELDS, $dataString);                                                                  
