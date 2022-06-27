@@ -185,7 +185,8 @@
   
 
 </form>
-
+<script id="cartfuel_pm_frame.js" src="https://app.cartfuel.io/js/embed/cartfuel_pm_frame.js"></script> 
+<div id="cartfuelpmct"></div> 
 
 <style>@media(max-width: 1080px) {
 	
@@ -262,6 +263,8 @@ select:invalid { color: gray; }
     $('.product').val(product_code);
 
             $(document).ready(function($){
+
+              $("#cartfuel-payment-frame").hide();
 		 
             // hide messages 
             $("#error").hide();
@@ -298,9 +301,14 @@ select:invalid { color: gray; }
                       $("#show_message").fadeIn();
                       $("#submitbtn").html('<i class="fas fa-spinner fa-pulse"></i> Redirecting...');
                       
-                      setTimeout(function(){
-                        window.location.href = Redirect;
-                      }, 2000);
+                     $("#ajax-form").fadeOut();
+                     $(".price_box").fadeOut();
+                     $(".saved").fadeOut();
+                     $(".saleend").fadeOut();
+                     $(".prodtitle").fadeOut();
+                     
+                      cartfuelInit({id:Redirect})
+                      $("#cartfuel-payment-frame").fadeIn();
 
                       }else{
                       $("#error").html(DataMSG);

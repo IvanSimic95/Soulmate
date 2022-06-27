@@ -33,7 +33,7 @@
       <div class="right">
 	   
 	  <div class="product-purchase">
-        <h1><?php echo $t_product_title; ?></h1>
+        <h1 class="prodtitle"><?php echo $t_product_title; ?></h1>
         <!--<span class="bestseller">Bestseller</span>-->
         <div class="price_box">
           <span class="new_prce">$29.99</span>
@@ -41,7 +41,7 @@
 
         </div>
         <span class="saved"> <strong>You save <span class="saveda">$270 (90%)</p></strong> </span>
-        <h2>Sale ends in few hours</h2>
+        <h2 class="saleend">Sale ends in few hours</h2>
           <!--<span class="vat"> <strong>VAT included (where applicable)</strong> </span>-->
 
           <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/order-form.php'; ?>
