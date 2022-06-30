@@ -118,7 +118,8 @@ $submitStatus = "Success";
 $SuccessMessage = "Information saved, Redirecting you to Payment Page Now!";
 $redirectPayment = "https://www.buygoods.com/secure/checkout.html?account_id=6274&product_codename=".$order_product.$order_priority."&aff_id=".$affid."&subid=".$subid."&subid2=".$subid2."&subid3=".$uFBC."&subid4=".$uFBP."&subid5=".$subid5."&redirect=".$returnEncoded;
 $redirectPayment = "c513a7c8-ccc9-40c9-ae3b-464d60707ee0";
-$returnData = [$submitStatus,$SuccessMessage,$redirectPayment];
+$returnData = [$submitStatus,$SuccessMessage,$redirectPayment,$lastRowInsert];
+$_SESSION['paymentOrder'] = $lastRowInsert;
 echo json_encode($returnData);
 } else {
 $lastRowInsert = "";
