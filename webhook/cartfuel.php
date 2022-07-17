@@ -11,6 +11,7 @@ $productImage = "https://soulmate-artist.com/assets/img/14dk.jpg";
 $productFullTitle = $obj->product->product_name;
 $logaArray[] = "Order #".$mOrderID;
 $logaArray[] = $order_email;
+$logaArray[] = $productFullTitle;
 if($order_email) {
 include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 
