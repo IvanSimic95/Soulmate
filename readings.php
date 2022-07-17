@@ -190,6 +190,9 @@ text-align:center;
 				</ul>
       </center>
 
+      <script id="cartfuel_up_frame.js" src="https://app.cartfuel.io/js/embed/cartfuel_up_frame.js"></script> 
+      <div id="cartfueluppmct"></div> <script defer> cartfuelUpInit({id:"03d326af-2ad3-4f7f-b6ae-1cbfa6c748d9"}) </script> 
+
         <input class="customer_name" type="hidden" id="fullname" name="form_name" value="<?php echo $_SESSION['orderFName'].' '.$_SESSION['orderLName']; ?>">
         <input class="customer_name" type="hidden" id="firstname" name="first_name" value="<?php echo $_SESSION['orderFName']; ?>">
         <input class="customer_name" type="hidden" id="lastname" name="last_name" value="<?php echo $_SESSION['orderLName']; ?>">
