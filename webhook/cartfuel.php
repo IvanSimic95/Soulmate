@@ -32,7 +32,7 @@ $data = [
 "email" => [$order_email],
 "role" => "customer",
 "photoUrl" => "https://avatars.dicebear.com/api/adventurer/".$order_email.".svg?skinColor=variant02",
-"custom" => ["email" => $order_email, "phone" => $cPhone, "lastOrder" => $mOrderID]
+"custom" => ["email" => $order_email, "lastOrder" => $mOrderID]
 ];
 $data1 = json_encode($data);
 print_r($data1);
