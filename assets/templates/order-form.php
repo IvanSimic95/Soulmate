@@ -186,6 +186,7 @@
 </form>
 
 <div id="cartfuelpmct"></div>
+<script id="cartfuel_pm_frame.js" src="https://app.cartfuel.io/js/embed/cartfuel_pm_frame.js"></script> 
 
 <style>@media(max-width: 1080px) {
 	
@@ -307,13 +308,10 @@ select:invalid { color: gray; }
                      $(".saved").fadeOut();
                      $(".saleend").fadeOut();
                      $(".prodtitle").fadeOut();
-                     $.getScript("https://app.cartfuel.io/js/embed/cartfuel_pm_frame.js")
-                     
-                    .done(function( s, Status ) {
-                      setTimeout(function() { 
+                    setTimeout(function() { 
                         cartfuelInit({id: Redirect, data:{order_ID: orderID}})
                     }, 300);
-                    })
+                 
                       
                       $("#cartfuel-payment-frame").fadeIn();
 
