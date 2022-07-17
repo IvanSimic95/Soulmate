@@ -267,12 +267,15 @@ text-align:center;
           $('.new_prce').show();
           $('.smallerText').hide();
           $('#addtopurchase').prop("disabled",false);
+          $('#cartfuel-up-payment-frame').remove();
+          cartfuelUpInit({id:"1382ccdd-ec6f-4023-9f9c-b005c8b49d3e"});
         }
         if (countCheckedCheckboxes == 0) {
           $('.new_prce').hide();
           $('#product_price').val('00.00');
           $('.smallerText').show();
           $('#addtopurchase').prop("disabled",true);
+
         }
       });
 
