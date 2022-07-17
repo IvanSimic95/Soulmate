@@ -190,8 +190,7 @@ text-align:center;
 				</ul>
       </center>
 
-      <script id="cartfuel_up_frame.js" src="https://app.cartfuel.io/js/embed/cartfuel_up_frame.js"></script> 
-      <div id="cartfueluppmct"></div> <script defer> cartfuelUpInit({id:"03d326af-2ad3-4f7f-b6ae-1cbfa6c748d9"}) </script> 
+      
 
         <input class="customer_name" type="hidden" id="fullname" name="form_name" value="<?php echo $_SESSION['orderFName'].' '.$_SESSION['orderLName']; ?>">
         <input class="customer_name" type="hidden" id="firstname" name="first_name" value="<?php echo $_SESSION['orderFName']; ?>">
@@ -214,11 +213,11 @@ text-align:center;
             <span class="new_prce">$19.99</span>
           </div>
           <div class="smallerText">Choose at least one option to Proceed!</div>
-          <button id="addtopurchase" type="submit" name="submit" value="Add to my Purchase">Add to my Purchase</button>
-
+          <script id="cartfuel_up_frame.js" src="https://app.cartfuel.io/js/embed/cartfuel_up_frame.js"></script> 
+      <div id="cartfueluppmct"></div> <script defer> cartfuelUpInit({id:"03d326af-2ad3-4f7f-b6ae-1cbfa6c748d9"}) </script> 
         </div>
       </div>
-      <button id="nothanks" class="nothanks" type="submit" name="submit" value="No Thanks">No Thanks!</button>
+      
 </div>
       </div></div>
     </form>
