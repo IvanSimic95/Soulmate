@@ -6,4 +6,9 @@ $product=$obj->product->product_name;
 
 echo $product;
 
+$logaArray[] = $obj;
+
+$logaArray[] = $product;
+formLogNewAgain($logaArray);
+
 ?>
