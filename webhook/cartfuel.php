@@ -7,7 +7,6 @@ $order_buygoods = $obj->customer->user_id;
 $cookie_id = $obj->metadata->cookie_ID;
 $mOrderID = $obj->metadata->order_ID;
 $cName = $obj->customer->name;
-$cPhone = $obj->customer->phone;
 $productImage = "https://soulmate-artist.com/assets/img/14dk.jpg";
 $productFullTitle = $obj->product->product_name;
 
