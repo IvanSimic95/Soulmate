@@ -1,5 +1,6 @@
 <?php
-$obj=json_decode($_POST['data']); // put the second parameter as true if you want it to be a associative array
+$json = file_get_contents('php://input');
+$obj=json_decode($json); // put the second parameter as true if you want it to be a associative array
 
 $order_email = $obj->customer->email;
 $order_price = "29.99";
@@ -12,7 +13,7 @@ $productFullTitle = $obj->product->product_name;
 $logaArray[] = "Order #".$mOrderID;
 $logaArray[] = $order_email;
 $logaArray[] = $productFullTitle;
-$logaArray[] = $_POST['data'];
+$logaArray[] = $json;
 if($order_email) {
 include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 
