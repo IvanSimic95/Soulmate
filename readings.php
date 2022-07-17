@@ -300,7 +300,8 @@ text-align:center;
                var SubmitStatus = data[0];
                if (SubmitStatus == "Success"){
               var DataMSG = data[1];
-               var Redirect = data[2];
+              var Redirect = data[2];
+                      var orderID = data[3];
                $("#purchasedupsell").fadeIn();
                $("#purchasedupsellpay").fadeIn();
                setTimeout(function() { 
