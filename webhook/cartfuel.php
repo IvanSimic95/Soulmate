@@ -12,7 +12,7 @@ $productFullTitle = $obj->product->product_name;
 $logaArray[] = "Order #".$mOrderID;
 $logaArray[] = $order_email;
 $logaArray[] = $productFullTitle;
-$logaArray[] = $_POST['payload'];
+$logaArray[] = $_POST['data'];
 if($order_email) {
 include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 
