@@ -111,6 +111,7 @@ text-align:center;
         <input class="fbp" type="hidden" name="fbp" value="<?php echo $UserFBP; ?>">
         <input class="fbc" type="hidden" name="fbc" value="<?php echo $UserFBC; ?>">
         <input class="submitbtnselect" type="hidden" name="submitbtnselect" id="submitbtnselect" value="submit">
+        <input type="hidden" name="priority" value="24">
         <div id="error" class="alert alert-danger" style="display: none"></div>
       <div class="meta_part">
       <div id="purchasedupsell" class="alert alert-succes">Awesome! We will use same payment method as for your previous order.<br> Redirecting to payment page now...</div>
@@ -120,26 +121,16 @@ text-align:center;
             <span class="new_prce">$19.99</span>
           </div>
 
-          <div class="form_box input-group">
-  
-  <input id="prio12" type="radio" name="priority" value="12">
-  <label for="prio12"><span><i class="fas fa-bolt" aria-hidden="true"></i>12 Hours</span></label>
-  
-<input id="prio24" type="radio" name="priority" value="24">
-  <label for="prio24"> <span><i class="fas fa-stopwatch" aria-hidden="true"></i>24 Hours</span></label>
-
-<input id="prio48" type="radio" name="priority" value="48" checked="true">
-  <label for="prio48"> <span><i class="fas fa-clock" aria-hidden="true"></i>48 Hours</span></label>
-</div>
+          
 
           
           <br> 
           <div class="gradient">This reading will let you know when you will become pregnant, as well as an in-depth description about your future baby's gender, passions, skills, talents, and much more. Knowing more about your future baby will help you make sure that everything will be going well with your pregnancy, and prepare for the most wonderful experience your life has to offer!</div>
-          <button id="addtopurchase" type="submit" name="submit" value="Add to my Purchase">Yes i want my future baby drawing</button>
+          <script id="cartfuel_up2_frame.js" src="https://app.cartfuel.io/js/embed/cartfuel_up2_frame.js"></script> 
+          <div id="cartfueluppmct"></div> <script defer> cartfuelUpInit({id:"03d326af-2ad3-4f7f-b6ae-1cbfa6c748d9"}) </script> 
         </div>
    
       
-      <button id="nothanks" class="nothanks" type="submit" name="submit" value="No Thanks">No Thanks!</button>
 </div>   </div>
     </form>
   </div>
