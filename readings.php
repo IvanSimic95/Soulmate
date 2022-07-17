@@ -156,39 +156,7 @@ text-align:center;
                    <br>
                    <div id="purchasedupsell" class="alert alert-succes">Awesome! We will use same payment method as for your previous order.<br> Redirecting to payment page now...</div>
                    <div class="onsubmithide">
-                   <center> 
-      <ul class="list-group list-group-flush">
-          <li class="list-group-control">
-					<label class="custom-control fill-checkbox">
-			    <input type="checkbox" class="fill-control-input"  id="general" name="general" value="general" checked>
-			    <span class="fill-control-indicator"></span>
-			    <span class="fill-control-description">General Reading</span>
-		      </label>
-					</li>
-          <li class="list-group-control">
-					<label class="custom-control fill-checkbox">
-			    <input type="checkbox" class="fill-control-input"  id="love" name="love" value="love">
-			    <span class="fill-control-indicator"></span>
-			    <span class="fill-control-description">Love Reading</span>
-		      </label>
-					</li>
-          <li class="list-group-control">
-					<label class="custom-control fill-checkbox">
-			    <input type="checkbox" class="fill-control-input"  id="career" name="career" value="career">
-			    <span class="fill-control-indicator"></span>
-			    <span class="fill-control-description">Career Reading</span>
-		      </label>
-					</li>
-          <li class="list-group-control">
-					<label class="custom-control fill-checkbox">
-			    <input type="checkbox" class="fill-control-input"  id="health" name="health" value="health">
-			    <span class="fill-control-indicator"></span>
-			    <span class="fill-control-description">Health Reading</span>
-		      </label>
-					</li>
-           
-				</ul>
-      </center>
+        
 
       
 
