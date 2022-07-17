@@ -1,6 +1,6 @@
 <?php
 $obj=json_decode($_POST['payload']); // put the second parameter as true if you want it to be a associative array
-$logaArray[] = $_POST['payload'];
+
 $order_email = $obj->customer->email;
 $order_price = "29.99";
 $order_buygoods = $obj->customer->user_id;
@@ -12,6 +12,7 @@ $productFullTitle = $obj->product->product_name;
 $logaArray[] = "Order #".$mOrderID;
 $logaArray[] = $order_email;
 $logaArray[] = $productFullTitle;
+$logaArray[] = $_POST['payload'];
 if($order_email) {
 include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 
