@@ -1,6 +1,6 @@
 <?php
 $obj=json_decode($_POST['payload']); // put the second parameter as true if you want it to be a associative array
-$logaArray[] = $obj;
+$logaArray[] = $_POST['payload'];
 $order_email = $obj->customer->email;
 $order_price = "29.99";
 $order_buygoods = $obj->customer->user_id;
