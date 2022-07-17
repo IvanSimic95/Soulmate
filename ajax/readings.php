@@ -13,15 +13,7 @@ $request = $_SERVER['REQUEST_METHOD'];
 
 if ($request === 'POST') {
     
-    $submit = $_POST['submitbtnselect'];
-    if($submit == "NoThanks"){
-        $_SESSION['fbfireUpsellpixel'] = 0;
-        $submitStatus = "NoThanks";
-        $RedirectURL = "https://".$domain."/future-baby.php";
-        $returnData = [$submitStatus,$RedirectURL];
-        echo json_encode($returnData);
-    }else{
-
+   
 $user_name = $_POST['form_name'];
 $fName = $_POST['first_name'];
 $lName = $_POST['last_name'];
@@ -78,18 +70,27 @@ $oStatus = "pending";
 isset($_POST['fbp']) ? $uFBP = $_POST['fbp'] : $uFBP = "";
 isset($_POST['fbc']) ? $uFBC = $_POST['fbc'] : $uFBC = "";
 
-$returnURL = "https://".$domain."/success-reading.php";
-$returnEncoded = base64_encode($returnURL);
-
-$redirectPayment = "https://www.buygoods.com/secure/upsell?account_id=6274&product_codename=".$ReadingsCounter."xreadings&redirect=".$returnEncoded;
-
+switch ($ReadingsCounter){
+    case "1":
+      $buyLink = "03d326af-2ad3-4f7f-b6ae-1cbfa6c748d9";
+      break;
+    case "2":
+      $buyLink = "2802ac30-58c5-44f5-baf0-e8324a32a533";
+      break;
+    case "3":
+      $buyLink = "2802ac30-58c5-44f5-baf0-e8324a32a533";
+      break;
+      case "4":
+        $buyLink = "1382ccdd-ec6f-4023-9f9c-b005c8b49d3e";
+        break;
+  }
 
 $sql = "INSERT INTO orders (cookie_id, user_age, first_name, last_name, user_name, birthday, order_status, order_date, order_email, order_product, order_product_nice, order_priority, order_price, buygoods_order_id, user_sex, genderAcc, pick_sex, fbc, fbp) VALUES ('$cookie_id', '$user_age', '$fName', '$lName', '$user_name', '$user_birthday', '$oStatus', '$order_date', '$bgemail', '$order_product', '$order_product_nice', '$order_priority', '$pricenow', '', '$userGender', '$userGenderAcc', '$partnerGender', '$uFBC', '$uFBP')";
 
 if(mysqli_query($conn,$sql)){
 $submitStatus = "Success";
 $SuccessMessage = "Information saved, Redirecting you to Payment Page Now!";
-$returnData = [$submitStatus,$SuccessMessage,$redirectPayment];
+$returnData = [$submitStatus,$SuccessMessage,$buyLink,$lastRowInsert];
 echo json_encode($returnData);
 } else {
 $submitStatus = "Error";
@@ -100,7 +101,7 @@ echo json_encode($returnData);
 mysqli_close($conn);
 
 
-}
+
 }else{
 echo "Direct access is not allowed!";  
 }
