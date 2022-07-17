@@ -304,7 +304,7 @@ text-align:center;
                $("#purchasedupsell").fadeIn();
                $("#purchasedupsellpay").fadeIn();
                setTimeout(function() { 
-                        cartfuelInit({id: Redirect, data:{order_ID: orderID, cookie_ID: <?php echo $_SESSION['user_cookie_id']; ?> }})
+                        cartfuelUpInit({id: Redirect, data:{order_ID: orderID, cookie_ID: <?php echo $_SESSION['user_cookie_id']; ?> }})
                     }, 300);
                  
                       
