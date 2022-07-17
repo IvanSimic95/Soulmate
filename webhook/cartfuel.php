@@ -1,6 +1,5 @@
 <?php
-$data = file_get_contents('php://input');
-$obj=json_decode($data); // put the second parameter as true if you want it to be a associative array
+$obj=json_decode($_POST['data']); // put the second parameter as true if you want it to be a associative array
 
 $order_email = $obj->customer->email;
 $order_price = "29.99";
