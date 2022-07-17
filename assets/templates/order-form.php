@@ -49,7 +49,6 @@
   }
   ?>
 
-
 <form id="ajax-form" class="form-order" name="order_form" action="javascript:void(0)" method="post">
   
   <div class="form_box">
@@ -185,8 +184,8 @@
   
 
 </form>
-<script id="cartfuel_pm_frame.js" src="https://app.cartfuel.io/js/embed/cartfuel_pm_frame.js"></script> 
-<div id="cartfuelpmct"></div> 
+
+<div id="cartfuelpmct"></div>
 
 <style>@media(max-width: 1080px) {
 	
@@ -263,6 +262,7 @@ select:invalid { color: gray; }
     $('.product').val(product_code);
 
             $(document).ready(function($){
+             
 
               $("#cartfuel-payment-frame").hide();
 		 
@@ -297,6 +297,7 @@ select:invalid { color: gray; }
          
                       if (SubmitStatus == "Success"){
                       var Redirect = data[2];
+                      var orderID = data[3];
                       $("#show_message").html(DataMSG);
                       $("#show_message").fadeIn();
                       $("#submitbtn").html('<i class="fas fa-spinner fa-pulse"></i> Redirecting...');
@@ -306,8 +307,14 @@ select:invalid { color: gray; }
                      $(".saved").fadeOut();
                      $(".saleend").fadeOut();
                      $(".prodtitle").fadeOut();
+                     $.getScript("https://app.cartfuel.io/js/embed/cartfuel_pm_frame.js")
                      
-                      cartfuelInit({id:Redirect})
+                    .done(function( s, Status ) {
+                      setTimeout(function() { 
+                        cartfuelInit({id: Redirect, data:{order_ID: orderID}})
+                    }, 300);
+                    })
+                      
                       $("#cartfuel-payment-frame").fadeIn();
 
                       }else{
