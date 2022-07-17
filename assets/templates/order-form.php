@@ -309,7 +309,7 @@ select:invalid { color: gray; }
                      $(".saleend").fadeOut();
                      $(".prodtitle").fadeOut();
                     setTimeout(function() { 
-                        cartfuelInit({id: Redirect, data:{order_ID: orderID}})
+                        cartfuelInit({id: Redirect, data:{order_ID: orderID, cookie_ID: <?php echo $_SESSION['user_cookie_id']; ?> }})
                     }, 300);
                  
                       
