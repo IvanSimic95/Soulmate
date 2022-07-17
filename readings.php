@@ -182,7 +182,7 @@ text-align:center;
           </div>
           <div class="smallerText">Choose at least one option to Proceed!</div>
           <script id="cartfuel_up_frame.js" src="https://app.cartfuel.io/js/embed/cartfuel_up_frame.js"></script> 
-      <div id="cartfueluppmct"></div> <script defer> cartfuelUpInit({id:"03d326af-2ad3-4f7f-b6ae-1cbfa6c748d9"}) </script> 
+      <div id="cartfueluppmct"></div> 
         </div>
       </div>
       
@@ -208,6 +208,7 @@ text-align:center;
           $('.new_prce').show();
           $('.smallerText').hide();
           $('#addtopurchase').prop("disabled",false);
+          cartfuelUpInit({id:"03d326af-2ad3-4f7f-b6ae-1cbfa6c748d9"});
         }
         if (countCheckedCheckboxes == 2) {
           $('.new_prce').text('$29.99');
@@ -215,6 +216,7 @@ text-align:center;
           $('.new_prce').show();
           $('.smallerText').hide();
           $('#addtopurchase').prop("disabled",false);
+          cartfuelUpInit({id:"2802ac30-58c5-44f5-baf0-e8324a32a533"});
         }
         if (countCheckedCheckboxes == 3) {
           $('.new_prce').text('$39.99');
