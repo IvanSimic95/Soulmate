@@ -258,6 +258,8 @@ text-align:center;
           $('.new_prce').show();
           $('.smallerText').hide();
           $('#addtopurchase').prop("disabled",false);
+          $('#cartfuel-up-payment-frame').remove();
+          cartfuelUpInit({id:"2802ac30-58c5-44f5-baf0-e8324a32a533"});
         }
         if (countCheckedCheckboxes == 4) {
           $('.new_prce').text('$49.99');
