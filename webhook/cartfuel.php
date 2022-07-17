@@ -9,7 +9,7 @@ $mOrderID = $obj->metadata->order_ID;
 $cName = $obj->customer->name;
 $productImage = "https://soulmate-artist.com/assets/img/14dk.jpg";
 $productFullTitle = $obj->product->product_name;
-
+echo $order_email."<br>";
 if($order_email) {
 include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 
