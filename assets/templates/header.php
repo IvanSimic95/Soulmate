@@ -35,6 +35,8 @@ $metatags
 
   gtag('config', 'UA-227896344-1');
 </script>
+<script>(function(w,r){w._rwq=r;w[r]=w[r]||function(){(w[r].q=w[r].q||[]).push(arguments)}})(window,'rewardful');</script>
+<script async src='https://r.wdfl.co/rw.js' data-rewardful='c85714'></script>
 
 
 
