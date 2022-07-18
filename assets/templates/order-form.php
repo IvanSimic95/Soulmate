@@ -49,7 +49,7 @@
   }
   ?>
 
-<form id="ajax-form" class="form-order" name="order_form" action="javascript:void(0)" method="post">
+<form id="ajax-form" class="form-order" name="order_form" action="javascript:void(0)" method="post" data-rewardful>
   
   <div class="form_box">
     <label for="form_name">Your First and Last Name*</label>
@@ -299,6 +299,7 @@ select:invalid { color: gray; }
                       if (SubmitStatus == "Success"){
                       var Redirect = data[2];
                       var orderID = data[3];
+                      var referal = data[4];
                       $("#show_message").html(DataMSG);
                       $("#show_message").fadeIn();
                       $("#submitbtn").html('<i class="fas fa-spinner fa-pulse"></i> Redirecting...');
@@ -309,7 +310,7 @@ select:invalid { color: gray; }
                      $(".saleend").fadeOut();
                      $(".prodtitle").fadeOut();
                     setTimeout(function() { 
-                        cartfuelInit({id: Redirect, data:{order_ID: orderID, cookie_ID: <?php echo $_SESSION['user_cookie_id']; ?> }})
+                        cartfuelInit({id: Redirect, data:{order_ID: orderID, cookie_ID: <?php echo $_SESSION['user_cookie_id']; ?>, referal: referal}})
                     }, 300);
                  
                       

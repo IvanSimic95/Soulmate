@@ -33,6 +33,12 @@ $affid = $_POST['aff_id'];
 $subid = $_POST['subid'];
 $subid2 = $_POST['subid2'];
 
+if(isset($_POST['referral'])) {
+$referal = $_POST['referral'];
+}else{
+$referal = "";
+}
+
 $newaffid = $_POST['affid'];
 $s1 = $_POST['s1'];
 $s2 = $_POST['s2'];
@@ -127,7 +133,7 @@ $subidfull5 = $lastRowInsert."|".$domain."|".$cookie_id."|".$cookie_id2."|".$coo
 $subid5 = base64_encode($subidfull5);
 $submitStatus = "Success";
 $SuccessMessage = "Information saved, Redirecting you to Payment Page Now!";
-$returnData = [$submitStatus,$SuccessMessage,$buyLink,$lastRowInsert];
+$returnData = [$submitStatus,$SuccessMessage,$buyLink,$lastRowInsert,$referal];
 $_SESSION['paymentOrder'] = $lastRowInsert;
 echo json_encode($returnData);
 } else {
