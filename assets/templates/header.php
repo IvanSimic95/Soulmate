@@ -112,7 +112,7 @@ setTimeout(function(){ var el = document.getElementById('ust_body_style'); el &&
                 <li  data-toggle="collapse" data-target="#products" class="collapsed men_2_0">
                   <a href="#/"><i class="fa fa-shopping-cart fa-lg"></i> Services <span class="arrow"></span></a>
                 </li>
-                <ul class="sub-menu collapse" id="products">
+               <!-- <ul class="sub-menu collapse" id="products">
                     <li class="men_2_1"> <a href="/soulmate-drawing.php">Soulmate Drawing</a> </li>
 					<li class="men_2_2"> <a href="/twin-drawing.php">Twin Flame Drawing</a> </li>
 					<li class="men_2_3"> <a href="/FutureHusband.php">Future Husband/Wife Drawing</a> </li>
@@ -121,10 +121,12 @@ setTimeout(function(){ var el = document.getElementById('ust_body_style'); el &&
           <li class="men_2_3"> <a href="/FutureHusband.php">Future Husband/Wife Drawing</a> </li>
 					<li class="men_2_4"> <a href="/baby-drawing.php">Future Baby Drawing</a> </li>
 					<li class="men_2_4"> <a href="/baby-drawing.php">Future Baby Drawing</a> </li>
-                 </ul>
+                 </ul>-->
+                 <li class="men_2_0"><a href="/soulmate-drawing.php"><i class="fa fa-shopping-cart fa-lg"></i> Soulmate Drawing </a></li>
+                 
 
                  <li class="men_3_0"> <a href="/about.php"><i class="fa fa-star fa-lg"></i>About Melissa</a> </li>
-                 <li class="men_4_0"> <a href="/blog/"><i class="fa fa-book-reader fa-lg"></i> Blog</a> </li>
+                <!-- <li class="men_4_0"> <a href="/blog/"><i class="fa fa-book-reader fa-lg"></i> Blog</a> </li> -->
                  <li class="men_5_0"> <a href="/contact.php"><i class="fa fa-envelope-open-text fa-lg"></i> Contact</a> </li>
 
                  <?php
@@ -173,16 +175,17 @@ setTimeout(function(){ var el = document.getElementById('ust_body_style'); el &&
                 <nav id="main_menu">
                   <ul>
                     <li class="men_1_0"> <a href="/index.php">Home</a> </li>
-                    <li class="men_2_0"> <a href="/services.php">Services</a>
+                    <li class="men_2_0"> <a href="/soulmate-drawing.php">Soulmate Drawing</a> </li>
+                    <!--<li class="men_2_0"> <a href="/services.php">Services</a>
                       <ul class="submenu">
                         <li class="men_2_1"> <a href="/soulmate-drawing.php">Soulmate Drawing</a> </li>
                         <li class="men_2_2"> <a href="/twin-drawing.php">Twin Flame Drawing</a> </li>
                         <li class="men_2_3"> <a href="/FutureHusband.php">Future Husband/Wife Drawing</a> </li>
                         <li class="men_2_4"> <a href="/baby-drawing.php">Future Baby Drawing</a> </li>
                       </ul>
-                    </li>
+                    </li>-->
                     <li class="men_3_0"> <a href="/about.php">About Melissa</a> </li>
-                    <li class="men_4_0"> <a href="/blog/">Blog</a> </li>
+                    <!--<li class="men_4_0"> <a href="/blog/">Blog</a> </li>-->
                     <li class="men_5_0"> <a href="/contact.php">Contact</a> </li>
                   </ul>
                 </nav>
