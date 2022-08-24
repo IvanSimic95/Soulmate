@@ -109,7 +109,7 @@ setTimeout(function(){ var el = document.getElementById('ust_body_style'); el &&
             <ul id="menu-content" class="menu-content collapse out">
                 <li class="men_1_0"><a href="/index.php"><i class="fa fa-home fa-lg"></i> Home </a></li>
 
-                <li  data-toggle="collapse" data-target="#products" class="collapsed men_2_0">
+                <!--  <li  data-toggle="collapse" data-target="#products" class="collapsed men_2_0">
                   <a href="#/"><i class="fa fa-shopping-cart fa-lg"></i> Services <span class="arrow"></span></a>
                 </li>
                <!-- <ul class="sub-menu collapse" id="products">
