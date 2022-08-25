@@ -1,68 +1,49 @@
 <?php
-$ForderID = "testorder";
-$ip = "62.4.34.122";
-$agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0";
-$Ffirst_name = "ivan";
-$Flast_name = "test";
-$customer_emailaddress = "email@isimic.com";
-$cleanPhone = "385977117522";
-$fixedBirthday = "19950329";
-$Fsex = "male";
-$fbc = "";
-$fbp = "";
-$Fproduct = array('soulmate');
-$price = "49.99";
-$domain = "soulmate-artist.com";
+$signature = hash_hmac('sha256', strval("psychicAdmin"), 'sk_live_Ncow50B9RdRQFeXBsW45c5LFRVYLCm98');
 
-$accessToken1 = "EAAQdSy3JN5QBAPgrqO52jtPQWl04D2nti6V5gHaiYkl50iBLu3O5jIohmZA0GsWBNqQOs";
-$accessToken2 = "MYZB9qGeZBZAZBVHkuTdj26ZAXWRMhMM9TuvTLkRKJtxxksdCLXStTWKjipEMDYY00DSfiZCS6KaaTUZCHjpYZCQBZCv8AeAgWgqQHKYARWZAqa7bu0rmT";
-$fbAccessToken = $accessToken1.$accessToken2;
+?>
 
-$FBPixel = "3687138444845960";
+<div id="talkjs-container-psychicAdmin" style="width: 90%; margin: 30px; height: 500px; position:fixed;bottom:0;right:0;z-index:999;">
+     <i>Loading chat...</i>
+ </div>
 
-$data = array( // main object
-        "data" => array( // data array
-            array(
-                "event_name" => "Purchase",
-                "event_time" => time(),
-                "event_id" => $ForderID,
-                "user_data" => array(
-                    "client_ip_address" => $ip,
-                    "client_user_agent" => $agent,
-                    "fn" => hash('sha256', $Ffirst_name),
-                    "ln" => hash('sha256', $Flast_name),
-                    "em" => hash('sha256', $customer_emailaddress),
-                    "ph" => hash('sha256', $cleanPhone),
-                    "db" => hash('sha256', $fixedBirthday),
-                    "ge" => hash('sha256', $Fsex),
-                    "fbc" => $fbc,
-                    "fbp" => $fbp,
-                    "external_id" => hash('sha256', $ForderID),
-                ),
-                "content_ids" => $Fproduct,
-                "order_id" => $ForderID,
-                "custom_data" => array(
-                    "currency" => "USD",
-                    "value"    => $price,
-                ),
-                "action_source" => "website",
-                "event_source_url"  => $domain,
-           ),
-        ),
-          "test_event_code" => "TEST89589",
-          "access_token" => $fbAccessToken
-        );  
-        
-        
-        $dataString = json_encode($data);                                                                                                              
-        $ch = curl_init('https://graph.facebook.com/v11.0/'.$FBPixel.'/events');                                                                      
-        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $dataString);                                                                  
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                      
-        curl_setopt($ch, CURLOPT_HTTPHEADER, array(                                                                          
-            'Content-Type: application/json',                                                                                
-            'Content-Length: ' . strlen($dataString))                                                                       
-        );                                                                                                                                                                       
-        $response = curl_exec($ch);
-        echo $response;
-  ?>
+<script>
+    (function(t,a,l,k,j,s){
+    s=a.createElement('script');s.async=1;s.src="https://cdn.talkjs.com/talk.js";a.head.appendChild(s)
+    ;k=t.Promise;t.Talk={v:3,ready:{then:function(f){if(k)return new k(function(r,e){l.push([f,r,e])});l
+    .push([f])},catch:function(){return k&&new k()},c:l}};})(window,document,[]);
+</script>
+
+
+<script>  
+    Talk.ready.then(function() {
+      var other = new Talk.User({
+          id: "psychicAdmin",
+          name: "Psychic Art",
+          email: "contact@psychic-art.com",
+          photoUrl: "https://psychic-art.com/assets/img/avatars/admin.png",
+          role: "administrator",
+    
+      });
+      var me = new Talk.User("soulmateAdmin");
+      window.talkSession = new Talk.Session({
+          appId: "ArJWsup2",
+          me: other,
+          signature: "<?php echo $signature; ?>"
+      });
+      var conversation = talkSession.getOrCreateConversation("psychicAdmin");
+          conversation.setAttributes({
+          subject: "Psychic Art Admin Test",
+          custom: { 
+          status: "Paid"
+          }
+      });
+
+      conversation.setParticipant(other);
+      conversation.setParticipant(me);
+
+        var chatbox = window.talkSession.createChatbox(conversation);
+        chatbox.mount(document.getElementById("talkjs-container-psychicAdmin"));
+    })
+
+</script>
