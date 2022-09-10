@@ -7,6 +7,7 @@ $createChat = $genderAcc =   $skipSelect = "";
 isset($_GET['emailaddress']) ? $order_email = $_GET['emailaddress'] : $order_email = "";
 isset($_GET['order_id']) ? $order_buygoods = $_GET['order_id'] : $order_buygoods = "";
 isset($_GET['total']) ? $order_price = $_GET['total'] : $order_price = "19.99";
+isset($_GET['id']) ? $id = $_GET['id'] : $id = "12";
 
 $cookie_id = $_SESSION['user_cookie_id'];
 $lastOrderID = $_SESSION['lastorder'];
@@ -95,7 +96,7 @@ if(!isset($product)){
 
 <?php if($fireiframe==1){ ?>
 
-<iframe src="https://newrideanddrive.com/p.ashx?a=177&e=180&f=pb&r=<?php echo $s2; ?>&t=<?php echo $orderID; ?>" height="1" width="1" frameborder="0"></iframe>
+<!--<iframe src="https://newrideanddrive.com/p.ashx?a=177&e=180&f=pb&r=<?php echo $s2; ?>&t=<?php echo $orderID; ?>" height="1" width="1" frameborder="0"></iframe>-->
 
 <?php } ?>
 
@@ -124,7 +125,7 @@ if(!isset($product)){
 <script>
   document.addEventListener("DOMContentLoaded", function(event) {
     setTimeout(function(){
-      window.location.href = "https://<?php echo $domain; ?>/readings.php";
+      window.location.href = "https://<?php echo $domain; ?>/readings.php?id=<?php echo $id; ?>";
      }, 3000);
   });
 

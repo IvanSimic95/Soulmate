@@ -9,6 +9,7 @@ $_SESSION['fbfireUpsellpixel'] = 0;
 isset($_GET['emailaddress']) ? $order_email = $_GET['emailaddress'] : $order_email = "N/A";
 isset($_GET['order_id']) ? $order_buygoods = $_GET['order_id'] : $order_buygoods = "N/A";
 isset($_GET['total']) ? $order_price = $_GET['total'] : $order_price = "19.99";
+isset($_GET['id']) ? $id = $_GET['id'] : $id = "12";
 $cookie_id = $_SESSION['user_cookie_id2'];
 $createChat = "";
 
@@ -62,7 +63,7 @@ if(isset($cookie_id)) {
 <script>
   document.addEventListener("DOMContentLoaded", function(event) {
     setTimeout(function(){
-      window.location.href = "https://<?php echo $domain; ?>/future-baby.php";
+      window.location.href = "https://<?php echo $domain; ?>/future-baby.php?id=<?php echo $id; ?>";
      }, 3000);
   });
 

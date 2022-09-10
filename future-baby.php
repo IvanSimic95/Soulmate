@@ -107,6 +107,7 @@ text-align:center;
         <input class="partnergender" type="hidden" id="partnergender" name="partnergender" value="<?php echo $_SESSION['orderGender']; ?>">
         <input class="cookie" type="hidden" name="cookie_id" value="<?php echo $_SESSION['user_cookie_id3']; ?>">
         <input class="email" type="hidden" name="bgemail" value="<?php echo $_SESSION['BGEmail']; ?>">
+        <input class="mainID" type="hidden" name="mainID" value="<?php echo $id; ?>">
         <input class="price" type="hidden" id="product_price" name="price" value="19.99">
         <input class="fbp" type="hidden" name="fbp" value="<?php echo $UserFBP; ?>">
         <input class="fbc" type="hidden" name="fbc" value="<?php echo $UserFBC; ?>">
@@ -127,7 +128,8 @@ text-align:center;
           <br> 
           <div class="gradient">This reading will let you know when you will become pregnant, as well as an in-depth description about your future baby's gender, passions, skills, talents, and much more. Knowing more about your future baby will help you make sure that everything will be going well with your pregnancy, and prepare for the most wonderful experience your life has to offer!</div>
           <script id="cartfuel_up2_frame.js" src="https://app.cartfuel.io/js/embed/cartfuel_up2_frame.js"></script> 
-          <div id="cartfueluppmct"></div> <script defer> cartfuelUpInit({id:"8e3d722c-da80-4a7e-ba18-0b095ebbe0d3"}) </script> 
+          <div id="purchasedupsellpay"><script id="cartfuel_up_frame.js" src="https://app.cartfuel.io/js/embed/cartfuel_up2_frame.js"></script> 
+      <div id="cartfueluppmct"></div></div>
         </div>
    
       
@@ -172,42 +174,48 @@ $(document).ready(function($){
   // hide messages 
   $("#error").hide();
 
-  // on submit...
-  $('#ajax-form').submit(function(e){
-      e.preventDefault();
-      $(".onsubmithide").fadeOut();
+     // on submit...
+     $('#ajax-form').submit(function(e){
+         e.preventDefault();
+         $(".onsubmithide").fadeOut();
+         //$("#submitbtn").html('<i class="fas fa-spinner fa-pulse"></i> Loading...');
 
-      $.ajax({
-          type:"POST",
-          url: "/ajax/baby.php",
-          dataType: 'json',
-          data: $(this).serialize(),
-          success: function(data){
-            var SubmitStatus = data[0];
-            if (SubmitStatus == "Success"){
-           var DataMSG = data[1];
-            var Redirect = data[2];
-            $("#purchasedupsell").fadeIn();
-            setTimeout(function(){
-            window.location.href = Redirect;
-            }, 2000);
-            }else if(SubmitStatus == "NoThanks"){
-             var Redirect = data[1];
-             $("#purchasedupsell").html("You have choosen to skip this offer, redirecting you...");
-             $("#purchasedupsell").fadeIn();
+         $.ajax({
+             type:"POST",
+             url: "/ajax/readings.php",
+             dataType: 'json',
+             data: $(this).serialize(),
+             success: function(data){
+              var SubmitStatus = data[0];
+              if (SubmitStatus == "Success"){
+              var DataMSG = data[1];
+              var Redirect = data[2];
+              var orderID = data[3];
+               $("#purchasedupsell").fadeIn();
+               $("#purchasedupsellpay").fadeIn();
+               setTimeout(function() { 
+                        cartfuelUpInit({id: Redirect, data:{order_ID: orderID, cookie_ID: <?php echo $_SESSION['user_cookie_id2']; ?> }})
+                    }, 300);
+                 
+                      
+                      $("#cartfuel-payment-frame").fadeIn();
+               }else if(SubmitStatus == "NoThanks"){
+                var Redirect = data[1];
+                $("#purchasedupsell").html("You have choosen to skip this offer, redirecting you...");
+                $("#purchasedupsell").fadeIn();
 
-           setTimeout(function(){
-            window.location.href = Redirect;
-            }, 2000);
-            }else{
-           var DataMSG = data[1];
-            $("#error").html(DataMSG);
-            $("#error").fadeIn();
-            }
+              setTimeout(function(){
+               window.location.href = Redirect;
+               }, 2000);
+               }else{
+              var DataMSG = data[1];
+               $("#error").html(DataMSG);
+               $("#error").fadeIn();
+               }
 
-          }
-      });
-  });  
+             }
+         });
+     });  
   return false;
 });
 </script>

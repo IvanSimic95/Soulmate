@@ -12,7 +12,7 @@ die();
 $request = $_SERVER['REQUEST_METHOD'];
 
 if ($request === 'POST') {
-    
+$id = $_POST['mainID'];
    
 $user_name = $_POST['form_name'];
 $fName = $_POST['first_name'];
@@ -70,19 +70,16 @@ $oStatus = "pending";
 isset($_POST['fbp']) ? $uFBP = $_POST['fbp'] : $uFBP = "";
 isset($_POST['fbc']) ? $uFBC = $_POST['fbc'] : $uFBC = "";
 
-switch ($ReadingsCounter){
-    case "1":
-      $buyLink = "03d326af-2ad3-4f7f-b6ae-1cbfa6c748d9";
-      break;
-    case "2":
+switch ($id){
+    case "12":
       $buyLink = "2802ac30-58c5-44f5-baf0-e8324a32a533";
       break;
-    case "3":
-      $buyLink = "8e3d722c-da80-4a7e-ba18-0b095ebbe0d3";
+    case "24":
+      $buyLink = "1382ccdd-ec6f-4023-9f9c-b005c8b49d3e";
       break;
-      case "4":
-        $buyLink = "1382ccdd-ec6f-4023-9f9c-b005c8b49d3e";
-        break;
+    case "48":
+      $buyLink = "03d326af-2ad3-4f7f-b6ae-1cbfa6c748d9";
+      break;
   }
 
 $sql = "INSERT INTO orders (cookie_id, user_age, first_name, last_name, user_name, birthday, order_status, order_date, order_email, order_product, order_product_nice, order_priority, order_price, buygoods_order_id, user_sex, genderAcc, pick_sex, fbc, fbp) VALUES ('$cookie_id', '$user_age', '$fName', '$lName', '$user_name', '$user_birthday', '$oStatus', '$order_date', '$bgemail', '$order_product', '$order_product_nice', '$order_priority', '$pricenow', '', '$userGender', '$userGenderAcc', '$partnerGender', '$uFBC', '$uFBP')";
