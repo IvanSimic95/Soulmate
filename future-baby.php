@@ -134,12 +134,14 @@ text-align:center;
   <div class="price_box">
     <span class="new_prce">$19.99</span>
   </div>
+  <div class="onsubmithide">
   <div class="smallerText">Choose at least one option to Proceed!</div>
   <button id="addtopurchase" type="submit" name="submit" value="Add to my Purchase">Add to my Purchase</button>
 
 </div>
 </div>
 <button id="nothanks" class="nothanks" type="submit" name="submit" value="No Thanks">No Thanks!</button>
+</div>
 </div>
    
       
