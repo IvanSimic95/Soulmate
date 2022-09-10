@@ -114,14 +114,19 @@ text-align:center;
         <input class="submitbtnselect" type="hidden" name="submitbtnselect" id="submitbtnselect" value="submit">
         <input type="hidden" name="priority" value="24">
         <div id="error" class="alert alert-danger" style="display: none"></div>
-      <div class="meta_part">
-      <div id="purchasedupsell" class="alert alert-succes">Awesome! We will use same payment method as for your previous order.<br> Redirecting to payment page now...</div>
-      <div class="onsubmithide">
+        <div class="meta_part">
+
         <div class="sides">
           <div class="price_box">
-            <span class="new_prce">$19.99</span>
-          </div>
+    <span class="new_prce">$29.99</span>
+  </div>
+  <div class="smallerText">Choose at least one option to Proceed!</div>
+  <button id="addtopurchase" type="submit" name="submit" value="Add to my Purchase">Add to my Purchase</button>
 
+</div>
+</div>
+<button id="nothanks" class="nothanks" type="submit" name="submit" value="No Thanks">No Thanks!</button>
+</div>
           
 
           
