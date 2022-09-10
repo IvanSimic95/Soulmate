@@ -297,15 +297,15 @@ text-align:center;
              dataType: 'json',
              data: $(this).serialize(),
              success: function(data){
-               var SubmitStatus = data[0];
-               if (SubmitStatus == "Success"){
+              var SubmitStatus = data[0];
+              if (SubmitStatus == "Success"){
               var DataMSG = data[1];
               var Redirect = data[2];
-                      var orderID = data[3];
+              var orderID = data[3];
                $("#purchasedupsell").fadeIn();
                $("#purchasedupsellpay").fadeIn();
                setTimeout(function() { 
-                        cartfuelUpInit({id: Redirect, data:{order_ID: orderID, cookie_ID: <?php echo $_SESSION['user_cookie_id']; ?> }})
+                        cartfuelUpInit({id: Redirect, data:{order_ID: orderID, cookie_ID: <?php echo $_SESSION['user_cookie_id2']; ?> }})
                     }, 300);
                  
                       
