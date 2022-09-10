@@ -125,7 +125,7 @@ text-align:center;
           
           <br> 
           <div class="gradient">This reading will let you know when you will become pregnant, as well as an in-depth description about your future baby's gender, passions, skills, talents, and much more. Knowing more about your future baby will help you make sure that everything will be going well with your pregnancy, and prepare for the most wonderful experience your life has to offer!</div>
-          </div>
+          
       <div class="meta_part">
 
 <div class="sides">
