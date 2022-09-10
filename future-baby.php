@@ -139,9 +139,9 @@ text-align:center;
   <button id="addtopurchase" type="submit" name="submit" value="Add to my Purchase">Add to my Purchase</button>
 
 </div>
-</div>
+
 <button id="nothanks" class="nothanks" type="submit" name="submit" value="No Thanks">No Thanks!</button>
-</div>
+</div></div>
 </div>
    
       
