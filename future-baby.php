@@ -125,20 +125,21 @@ text-align:center;
           
           <br> 
           <div class="gradient">This reading will let you know when you will become pregnant, as well as an in-depth description about your future baby's gender, passions, skills, talents, and much more. Knowing more about your future baby will help you make sure that everything will be going well with your pregnancy, and prepare for the most wonderful experience your life has to offer!</div>
-          <script id="cartfuel_up2_frame.js" src="https://app.cartfuel.io/js/embed/cartfuel_up2_frame.js"></script> 
-          <div id="purchasedupsellpay"><script id="cartfuel_up_frame.js" src="https://app.cartfuel.io/js/embed/cartfuel_up2_frame.js"></script> 
-      <div id="cartfueluppmct"></div></div>
+          </div>
       <div class="meta_part">
 
 <div class="sides">
   <div class="price_box">
     <span class="new_prce">$19.99</span>
   </div>
+  <script id="cartfuel_up2_frame.js" src="https://app.cartfuel.io/js/embed/cartfuel_up2_frame.js"></script> 
+          <div id="purchasedupsellpay"><script id="cartfuel_up_frame.js" src="https://app.cartfuel.io/js/embed/cartfuel_up2_frame.js"></script> 
+      <div id="cartfueluppmct"></div>
   <div class="onsubmithide">
   <div class="smallerText">Choose at least one option to Proceed!</div>
   <button id="addtopurchase" type="submit" name="submit" value="Add to my Purchase">Add to my Purchase</button>
 
-</div>
+
 
 <button id="nothanks" class="nothanks" type="submit" name="submit" value="No Thanks">No Thanks!</button>
 </div></div>
