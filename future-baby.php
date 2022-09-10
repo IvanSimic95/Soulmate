@@ -6,7 +6,11 @@ $menu_order="men_0_0";
 $cookie_id = $_SESSION['user_cookie_id3'];
 
 
-
+if(isset($_GET['id'])){
+  $id = $_GET['id'];
+}else{
+  $id = "12";
+}
 
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; 
 ?>

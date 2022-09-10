@@ -21,7 +21,7 @@ if ($request === 'POST') {
         $returnData = [$submitStatus,$RedirectURL];
         echo json_encode($returnData);
     }else{
-        $id = $_POST['mainID'];
+$id = $_POST['mainID'];
 $user_name = $_POST['form_name'];
 $fName = $_POST['first_name'];
 $lName = $_POST['last_name'];
