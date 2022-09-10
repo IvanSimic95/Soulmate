@@ -114,19 +114,8 @@ text-align:center;
         <input class="submitbtnselect" type="hidden" name="submitbtnselect" id="submitbtnselect" value="submit">
         <input type="hidden" name="priority" value="24">
         <div id="error" class="alert alert-danger" style="display: none"></div>
-        <div class="meta_part">
+   
 
-        <div class="sides">
-          <div class="price_box">
-    <span class="new_prce">$29.99</span>
-  </div>
-  <div class="smallerText">Choose at least one option to Proceed!</div>
-  <button id="addtopurchase" type="submit" name="submit" value="Add to my Purchase">Add to my Purchase</button>
-
-</div>
-</div>
-<button id="nothanks" class="nothanks" type="submit" name="submit" value="No Thanks">No Thanks!</button>
-</div>
           
 
           
@@ -135,7 +124,19 @@ text-align:center;
           <script id="cartfuel_up2_frame.js" src="https://app.cartfuel.io/js/embed/cartfuel_up2_frame.js"></script> 
           <div id="purchasedupsellpay"><script id="cartfuel_up_frame.js" src="https://app.cartfuel.io/js/embed/cartfuel_up2_frame.js"></script> 
       <div id="cartfueluppmct"></div></div>
-        </div>
+      <div class="meta_part">
+
+<div class="sides">
+  <div class="price_box">
+    <span class="new_prce">$19.99</span>
+  </div>
+  <div class="smallerText">Choose at least one option to Proceed!</div>
+  <button id="addtopurchase" type="submit" name="submit" value="Add to my Purchase">Add to my Purchase</button>
+
+</div>
+</div>
+<button id="nothanks" class="nothanks" type="submit" name="submit" value="No Thanks">No Thanks!</button>
+</div>
    
       
 </div>   </div>
