@@ -131,7 +131,7 @@ text-align:center;
   <div class="container">
 
   
-  <iframe src="https://<?php echo $domain; ?>/pixel-tt.php?product=<?php echo $TTproduct; ?>&price=<?php echo $TTprice; ?>" scrolling="no" frameborder="0" width="1" height="1"></iframe>
+  <!--<iframe src="https://<?php echo $domain; ?>/pixel-tt.php?product=<?php echo $TTproduct; ?>&price=<?php echo $TTprice; ?>" scrolling="no" frameborder="0" width="1" height="1"></iframe>-->
 
 
   <div class="white-wrapper col-md-10 offset-md-2"> <h1>You Unlocked a Special Service!</h1>
@@ -159,31 +159,31 @@ text-align:center;
       <div id="cartfueluppmct"></div></div>
                    <div class="onsubmithide">
                    <center> 
-      <ul class="list-group list-group-flush">
+      <ul class="list-group list-group-flush" style="display: flex;flex-direction: column;flex-wrap:wrap;align-items:center;">
           <li class="list-group-control">
 					<label class="custom-control fill-checkbox">
-			    <input type="checkbox" class="fill-control-input"  id="general" name="general" value="general" checked>
+			    <input type="checkbox" class="fill-control-input"  id="general" name="general" value="general" checked disabled>
 			    <span class="fill-control-indicator"></span>
 			    <span class="fill-control-description">General Reading</span>
 		      </label>
 					</li>
           <li class="list-group-control">
 					<label class="custom-control fill-checkbox">
-			    <input type="checkbox" class="fill-control-input"  id="love" name="love" value="love">
+			    <input type="checkbox" class="fill-control-input"  id="love" name="love" value="love" checked disabled>
 			    <span class="fill-control-indicator"></span>
 			    <span class="fill-control-description">Love Reading</span>
 		      </label>
 					</li>
           <li class="list-group-control">
 					<label class="custom-control fill-checkbox">
-			    <input type="checkbox" class="fill-control-input"  id="career" name="career" value="career">
+			    <input type="checkbox" class="fill-control-input"  id="career" name="career" value="career" checked disabled>
 			    <span class="fill-control-indicator"></span>
 			    <span class="fill-control-description">Career Reading</span>
 		      </label>
 					</li>
           <li class="list-group-control">
 					<label class="custom-control fill-checkbox">
-			    <input type="checkbox" class="fill-control-input"  id="health" name="health" value="health">
+			    <input type="checkbox" class="fill-control-input"  id="health" name="health" value="health" checked disabled>
 			    <span class="fill-control-indicator"></span>
 			    <span class="fill-control-description">Health Reading</span>
 		      </label>
@@ -201,7 +201,7 @@ text-align:center;
         <input class="partnergender" type="hidden" id="partnergender" name="partnergender" value="<?php echo $_SESSION['orderPartnerGender']; ?>">
         <input class="email" type="hidden" name="bgemail" value="<?php echo $_SESSION['BGEmail']; ?>">
         <input class="cookie" type="hidden" name="cookie_id" value="<?php echo $_SESSION['user_cookie_id2']; ?>">
-        <input class="price" type="hidden" id="product_price" name="price" value="19.99">
+        <input class="price" type="hidden" id="product_price" name="price" value="29.99">
         <input class="fbp" type="hidden" name="fbp" value="<?php echo $UserFBP; ?>">
         <input class="fbc" type="hidden" name="fbc" value="<?php echo $UserFBC; ?>">
         <input class="submitbtnselect" type="hidden" name="submitbtnselect" id="submitbtnselect" value="submit">
@@ -210,7 +210,7 @@ text-align:center;
 
         <div class="sides">
           <div class="price_box">
-            <span class="new_prce">$19.99</span>
+            <span class="new_prce">$29.99</span>
           </div>
           <div class="smallerText">Choose at least one option to Proceed!</div>
           <button id="addtopurchase" type="submit" name="submit" value="Add to my Purchase">Add to my Purchase</button>
@@ -257,8 +257,8 @@ text-align:center;
           $('#addtopurchase').prop("disabled",false);
         }
         if (countCheckedCheckboxes == 4) {
-          $('.new_prce').text('$49.99');
-          $('#product_price').val('49.99');
+          $('.new_prce').text('$29.99');
+          $('#product_price').val('29.99');
           $('.new_prce').show();
           $('.smallerText').hide();
           $('#addtopurchase').prop("disabled",false);
