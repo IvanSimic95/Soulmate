@@ -186,7 +186,7 @@ text-align:center;
 			    <span class="fill-control-indicator"></span>
 			    <span class="fill-control-description">Career Reading</span>
 		      </label>
-					</li>
+					</li> 
           <li class="list-group-control">
 					<label class="custom-control fill-checkbox">
 			    <input type="checkbox" class="fill-control-input"  id="health" name="health" value="health" checked disabled>
