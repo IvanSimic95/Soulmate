@@ -8,8 +8,8 @@ $metatags
         ->title($title)
         ->description($description)
         ->meta('author', 'Melissa Psychic')
-        ->image('https://soulmate-artist.com/assets/img/products/'.$t_product_form_name.'.jpg')
-        ->mobile('https://soulmate-artist.com/assets/img/products/'.$t_product_form_name.'.jpg');
+        ->image('https://soulmate-psychic.com/assets/img/products/'.$t_product_form_name.'.jpg')
+        ->mobile('https://soulmate-psychic.com/assets/img/products/'.$t_product_form_name.'.jpg');
 
 
 }else{
@@ -18,8 +18,8 @@ $metatags
           ->title($title)
           ->description($description)
           ->meta('author', 'Melissa Psychic')
-          ->image('https://soulmate-artist.com/assets/img/good-logo.jpg')
-          ->mobile('https://soulmate-artist.com/assets/img/good-logo.jpg');
+          ->image('https://soulmate-psychic.com/assets/img/good-logo.jpg')
+          ->mobile('https://soulmate-psychic.com/assets/img/good-logo.jpg');
 }
 ?>
 <!DOCTYPE html>
@@ -44,7 +44,7 @@ $metatags
 
     <!-- Verification Tags -->
     <meta name="google-site-verification" content="08uItPxLqgddTP0orZfHcGBG_3QXJ8rzjGcRodl60dE" />
-    <meta name="facebook-domain-verification" content="ibdhldwno4hhu1p6xh51xuwm0okz99" />
+    <meta name="facebook-domain-verification" content="2k86f4j7r8ldmhoebjj8054onoilt7" />
 
     <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
 
@@ -88,7 +88,7 @@ setTimeout(function(){ var el = document.getElementById('ust_body_style'); el &&
         <div class="container">
           <div class="sides">
             <div class="left">
-              <a href="mailto:contact@soulmate-artist.com"><i class="fas fa-envelope"></i> contact@soulmate-artist.com</a>
+              <a href="mailto:contact@soulmate-psychic.com"><i class="fas fa-envelope"></i> contact@soulmate-psychic.com</a>
             </div>
             <div class="right">
                 <a href="#"><i class="fab fa-facebook"></i></a>

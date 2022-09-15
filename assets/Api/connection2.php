@@ -13,8 +13,8 @@
     );
     $adminData = json_encode(array(
         "name"  => "Melissa Psychic",
-        "email-1" => "contact@soulmate-artist.com",
-        "photoUrl" => "https://www.soulmate-artist.com/assets/img/avatars/1.png",
+        "email-1" => "contact@soulmate-psychic.com",
+        "photoUrl" => "https://www.soulmate-psychic.com/assets/img/avatars/1.png",
         "welcomeMessage" => "Hey there! :-) Im Melissa Psychic :-)",
         "roole" => "admin"
     )); 

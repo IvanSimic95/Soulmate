@@ -158,7 +158,7 @@ if($domain == "soulmate.test"){
     $username = "soulmate_user";
     $password = "zcV7_CuxEPDB";
     $dbname = "soulmate_shop";
-	$base_url = "https://soulmate-artist.com";
+	$base_url = "https://soulmate-psychic.com";
 }
 
 // Create connection
