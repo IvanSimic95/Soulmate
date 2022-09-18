@@ -56,6 +56,10 @@ $metatags
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://use.fontawesome.com" crossorigin>
   <link rel="preconnect" href="https://maxcdn.bootstrapcdn.com" crossorigin>
+  <link rel="stylesheet" href="assets/css/checkout.css" />
+    
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="assets/js/checkout.js" defer></script>
 
   <!-- Latest compiled and minified CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">

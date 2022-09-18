@@ -185,8 +185,17 @@
 
 </form>
 
-<div id="cartfuelpmct"></div>
-<script id="cartfuel_pm_frame.js" src="https://app.cartfuel.io/js/embed/cartfuel_pm_frame.js"></script> 
+ <!-- Display a payment form -->
+    <form id="payment-form">
+      <div id="payment-element">
+        <!--Stripe.js injects the Payment Element-->
+      </div>
+      <button id="submit">
+        <div class="spinner hidden" id="spinner"></div>
+        <span id="button-text">Pay now</span>
+      </button>
+      <div id="payment-message" class="hidden"></div>
+    </form>
 
 <style>@media(max-width: 1080px) {
 	
@@ -265,7 +274,7 @@ select:invalid { color: gray; }
             $(document).ready(function($){
              
 
-              $("#cartfuel-payment-frame").hide();
+              $("#payment-form").hide();
 		 
             // hide messages 
             $("#error").hide();
@@ -314,7 +323,7 @@ select:invalid { color: gray; }
                     }, 300);
                  
                       
-                      $("#cartfuel-payment-frame").fadeIn();
+                      $("#payment-form").fadeIn();
 
                       }else{
                       $("#error").html(DataMSG);
