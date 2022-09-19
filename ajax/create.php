@@ -1,6 +1,6 @@
 <?php
 
-require 'vendor/autoload.php';
+require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 
 // This is your test secret API key.
 \Stripe\Stripe::setApiKey('sk_test_51LDvtYLmVL6liR9VfiLnEMKM8YejFOMOeiZZGbCtdE5lFDaTzuPyhizKrrRbucDba9QLewGn4f893r2OT3YA9pfi00PpKjexOx');

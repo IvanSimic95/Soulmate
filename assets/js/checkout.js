@@ -2,7 +2,7 @@
 const stripe = Stripe("pk_test_51LDvtYLmVL6liR9VjJAFYKglmaPJqJWHUAbVckNCzgm3v2fKJHIYL0B3DBqtpJcDty4V24E4pGC3sdqG3Zyme4V100LEFGgQzN");
 
 // The items the customer wants to buy
-const items = [{ id: "xl-tshirt" }];
+const items = [{ id: "prod_MSQq8PEe8Ub3tc" }];
 
 let elements;
 
@@ -36,6 +36,7 @@ async function handleSubmit(e) {
     confirmParams: {
       // Make sure to change this to your payment completion page
       return_url: "http://localhost:4242/public/checkout.html",
+      receipt_email: document.getElementById("email").value,
     },
   });
 
