@@ -31,6 +31,7 @@ try {
         'automatic_payment_methods' => [
             'enabled' => true,
         ],
+        
     ]);
 
     $output = [
