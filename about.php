@@ -54,7 +54,7 @@ Skilled and forceful psychics like me are not limited by interactions in the sam
 
 
 .left img {
-border-radius: 8px;
+border-radius: 4px;
 }
 
 h1 {

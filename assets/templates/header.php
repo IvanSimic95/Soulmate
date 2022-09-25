@@ -57,9 +57,12 @@ $metatags
   <link rel="preconnect" href="https://use.fontawesome.com" crossorigin>
   <link rel="preconnect" href="https://maxcdn.bootstrapcdn.com" crossorigin>
   <link rel="stylesheet" href="assets/css/checkout.css" />
+
+    <!-- jQuery, Bootstrap & FontAwesome JS Files -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
-  <script src="https://js.stripe.com/v3/"></script>
-  <script src="assets/js/checkout.js" defer></script>
 
   <!-- Latest compiled and minified CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -67,20 +70,13 @@ $metatags
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/assets/css/lazyload.css">
 	<link rel="stylesheet" href="/assets/css/review.css">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/style5.css">
   <link rel="stylesheet" href="/assets/css/jquery.popVideo.css">
 
+  <link rel="stylesheet" href="/assets/css/restyle.css">
 
-  <!-- jQuery, Bootstrap & FontAwesome JS Files -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script src="https://kit.fontawesome.com/699dff544d.js" crossorigin="anonymous"></script>
 
-  <!-- Heatmap & Visitor Stats -->
-<script>UST_CT = [];UST = { s: Date.now(), addTag: function(tag) { UST_CT.push(tag) } };UST.addEvent = UST.addTag;
-(function() {var ust_s = document.createElement('STYLE');ust_s.id = 'ust_body_style';
-ust_s.appendChild(document.createTextNode('body {opacity: 0}'));document.head.appendChild(ust_s);})();
-setTimeout(function(){ var el = document.getElementById('ust_body_style'); el && el.remove()}, 800);</script>
+
 
 
 
@@ -156,24 +152,7 @@ setTimeout(function(){ var el = document.getElementById('ust_body_style'); el &&
               </a>
             </div>
             <div class="right">
-              <div class="level_1">
-                <div class="top_menu">
-                  <div class="bars" style="display:none">
-                    <i class="fas fa-bars"></i>
-                  </div>
-                  <?php
-                  if(isset($_SESSION['email'])){
-                  ?>
-                  <a class="btn" href="/dashboard.php"><i class="fas fa-user-shield"></i> <?php echo $_SESSION['email']; ?></a>
-                  <a class="btn" href="/index.php?logout=yes"><i class="fas fa-sign-out-alt"></i> Logout</a>
-                  <?php
-                  }else{
-                  ?>
-                  <a class="btn" href="/dashboard.php"><i class="fas fa-user-shield"></i> Dashboard</a>
-                <?php } ?>
-
-                </div>
-              </div>
+            
               <div class="level_2">
 
                 <nav id="main_menu">
@@ -188,9 +167,18 @@ setTimeout(function(){ var el = document.getElementById('ust_body_style'); el &&
                         <li class="men_2_4"> <a href="/baby-drawing.php">Future Baby Drawing</a> </li>
                       </ul>
                     </li>-->
-                    <li class="men_3_0"> <a href="/about.php">About Melissa</a> </li>
                     <!--<li class="men_4_0"> <a href="/blog/">Blog</a> </li>-->
                     <li class="men_5_0"> <a href="/contact.php">Contact</a> </li>
+                    <?php
+                  if(isset($_SESSION['email'])){
+                  ?>
+                  <a class="btn" style="margin-left:20px;" href="/dashboard.php"><i class="fas fa-user-shield"></i> <?php echo $_SESSION['email']; ?></a>
+                  <a class="btn" style="margin-left:20px;" href="/index.php?logout=yes"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                  <?php
+                  }else{
+                  ?>
+                  <a class="btn" style="margin-left:20px;" href="/dashboard.php"><i class="fas fa-user-shield"></i> Dashboard</a>
+                <?php } ?>
                   </ul>
                 </nav>
               </div>

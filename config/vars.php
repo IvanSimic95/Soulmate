@@ -4,8 +4,8 @@ date_default_timezone_set('Europe/Bucharest');
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
-$startpixel = 1;
-$FBPixel = "524162389470320";
+$startpixel = 0;
+$FBPixel = "";
 $FBPurchasePixel = "";
 $FBViewContent = "";
 $productMETA = "";
@@ -14,7 +14,7 @@ $productMETA = "";
 $accessToken1 = "EAAQdSy3JN5QBAPgrqO52jtPQWl04D2nti6V5gHaiYkl50iBLu3O5jIohmZA0GsWBNqQOs";
 $accessToken2 = "MYZB9qGeZBZAZBVHkuTdj26ZAXWRMhMM9TuvTLkRKJtxxksdCLXStTWKjipEMDYY00DSfiZCS6KaaTUZCHjpYZCQBZCv8AeAgWgqQHKYARWZAqa7bu0rmT";
 $fbAccessToken = $accessToken1.$accessToken2;
-$sendFBAPI = 1; #Set to 1 to send data via api
+$sendFBAPI = 0; #Set to 1 to send data via api
 
 if(!isset($_SESSION['PixelDATA'])){
 $_SESSION['PixelDATA'] = 0;

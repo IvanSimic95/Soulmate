@@ -1,0 +1,115 @@
+.cr{
+    background-color:#2c2e43;
+}
+hr {
+    margin: 0.1rem 0;
+    color: #d8e2ef;
+    background-color: currentColor;
+    border: 0;
+    opacity: 1;
+}
+main{
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+footer{
+    background-color: #373f50!important;
+    background: none;
+    padding-top:20px;
+}
+footer .paragraph{
+    padding-bottom:20px;
+}
+.breadcrumbs{
+    display:none;
+}
+.product_page{
+    background-color: white;
+    border-radius: 3px;
+    padding: 0px;
+    border: 1px solid #d8e2ef;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.product_page h1{
+    color: #7303c0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: transparent;
+    background-image: linear-gradient(to right, #243B55, #141E30);
+    text-align:center;
+    font-size:26px;
+}
+#fullname{
+border-radius:4px!important;
+}
+.product_box_pc{
+
+}
+.form_box input, .form_box select{
+    border-radius:4px;
+}
+
+.form-floating>label {
+    left: 30px; }
+
+
+    .form-floating-icon .icon-inside {
+        position: absolute;
+        left: 20px;
+        top: 17px;
+        pointer-events: none;
+        font-size: 16px;
+        font-size: 1.125rem;
+        color: #c4c3c3;
+        z-index:3;
+      }
+
+      .form-floating-icon input {
+        padding-left:45px!important;
+        padding-top: 1.625rem!important;
+       }
+       .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+        opacity: .65;
+        -webkit-transform: scale(0.75) translateY(-0.7rem) translateX(0.15rem);
+        -ms-transform: scale(0.75) translateY(-0.7rem) translateX(0.15rem);
+        transform: scale(0.75) translateY(-0.7rem) translateX(0.15rem);
+    }
+
+    .price-side {
+        border-left: 1px solid #d8e2ef;
+        padding-left: 10px;
+        font-size: 1.2rem !important;
+    }
+    .old_price del{
+        font-size:1.2rem;
+        font-color:gray;
+    }
+
+    #submitbtn{
+        border-radius:4px;
+    }
+
+
+    @media(max-width: 442px) {
+        .price-side {
+            border-left: none;
+            padding-left: 10px;
+            font-size: 1.2rem !important;
+        }
+
+    }
+
+    .table_headers{
+        border: 2px solid white;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+    }
+    .tab1{
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+    }
+    .logo img{
+        max-height:50px;
+    }

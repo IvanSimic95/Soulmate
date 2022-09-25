@@ -143,7 +143,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 .title_area, .paragraph_area, .sub_area{
     background-color: #fff;
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 4px;
     margin-top: 15px;
 }
 

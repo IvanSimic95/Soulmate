@@ -69,46 +69,9 @@ src="https://www.facebook.com/tr?id=<?php echo $FBPixel; ?>&ev=PageView&noscript
 
       <div class="paragraph">
       Disclaimer: The information contained herein should not be used as a substitute for the advice of appropriately qualified and licensed person. According to the laws in force, I must state that my services are for entertainments purposes only. I have no liability and/or responsibility for any actions and/or decisions any buyer/client chooses to take or make based on his/her consultation. You  acknowledge that I am not a licensed psychologist, lawyer, or health care professional and my services do not replace the care of lawyers, psychologists, or other healthcare professionals. Tarot and numerology are in no way to be construed or substituted as psychological counseling or any other type of therapy or medical advice. I will at all times exercise my best professional efforts, skills, and care.</div>
-      <hr>
+   
   
-      <div class="sides">
-          <div class="quarter">
-            <h3>From Melissa</h3>
-            <div class="paragraph">
-              Wouldn’t Be Great To Permanently Stop Your Problems, Even if You’ve Tried Everything Before?
-            </div>
-          </div>
-          <div class="quarter">
-            <h3>Services</h3>
-            <ul>
-              <li> <a href="/soulmate-drawing.php">Soulmate Drawing</a> </li>
-              <li> <a href="/twin-drawing.php">Twin Flame Drawing</a> </li>
-              <li> <a href="/wife-husband-drawing.php">Future Husband/Wife Drawing</a> </li>
-              <li> <a href="/baby-drawing.php">Future Baby Drawing</a> </li>
-              <li> <a href="/contact.php#faq">FAQ</a> </li>
-            </ul>
-          </div>
-          <div class="quarter">
-            <h3>Account</h3>
-            <ul>
-              <li> <a href="/dashboard.php">Dashboard</a> </li>
-              <li> <a href="/privacy-policy.php">Privacy Policy</a></li>
-              <li> <a href="/terms-and-conditions.php">Terms & Conditions</a> </li>
-              <li> <a href="/terms-and-conditions.php#refunds">Refunds</a> </li>
-              <li> <a href="/contact.php">Contact</a> </li>
-            </ul>
-          </div>
-
-          <div class="quarter">
-            <a href="/index.php">
-              <img src="/assets/img/logo_footer.png" alt="Melissa">
-            </a>
-            <div class="cards">
-              <img src="/assets/img/cards.png" alt="credit_cards">
-            </div>
-          </div>
-        </div>
-      </div>
+</div>
       <div class="cr">
         <div class="container">
           &copy; <?php echo date("Y"); ?> Melissa. All Rights Reserved.

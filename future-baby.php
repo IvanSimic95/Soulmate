@@ -260,7 +260,7 @@ $('.product').val(product_code);
 	margin-bottom:0!important;
    }
 .input-group {
-border-radius: 8px!important;
+border-radius: 4px!important;
     height: 46px!important;
     border: 1px solid #cad1da!important;
 	display: inline-flex!important;
@@ -301,7 +301,7 @@ select:invalid { color: gray; }
 .input-group input:checked + label:before,
 .input-group select:focus,
 .input-group select:active {
- background: linear-gradient(90deg,#d130eb,#4a30eb 80%,#2b216c);
+ background: linear-gradient(90deg, #ec38bc 0%, #7303c0 50%, #03001e 100%);
   color: #fff!important;
   font-weight: bold;
   border-color: #bd8200;

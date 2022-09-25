@@ -212,7 +212,7 @@ font-size:28px;
 width: 100%!important;
 padding: 8px 20px!important;
 box-sizing: border-box!important;
-border-radius: 8px!important;
+border-radius: 4px!important;
 padding: 14px!important;
 border: 1px solid #cad1da!important;
 outline: none!important;

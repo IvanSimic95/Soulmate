@@ -14,9 +14,9 @@ $request = $_SERVER['REQUEST_METHOD'];
 
 if ($request === 'POST') {
 
-$cookie_id = $_POST['cookie_id'];
-$cookie_id2 = $_POST['cookie_id2'];
-$cookie_id3 = $_POST['cookie_id3'];
+  $cookie_id = $_POST['cookie_id'];
+  $cookie_id2 = $_POST['cookie_id2'];
+  $cookie_id3 = $_POST['cookie_id3'];
 
 $user_birthday = $_POST['form_day']."-".$_POST['form_month']."-".$_POST['form_year'];
 $birthday = new DateTime($user_birthday);
@@ -33,12 +33,6 @@ $order_date = date('Y-m-d H:i:s');
 $affid = $_POST['aff_id'];
 $subid = $_POST['subid'];
 $subid2 = $_POST['subid2'];
-
-if(isset($_POST['referral'])) {
-$referal = $_POST['referral'];
-}else{
-$referal = "";
-}
 
 $newaffid = $_POST['affid'];
 $s1 = $_POST['s1'];
@@ -82,6 +76,27 @@ $_SESSION['orderBirthday'] = $user_birthday;
 $_SESSION['orderGender'] = $userGender;
 $_SESSION['orderPartnerGender'] = $partnerGender;
 
+
+
+
+
+switch ($order_priority){
+  case "48":
+    $cbproduct = "1";
+    $cbprice = "29.99";
+  break;
+
+  case "24":
+    $cbproduct = "2";
+    $cbprice = "39.99";
+  break;
+
+  case "12":
+    $cbproduct = "3";
+    $cbprice = "49.99";
+  break;
+}
+
 $order_product_nice = "Soulmate Drawing";
 
 $order_product_test = ucwords($order_product);
@@ -112,21 +127,16 @@ case "Soulmate":
 case "Twinflame":
     $order_product_nice = "Twin Flame Drawing";
         break;
+        case "Spiritguide":
+          $order_product_nice = "Spirit Guide Drawing";
+              break;
+              case "Higherself":
+                $order_product_nice = "Higher Self Drawing";
+                    break;
 }
 
-switch ($order_priority){
-  case "48":
-    $buyLink = "03d326af-2ad3-4f7f-b6ae-1cbfa6c748d9";
-    break;
-  case "24":
-    $buyLink = "1382ccdd-ec6f-4023-9f9c-b005c8b49d3e";
-    break;
-  case "12":
-    $buyLink = "2802ac30-58c5-44f5-baf0-e8324a32a533";
-    break;
-}
-
-$sql = "INSERT INTO orders (cookie_id, user_age, first_name, last_name, user_name, birthday, order_status, order_date, order_email, order_product, order_product_nice, order_priority, order_price, buygoods_order_id, user_sex, genderAcc, pick_sex, fbc, fbp, fbCampaign, fbAdset, fbAd, affid, s1, s2) VALUES ('$cookie_id', '$user_age', '$fName', '$lName', '$user_name', '$user_birthday', '$oStatus', '$order_date', '$user_email', '$order_product', '$order_product_nice', '$order_priority', '', '', '$userGender', '$userGenderAcc', '$partnerGender', '$uFBC', '$uFBP', '$fbCampaign', '$fbAdset', '$fbAd', '$newaffid', '$s1', '$s2')";
+$sql = "INSERT INTO orders (cookie_id, user_age, first_name, last_name, user_name, birthday, order_status, order_date, order_email, order_product, order_product_nice, order_priority, order_price, buygoods_order_id, user_sex, genderAcc, pick_sex, fbc, fbp, fbCampaign, fbAdset, fbAd, affid, s1, s2) 
+VALUES ('$cookie_id', '$user_age', '$fName', '$lName', '$user_name', '$user_birthday', '$oStatus', '$order_date', '$user_email', '$order_product', '$order_product_nice', '$order_priority', '$cbprice', '', '$userGender', '$userGenderAcc', '$partnerGender', '$uFBC', '$uFBP', '$fbCampaign', '$fbAdset', '$fbAd', '$newaffid', '$s1', '$s2')";
 
 if(mysqli_query($conn,$sql)){
 $lastRowInsert = mysqli_insert_id($conn);
@@ -134,8 +144,30 @@ $subidfull5 = $lastRowInsert."|".$domain."|".$cookie_id."|".$cookie_id2."|".$coo
 $subid5 = base64_encode($subidfull5);
 $submitStatus = "Success";
 $SuccessMessage = "Information saved, Redirecting you to Payment Page Now!";
-$returnData = [$submitStatus,$SuccessMessage,$buyLink,$lastRowInsert,$referal];
-$_SESSION['paymentOrder'] = $lastRowInsert;
+$redirectPayment = "https://melissapsy.pay.clickbank.net/?cbskin=39040&cbtimer=1593&cbfid=52075&cbitems=".$cbproduct."&name=".$user_name."&email=".$user_email."&cookie_ID=".$cookie_id."&order_ID=".$lastRowInsert;
+#$redirectPayment = "https://melissapsy.pay.clickbank.net/order/orderform.html?time=1661350269&vvvv=6163646e71&cbskin=32971&cbtimer=874&cbfid=45991&cbf=X5XRKAHW9C&cbitems=SOULMATEDRAWINGS&emal=test%40test.com&ctry=US&vvar=cbitems%3DSOULMATEDRAWINGS%26cbfid%3D45991%26cbskin%3D32971%26cbtimer%3D874%26email%3Dtest%40test.com%26country%3DUS&oaref=01.3016AE12D133BF44610891FAC578E354570CED7871298747944E25F824CF230897D61519&corid=2d9954cf-67c8-40ed-a8e4-e6222b5bb211
+$returnData = [$submitStatus,$SuccessMessage,$redirectPayment];
+
+$_SESSION['UserEmail'] = $user_email;
+
+$_SESSION['fbc'] = $UserFBC;
+$_SESSION['fbp'] = $UserFBP;
+
+$_SESSION['fbfirepixel'] = 1;
+$_SESSION['fborderID'] = $lastRowInsert;
+$_SESSION['fborderPrice'] = $cbprice;
+$_SESSION['fbproduct'] = $order_product;
+
+$_SESSION['fbfirepixel'] = 1;
+
+$_SESSION['PixelDATA'] = "1";
+$_SESSION['Pixelemail'] = $user_email;
+$_SESSION['Pixelfname'] = $fName;
+$_SESSION['Pixellname'] = $lName;
+$_SESSION['Pixelgender']= $userGender;
+$_SESSION['Pixeldob']   = date("Ymd", strtotime($user_birthday));
+$_SESSION['PixelID']    = $lastRowInsert;
+
 echo json_encode($returnData);
 } else {
 $lastRowInsert = "";

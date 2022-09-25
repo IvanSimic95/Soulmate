@@ -114,7 +114,7 @@ $x++;
 }
 .single_article:last-child{
     padding: 25px;
-    border-radius: 8px;
+    border-radius: 4px;
     margin-top: 15px;
 	margin-bottom: 40px;
 	border-bottom: solid 4px;
@@ -122,7 +122,7 @@ $x++;
 .single_article{
     background-color: #fff;
     padding: 25px;
-    border-radius: 8px;
+    border-radius: 4px;
     margin-top: 15px;
 	    width: 48%;
 		    box-sizing: border-box;
@@ -167,7 +167,7 @@ display:block;
 .single_article{
     background-color: #fff;
     padding: 25px;
-    border-radius: 8px;
+    border-radius: 4px;
     margin-top: 15px;
 	    width: 100%;
 float:none;
