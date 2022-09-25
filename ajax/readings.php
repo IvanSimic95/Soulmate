@@ -17,7 +17,7 @@ if ($request === 'POST') {
     if($submit == "NoThanks"){
         $_SESSION['fbfireUpsellpixel'] = 0;
         $submitStatus = "NoThanks";
-        $RedirectURL = "https://melissapsy.pay.clickbank.net/?cbur=d&cbitems=5";
+        $RedirectURL = "https://soulmateps.pay.clickbank.net/?cbur=d&cbitems=5";
         $returnData = [$submitStatus,$RedirectURL];
         echo json_encode($returnData);
     }else{
@@ -109,7 +109,7 @@ $sql = "INSERT INTO orders (cookie_id, user_age, first_name, last_name, user_nam
 
 if(mysqli_query($conn,$sql)){
     $lastRowInsert = mysqli_insert_id($conn);
-$redirectPayment = "https://melissapsy.pay.clickbank.net/?cbur=a&cbfid=52075&cbitems=".$personalIDcount."&cbskin=39040&order_ID=".$lastRowInsert;
+$redirectPayment = "https://soulmateps.pay.clickbank.net/?cbur=a&cbfid=52075&cbitems=".$personalIDcount."&cbskin=39040&order_ID=".$lastRowInsert;
 $submitStatus = "Success";
 $SuccessMessage = "Information saved, Redirecting you to Payment Page Now!";
 $returnData = [$submitStatus,$SuccessMessage,$redirectPayment];
