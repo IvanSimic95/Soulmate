@@ -341,7 +341,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 							<script type="text/javascript">
 							let data<?php echo $orderID; ?>image =  [
 									{
-										"sender": "administrator",
+										"sender": "soulmateAdmin",
 										<?php echo $token; ?>,
 										"type": "UserMessage"
 									}
@@ -399,7 +399,7 @@ $noter = sb_add_note($orderChatID, 1, "Order Finished", "Image Sent");
 				<script type="text/javascript">
 				let data<?php echo $orderID; ?>text =  [
 						{
-							"sender": "administrator",
+							"sender": "soulmateAdmin",
 							"text": "<?php echo $email_text; ?>",
 							"type": "UserMessage"
 						}

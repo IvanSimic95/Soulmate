@@ -1,7 +1,7 @@
 <?php 
 header('Content-type: text/html; charset=utf-8');
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/session.php';
-$title = "Soulmate Drawing | Melissa Psychic";
+$title = "Soulmate Drawing | Soulmate Psychic";
 $description = "I will draw your SOULMATE with 100% accuracy";
 $menu_order="men_2_0"; 
 $bgproduct = "soulmate48";
@@ -28,7 +28,7 @@ $t_about_content = "
 <center> <p> <h2> <div style='color:#ff00f3;'> GUARANTEED 100% ACCURACY OR MONEY BACK </div> </h2> </p> </b> </center> </div> 
 <br>
 <div style='color:#a700f5;'><div style='font-size:120%'><center>  <b>MAXIMUM DISCRETION: DIGITAL DELIVERY ONLY! </p> </center>
-<p>All orders are delivered to the provided email address and also can be accessed from the user dashboard. Nothing will be shipped to your home address! </b></div>
+<p>All orders are delivered to the provided email address and also can be accessed from the user dashboard. Nothing will be shipped to your home address! </b><br> Drawing will be sent as .png or .jpg image format and text will be delivered to email and user dashboard.</div>
 ";
 
 
@@ -39,7 +39,7 @@ $productMETA = <<<EOT
     <meta property="og:url" content="$PRurl" />
     <meta property="og:type" content="website" />
 
-    <meta property="product:brand" content="Melissa Psychic">
+    <meta property="product:brand" content="Soulmate Psychic">
     <meta property="product:availability" content="in stock">
     <meta property="product:condition" content="new">
     <meta property="product:price:amount" content="29.99">

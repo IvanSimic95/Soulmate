@@ -16,17 +16,6 @@ function f($array) {
       echo "log saved";
     }
 }
-//Save to order log function
-function fb($array) {
-  $dataToLog = $array;
-  $data = $dataToLog;
-  $data .= PHP_EOL;
-  $pathToFile = $_SERVER['DOCUMENT_ROOT']."/logs/fb.log";
-  $success = file_put_contents($pathToFile, $data, FILE_APPEND);
-  if ($success === TRUE){
-    echo "log saved";
-  }
-}
 if(isset($_GET['data'])){
 $dDecode = base64_decode($_GET['data']);
 $d = explode("|", $dDecode);
@@ -42,7 +31,7 @@ $subid3                 = $d[6];
 $subid4                 = $d[7];
 $subid5                 = base64_decode($d[8]);
 $ip                     = $d[9];
-$agent                  = $d[9];
+$agent                  = $d[10];
 
 if (str_contains($subid5, '|')) { 
   $clean = explode("|", $subid5);
@@ -151,7 +140,7 @@ if($action == "neworder" && $error == ""){
         
         
         $dataString = json_encode($data);                                                                                                              
-        $ch = curl_init('https://graph.facebook.com/v11.0/'.$FBPixel.'/events');                                                                      
+        $ch = curl_init('https://graph.facebook.com/v11.0/{PIxel ID}/events');                                                                      
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");                                                                     
         curl_setopt($ch, CURLOPT_POSTFIELDS, $dataString);                                                                  
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);                                                                      
@@ -160,7 +149,6 @@ if($action == "neworder" && $error == ""){
             'Content-Length: ' . strlen($dataString))                                                                       
         );                                                                                                                                                                       
         $response = curl_exec($ch);
-        fb($response);
     }
 
 

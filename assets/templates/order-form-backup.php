@@ -137,7 +137,7 @@
 	margin-bottom:0!important;
    }
 .input-group {
-border-radius: 4px!important;
+border-radius: 8px!important;
     height: 46px!important;
     border: 1px solid #cad1da!important;
 	display: inline-flex!important;

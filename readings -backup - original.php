@@ -35,7 +35,7 @@ if($result->num_rows != 0) {
 
 }
 
-$title = "Readings | Melissa Psychic";
+$title = "Readings | Soulmate Psychic";
 $description = "Readings";
 $menu_order="men_0_0";
 

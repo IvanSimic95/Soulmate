@@ -1,49 +1,43 @@
 <?php
-$signature = hash_hmac('sha256', strval("psychicAdmin"), 'sk_live_Ncow50B9RdRQFeXBsW45c5LFRVYLCm98');
+$token = "aj2zskw799ncm7rh2x2f6vs7k6ezud";
+$utoken = "u24izth113b2jc8jwt4g68vvzppk12";
+$order_email = $obj->customer->billing->email;
+$order_price = $obj->totalOrderAmount;
+$order_buygoods = $obj->receipt;
+$cookie_id = $obj->vendorVariables->cookie_ID;
+$mOrderID = $obj->vendorVariables->order_ID;
+$cName = $obj->customer->billing->fullName;
+$productImage = "https://soulmate-artist.com/assets/img/14dk.jpg";
+$productFullTitle = $obj->lineItems[0]->productTitle;
 
-?>
+$title = "New Order: #".$mOrderID." - ".$order_price;
+$message = "Name: ".$cName." | Email: ".$order_email." | Product: ".$productFullTitle;
 
-<div id="talkjs-container-psychicAdmin" style="width: 90%; margin: 30px; height: 500px; position:fixed;bottom:0;right:0;z-index:999;">
-     <i>Loading chat...</i>
- </div>
-
-<script>
-    (function(t,a,l,k,j,s){
-    s=a.createElement('script');s.async=1;s.src="https://cdn.talkjs.com/talk.js";a.head.appendChild(s)
-    ;k=t.Promise;t.Talk={v:3,ready:{then:function(f){if(k)return new k(function(r,e){l.push([f,r,e])});l
-    .push([f])},catch:function(){return k&&new k()},c:l}};})(window,document,[]);
-</script>
-
-
-<script>  
-    Talk.ready.then(function() {
-      var other = new Talk.User({
-          id: "psychicAdmin",
-          name: "Psychic Art",
-          email: "contact@psychic-art.com",
-          photoUrl: "https://psychic-art.com/assets/img/avatars/admin.png",
-          role: "administrator",
+//First create TalkJS User with same ID as conversation
+$ch = curl_init();
+$data = [
+"token" => $token,
+"user" => $token,
+"title" => $title,
+"message" => $message
+];
+$data1 = json_encode($data);
+curl_setopt($ch, CURLOPT_URL, 'https://api.pushover.net/1/messages.json');
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
+curl_setopt($ch, CURLOPT_POSTFIELDS, $data1);
     
-      });
-      var me = new Talk.User("soulmateAdmin");
-      window.talkSession = new Talk.Session({
-          appId: "ArJWsup2",
-          me: other,
-          signature: "<?php echo $signature; ?>"
-      });
-      var conversation = talkSession.getOrCreateConversation("psychicAdmin");
-          conversation.setAttributes({
-          subject: "Psychic Art Admin Test",
-          custom: { 
-          status: "Paid"
-          }
-      });
+$headers = array();
+$headers[] = 'Content-Type: application/json';
+curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+    
+$result = curl_exec($ch);
+if (curl_errno($ch)) {
+echo 'Error:' . curl_error($ch);
+}
+curl_close($ch);
+echo $result;
 
-      conversation.setParticipant(other);
-      conversation.setParticipant(me);
 
-        var chatbox = window.talkSession.createChatbox(conversation);
-        chatbox.mount(document.getElementById("talkjs-container-psychicAdmin"));
-    })
 
-</script>
+        ?>

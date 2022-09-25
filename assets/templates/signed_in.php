@@ -1,7 +1,7 @@
 
 
 
-<?php $title = "Dashboard | Melissa Psychic"; ?>
+<?php $title = "Dashboard | Soulmate Psychic"; ?>
 <?php $description = "Dashboard"; ?>
 <?php $menu_order="6_0"; ?>
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
@@ -64,6 +64,12 @@
             case "Twinflame":
                     $product = "Twin Flame Drawing";
                     break;
+                    case "Spiritguide":
+                      $product = "Spirit Guide Drawing";
+                      break;
+                    case "Higherself":
+                      $product = "Higher Self Drawing";
+                      break;
             }
             if($row["order_status"]=="shipped"){$status="completed";}else{$status = $row["order_status"];}
               echo "<div class='order_single'><span>" . $row["user_name"]. "</span><span>" . ucwords($row["order_email"]) . "</span><span>" . $product . "</span><span>$" . $row["order_price"]. "</span><span class='sbadge sbadge-" . $status . "'>" . $status . " <i class='fas fa-check'></i><i class='fas fa-stream'></i><i class='fas fa-redo'></i><i class='fas fa-ban'></i></span><span class='chat' id='talkjs-" . $row["order_id"] . "'><a class='btn'>View Order #" . $row["order_id"] . "</a></span></div>";

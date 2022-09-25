@@ -1,4 +1,4 @@
-<?php $title = "About Melissa | Melissa Psychic";
+<?php $title = "About Melissa | Soulmate Psychic";
 
 $description = "About"; ?>
 <?php $menu_order="men_3_0"; ?>
@@ -54,7 +54,7 @@ Skilled and forceful psychics like me are not limited by interactions in the sam
 
 
 .left img {
-border-radius: 4px;
+border-radius: 8px;
 }
 
 h1 {

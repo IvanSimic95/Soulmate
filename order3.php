@@ -73,7 +73,7 @@ if($cookie_id) {
 
 
 
-<?php $title = "Order | Melissa Psychic"; ?>
+<?php $title = "Order | Soulmate Psychic"; ?>
 <?php $description = "Order"; ?>
 <?php $menu_order="men_0_0"; ?>
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>

@@ -1,16 +1,62 @@
 <?php
 include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
-$title = "Future Baby Drawing | Melissa Psychic";
+$title = "Future Baby Drawing | Soulmate Psychic";
 $description = "Future Baby Drawing"; 
 $menu_order="men_0_0"; 
 $cookie_id = $_SESSION['user_cookie_id3'];
 
 
-if(isset($_GET['id'])){
-  $id = $_GET['id'];
-}else{
-  $id = "12";
-}
+if(isset($_SESSION['lastorder'])){
+  $lastOrderID = $_SESSION['lastorder'];
+  $sql = "SELECT * FROM `orders` WHERE `order_id` = '$lastOrderID' ORDER BY `order_id` DESC LIMIT 1";
+  $result = $conn->query($sql);
+  $count = $result->num_rows;
+  $row = $result->fetch_assoc();
+  
+  //If order is found input data from BG and update status to paid
+  if($result->num_rows != 0) {
+  
+  
+  }
+  }else{
+    if(isset($_GET['order_ID'])){
+  $ord = $_GET['order_ID'];
+  $sql = "SELECT * FROM `orders` WHERE `order_id` = '$ord' ORDER BY `order_id` DESC LIMIT 1";
+  $result = $conn->query($sql);
+  $count = $result->num_rows;
+  $row = $result->fetch_assoc();
+  
+  //If order is found input data from BG and update status to paid
+  if($result->num_rows != 0) {
+  
+    $affid = $row['affid'];
+    $s1 = $row['s1'];
+    $s2 = $row['s2'];
+  
+  $_SESSION['lastorder'] = $_GET['order_ID'];
+  $_SESSION['orderFName'] = $row['first_name'];
+  $_SESSION['orderLName'] = $row['last_name'];
+  $_SESSION['orderBirthday'] = $row['birthday'];
+  $_SESSION['orderAge'] = $row['user_age'];
+  $_SESSION['orderGender'] = $row['user_sex'];
+  $_SESSION['orderPartnerGender'] = $row['pick_sex'];
+  $_SESSION['BGEmail'] = $row['order_email'];
+  
+  $_SESSION['fbfirepixel'] = 1;
+  $_SESSION['fborderID'] = $_GET['order_ID'];
+  $_SESSION['fborderPrice'] = $row['order_price'];
+  $_SESSION['fbproduct'] = $row['order_product'];
+    if($affid == 1){
+      $fireIframe = 1;
+    }
+  
+  }
+  
+  
+  
+  
+    }
+  }
 
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; 
 ?>
@@ -111,41 +157,39 @@ text-align:center;
         <input class="partnergender" type="hidden" id="partnergender" name="partnergender" value="<?php echo $_SESSION['orderGender']; ?>">
         <input class="cookie" type="hidden" name="cookie_id" value="<?php echo $_SESSION['user_cookie_id3']; ?>">
         <input class="email" type="hidden" name="bgemail" value="<?php echo $_SESSION['BGEmail']; ?>">
-        <input class="mainID" type="hidden" name="mainID" value="<?php echo $id; ?>">
         <input class="price" type="hidden" id="product_price" name="price" value="19.99">
         <input class="fbp" type="hidden" name="fbp" value="<?php echo $UserFBP; ?>">
         <input class="fbc" type="hidden" name="fbc" value="<?php echo $UserFBC; ?>">
         <input class="submitbtnselect" type="hidden" name="submitbtnselect" id="submitbtnselect" value="submit">
-        <input type="hidden" name="priority" value="24">
         <div id="error" class="alert alert-danger" style="display: none"></div>
-   
+      <div class="meta_part">
+      <div id="purchasedupsell" class="alert alert-succes">Awesome! We will use same payment method as for your previous order.<br> Redirecting to payment page now...</div>
+      <div class="onsubmithide">
+        <div class="sides">
+          <div class="price_box">
+            <span class="new_prce">$19.99</span>
+          </div>
 
-          
+          <div class="form_box input-group">
+  
+  <input id="prio12" type="radio" name="priority" value="12">
+  <label for="prio12"><span><i class="fas fa-bolt" aria-hidden="true"></i>12 Hours</span></label>
+  
+<input id="prio24" type="radio" name="priority" value="24">
+  <label for="prio24"> <span><i class="fas fa-stopwatch" aria-hidden="true"></i>24 Hours</span></label>
+
+<input id="prio48" type="radio" name="priority" value="48" checked="true">
+  <label for="prio48"> <span><i class="fas fa-clock" aria-hidden="true"></i>48 Hours</span></label>
+</div>
 
           
           <br> 
           <div class="gradient">This reading will let you know when you will become pregnant, as well as an in-depth description about your future baby's gender, passions, skills, talents, and much more. Knowing more about your future baby will help you make sure that everything will be going well with your pregnancy, and prepare for the most wonderful experience your life has to offer!</div>
-          
-      <div class="meta_part">
-
-<div class="sides">
-  <div class="price_box">
-    <span class="new_prce">$19.99</span>
-  </div>
-  <script id="cartfuel_up2_frame.js" src="https://app.cartfuel.io/js/embed/cartfuel_up2_frame.js"></script> 
-          <div id="purchasedupsellpay"><script id="cartfuel_up_frame.js" src="https://app.cartfuel.io/js/embed/cartfuel_up2_frame.js"></script> 
-      <div id="cartfueluppmct"></div>
-  <div class="onsubmithide">
-  <div class="smallerText">Choose at least one option to Proceed!</div>
-  <button id="addtopurchase" type="submit" name="submit" value="Add to my Purchase">Add to my Purchase</button>
-
-
-
-<button id="nothanks" class="nothanks" type="submit" name="submit" value="No Thanks">No Thanks!</button>
-</div></div>
-</div>
+          <button id="addtopurchase" type="submit" name="submit" value="Add to my Purchase">Yes i want my future baby drawing</button>
+        </div>
    
       
+      <button id="nothanks" class="nothanks" type="submit" name="submit" value="No Thanks">No Thanks!</button>
 </div>   </div>
     </form>
   </div>
@@ -187,48 +231,42 @@ $(document).ready(function($){
   // hide messages 
   $("#error").hide();
 
-     // on submit...
-     $('#ajax-form').submit(function(e){
-         e.preventDefault();
-         $(".onsubmithide").fadeOut();
-         //$("#submitbtn").html('<i class="fas fa-spinner fa-pulse"></i> Loading...');
+  // on submit...
+  $('#ajax-form').submit(function(e){
+      e.preventDefault();
+      $(".onsubmithide").fadeOut();
 
-         $.ajax({
-             type:"POST",
-             url: "/ajax/readings.php",
-             dataType: 'json',
-             data: $(this).serialize(),
-             success: function(data){
-              var SubmitStatus = data[0];
-              if (SubmitStatus == "Success"){
-              var DataMSG = data[1];
-              var Redirect = data[2];
-              var orderID = data[3];
-               $("#purchasedupsell").fadeIn();
-               $("#purchasedupsellpay").fadeIn();
-               setTimeout(function() { 
-                        cartfuelUpInit({id: Redirect, data:{order_ID: orderID, cookie_ID: <?php echo $_SESSION['user_cookie_id2']; ?> }})
-                    }, 300);
-                 
-                      
-                      $("#cartfuel-payment-frame").fadeIn();
-               }else if(SubmitStatus == "NoThanks"){
-                var Redirect = data[1];
-                $("#purchasedupsell").html("You have choosen to skip this offer, redirecting you...");
-                $("#purchasedupsell").fadeIn();
+      $.ajax({
+          type:"POST",
+          url: "/ajax/baby.php",
+          dataType: 'json',
+          data: $(this).serialize(),
+          success: function(data){
+            var SubmitStatus = data[0];
+            if (SubmitStatus == "Success"){
+           var DataMSG = data[1];
+            var Redirect = data[2];
+            $("#purchasedupsell").fadeIn();
+            setTimeout(function(){
+            window.location.href = Redirect;
+            }, 2000);
+            }else if(SubmitStatus == "NoThanks"){
+             var Redirect = data[1];
+             $("#purchasedupsell").html("You have choosen to skip this offer, redirecting you...");
+             $("#purchasedupsell").fadeIn();
 
-              setTimeout(function(){
-               window.location.href = Redirect;
-               }, 2000);
-               }else{
-              var DataMSG = data[1];
-               $("#error").html(DataMSG);
-               $("#error").fadeIn();
-               }
+           setTimeout(function(){
+            window.location.href = Redirect;
+            }, 2000);
+            }else{
+           var DataMSG = data[1];
+            $("#error").html(DataMSG);
+            $("#error").fadeIn();
+            }
 
-             }
-         });
-     });  
+          }
+      });
+  });  
   return false;
 });
 </script>
@@ -260,7 +298,7 @@ $('.product').val(product_code);
 	margin-bottom:0!important;
    }
 .input-group {
-border-radius: 4px!important;
+border-radius: 8px!important;
     height: 46px!important;
     border: 1px solid #cad1da!important;
 	display: inline-flex!important;
@@ -301,7 +339,7 @@ select:invalid { color: gray; }
 .input-group input:checked + label:before,
 .input-group select:focus,
 .input-group select:active {
- background: linear-gradient(90deg, #ec38bc 0%, #7303c0 50%, #03001e 100%);
+ background: linear-gradient(90deg,#d130eb,#4a30eb 80%,#2b216c);
   color: #fff!important;
   font-weight: bold;
   border-color: #bd8200;
@@ -442,23 +480,4 @@ input[type=radio]:checked ~ label {
 
 
 <?php 
-$FirePixelUP = $_SESSION['fbfireUpsellpixel'];
-
-if($FirePixelUP == 1){
-  $orderID = $_SESSION['fborderID'];
-  $orderPrice = $_SESSION['fborderPrice'];
-  $product = $_SESSION['fbproduct'];
-
-$FBPurchasePixel = <<<EOT
-<script>
-fbq('trackCustom', 'Upsell', {
-  value: $orderPrice , 
-  currency: 'USD'
-}, 
-{eventID: '$orderID'});
-</script>
-EOT;
-
-$_SESSION['fbfireUpsellpixel'] = 0;
-}
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/footer.php'; ?>

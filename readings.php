@@ -8,12 +8,6 @@ if(isset($_POST['pick_sex'])){
   $sex_picked = "1";
 }
 
-if(isset($_GET['id'])){
-  $id = $_GET['id'];
-}else{
-  $id = "12";
-}
-
 //If sex was picked manually by user update it in order info
 if ($sex_picked==1) {
     $order_id = $_POST['cookie_id'];
@@ -22,7 +16,9 @@ if ($sex_picked==1) {
 
     $_SESSION['orderPartnerGender'] = $pick_sex;
 }
+$_SESSION['fbfirepixel'] = 1;
 
+if(isset($_SESSION['lastorder'])){
 $lastOrderID = $_SESSION['lastorder'];
 $sql = "SELECT * FROM `orders` WHERE `order_id` = '$lastOrderID' ORDER BY `order_id` DESC LIMIT 1";
 $result = $conn->query($sql);
@@ -36,16 +32,53 @@ if($result->num_rows != 0) {
   $s1 = $row['s1'];
   $s2 = $row['s2'];
 
-  $TTproduct = $row['order_product'];
-  $TTprice = $row['order_price'];
+  if($affid == 1){
+    $fireIframe = 1;
+  }
 
+}
+}else{
+  if(isset($_GET['order_ID'])){
+$ord = $_GET['order_ID'];
+$sql = "SELECT * FROM `orders` WHERE `order_id` = '$ord' ORDER BY `order_id` DESC LIMIT 1";
+$result = $conn->query($sql);
+$count = $result->num_rows;
+$row = $result->fetch_assoc();
+
+//If order is found input data from BG and update status to paid
+if($result->num_rows != 0) {
+
+  $affid = $row['affid'];
+  $s1 = $row['s1'];
+  $s2 = $row['s2'];
+
+$_SESSION['lastorder'] = $_GET['order_ID'];
+$_SESSION['orderFName'] = $row['first_name'];
+$_SESSION['orderLName'] = $row['last_name'];
+$_SESSION['orderBirthday'] = $row['birthday'];
+$_SESSION['orderAge'] = $row['user_age'];
+$_SESSION['orderGender'] = $row['user_sex'];
+$_SESSION['orderPartnerGender'] = $row['pick_sex'];
+$_SESSION['BGEmail'] = $row['order_email'];
+
+$_SESSION['fbfirepixel'] = 1;
+$_SESSION['fborderID'] = $_GET['order_ID'];
+$_SESSION['fborderPrice'] = $row['order_price'];
+$_SESSION['fbproduct'] = $row['order_product'];
   if($affid == 1){
     $fireIframe = 1;
   }
 
 }
 
-$title = "Readings | Melissa Psychic";
+
+
+
+  }
+}
+
+
+$title = "Readings | Soulmate Psychic";
 $description = "Readings";
 $menu_order="men_0_0";
 
@@ -135,11 +168,6 @@ text-align:center;
 
 <div class="general_section upsale_page">
   <div class="container">
-
-  
-  <!--<iframe src="https://<?php echo $domain; ?>/pixel-tt.php?product=<?php echo $TTproduct; ?>&price=<?php echo $TTprice; ?>" scrolling="no" frameborder="0" width="1" height="1"></iframe>-->
-
-
   <div class="white-wrapper col-md-10 offset-md-2"> <h1>You Unlocked a Special Service!</h1>
       <h3>THIS IS AN EXCLUSIVE SERVICE WHICH I'M ONLY OFFERING A FEW TIMES A YEAR! </h3>
     <center> <img src="/assets/img/sitee91.jpg" alt="upsell"> </center>
@@ -160,36 +188,34 @@ text-align:center;
             
                    <div class="gradient"> You will receive your reading within 24 hours with everything you need to find out about yourself. </div>
                    <br>
-                   <div id="purchasedupsell" class="alert alert-succes">Awesome! We will use same payment method as for your previous order.<br> All you need to do is click the button below to confirm!</div>
-                   <div id="purchasedupsellpay"><script id="cartfuel_up_frame.js" src="https://app.cartfuel.io/js/embed/cartfuel_up_frame.js"></script> 
-      <div id="cartfueluppmct"></div></div>
+                   <div id="purchasedupsell" class="alert alert-succes">Awesome! We will use same payment method as for your previous order.<br> Redirecting to payment page now...</div>
                    <div class="onsubmithide">
                    <center> 
-      <ul class="list-group list-group-flush" style="display: flex;flex-direction: column;flex-wrap:wrap;align-items:center;">
+      <ul class="list-group list-group-flush">
           <li class="list-group-control">
 					<label class="custom-control fill-checkbox">
-			    <input type="checkbox" class="fill-control-input"  id="general" name="general" value="general" checked disabled>
+			    <input type="checkbox" class="fill-control-input"  id="general" name="general" value="general" checked>
 			    <span class="fill-control-indicator"></span>
 			    <span class="fill-control-description">General Reading</span>
 		      </label>
 					</li>
           <li class="list-group-control">
 					<label class="custom-control fill-checkbox">
-			    <input type="checkbox" class="fill-control-input"  id="love" name="love" value="love" checked disabled>
+			    <input type="checkbox" class="fill-control-input"  id="love" name="love" value="love">
 			    <span class="fill-control-indicator"></span>
 			    <span class="fill-control-description">Love Reading</span>
 		      </label>
 					</li>
           <li class="list-group-control">
 					<label class="custom-control fill-checkbox">
-			    <input type="checkbox" class="fill-control-input"  id="career" name="career" value="career" checked disabled>
+			    <input type="checkbox" class="fill-control-input"  id="career" name="career" value="career">
 			    <span class="fill-control-indicator"></span>
 			    <span class="fill-control-description">Career Reading</span>
 		      </label>
-					</li> 
+					</li>
           <li class="list-group-control">
 					<label class="custom-control fill-checkbox">
-			    <input type="checkbox" class="fill-control-input"  id="health" name="health" value="health" checked disabled>
+			    <input type="checkbox" class="fill-control-input"  id="health" name="health" value="health">
 			    <span class="fill-control-indicator"></span>
 			    <span class="fill-control-description">Health Reading</span>
 		      </label>
@@ -205,10 +231,9 @@ text-align:center;
         <input class="userage" type="hidden" id="userage" name="form_age" value="<?php echo $_SESSION['orderAge']; ?>">
         <input class="usergender" type="hidden" id="usergender" name="usergender" value="<?php echo $_SESSION['orderGender']; ?>">
         <input class="partnergender" type="hidden" id="partnergender" name="partnergender" value="<?php echo $_SESSION['orderPartnerGender']; ?>">
-        <input class="mainID" type="hidden" name="mainID" value="<?php echo $id; ?>">
         <input class="email" type="hidden" name="bgemail" value="<?php echo $_SESSION['BGEmail']; ?>">
         <input class="cookie" type="hidden" name="cookie_id" value="<?php echo $_SESSION['user_cookie_id2']; ?>">
-        <input class="price" type="hidden" id="product_price" name="price" value="29.99">
+        <input class="price" type="hidden" id="product_price" name="price" value="19.99">
         <input class="fbp" type="hidden" name="fbp" value="<?php echo $UserFBP; ?>">
         <input class="fbc" type="hidden" name="fbc" value="<?php echo $UserFBC; ?>">
         <input class="submitbtnselect" type="hidden" name="submitbtnselect" id="submitbtnselect" value="submit">
@@ -217,7 +242,7 @@ text-align:center;
 
         <div class="sides">
           <div class="price_box">
-            <span class="new_prce">$29.99</span>
+            <span class="new_prce">$19.99</span>
           </div>
           <div class="smallerText">Choose at least one option to Proceed!</div>
           <button id="addtopurchase" type="submit" name="submit" value="Add to my Purchase">Add to my Purchase</button>
@@ -228,7 +253,6 @@ text-align:center;
 </div>
       </div></div>
     </form>
-    
    
 </div>
 
@@ -264,8 +288,8 @@ text-align:center;
           $('#addtopurchase').prop("disabled",false);
         }
         if (countCheckedCheckboxes == 4) {
-          $('.new_prce').text('$29.99');
-          $('#product_price').val('29.99');
+          $('.new_prce').text('$49.99');
+          $('#product_price').val('49.99');
           $('.new_prce').show();
           $('.smallerText').hide();
           $('#addtopurchase').prop("disabled",false);
@@ -304,19 +328,15 @@ text-align:center;
              dataType: 'json',
              data: $(this).serialize(),
              success: function(data){
-              var SubmitStatus = data[0];
-              if (SubmitStatus == "Success"){
+               var SubmitStatus = data[0];
+               if (SubmitStatus == "Success"){
               var DataMSG = data[1];
-              var Redirect = data[2];
-              var orderID = data[3];
+               var Redirect = data[2];
                $("#purchasedupsell").fadeIn();
-               $("#purchasedupsellpay").fadeIn();
-               setTimeout(function() { 
-                        cartfuelUpInit({id: Redirect, data:{order_ID: orderID, cookie_ID: <?php echo $_SESSION['user_cookie_id2']; ?> }})
-                    }, 300);
-                 
-                      
-                      $("#cartfuel-payment-frame").fadeIn();
+              
+               setTimeout(function(){
+               window.location.href = Redirect;
+               }, 2000);
                }else if(SubmitStatus == "NoThanks"){
                 var Redirect = data[1];
                 $("#purchasedupsell").html("You have choosen to skip this offer, redirecting you...");
@@ -327,11 +347,23 @@ text-align:center;
                }, 2000);
                }else{
               var DataMSG = data[1];
+              alert(DataMSG);
                $("#error").html(DataMSG);
                $("#error").fadeIn();
                }
 
+             },
+             error:function(data){
+               var SubmitStatus = data[0];
+               if (SubmitStatus == "Success"){
+              var DataMSG = data[1];
+               var Redirect = data[2];
+               $("#purchasedupsell").fadeIn();
+               alert(SubmitStatus);
+               alert(DataMSG);
+
              }
+            }
          });
      });  
      return false;
@@ -346,7 +378,9 @@ if($FirePixel == 1){
   $product = $_SESSION['fbproduct'];
 
 $FBPurchasePixel = <<<EOT
+
 <script>
+fbq('init', '$FBPixel');
 fbq('track', 'Purchase', {
   value: $orderPrice , 
   currency: 'USD',
@@ -355,6 +389,29 @@ fbq('track', 'Purchase', {
 }, 
 {eventID: '$orderID'});
 </script>
+
+<script>
+fbq('init', '$FBPixel2');
+fbq('track', 'Purchase', {
+  value: $orderPrice , 
+  currency: 'USD',
+  content_type: 'product', 
+  content_ids: '$product'
+}, 
+{eventID: '$orderID'});
+</script>
+
+<script>
+fbq('init', '$FBPixel3');
+fbq('track', 'Purchase', {
+  value: $orderPrice , 
+  currency: 'USD',
+  content_type: 'product', 
+  content_ids: '$product'
+}, 
+{eventID: '$orderID'});
+</script>
+
 EOT;
 
 $_SESSION['fbfirepixel'] = 0;

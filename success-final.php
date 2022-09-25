@@ -32,7 +32,7 @@ if(isset($cookie_id)) {
 //Close connection to Database
 $conn->close();
 ?>
-<?php $title = "Processing.. | Melissa Psychic"; ?>
+<?php $title = "Processing.. | Soulmate Psychic"; ?>
 <?php $description = "Success"; ?>
 <?php $menu_order="men_0_0"; ?>
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>

@@ -54,12 +54,12 @@ $order_product = "Soulmate Drawing & Reading";
          name: "<?php echo $user_name; ?>",
          email: "<?php echo $order_email; ?>",
          photoUrl: "https://avatars.dicebear.com/api/adventurer/<?php echo $user_name; ?>.svg?skinColor=variant02",
-         role: "Scustomer"
+         role: "customer"
      });
      console.log(other);
 
      var admin = new Talk.User({
-         id: "administrator",
+         id: "soulmateAdmin",
          name: "Melissa",
          email: "contact@soulmate-psychic.com",
          photoUrl: "/assets/img/avatars/admin.png",

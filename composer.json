@@ -1,7 +1,6 @@
 {
     "require": {
         "melbahja/seo": "^2.0",
-        "stripe/stripe-php": "^9.6",
         "theiconic/name-parser": "^1.2",
         "tuqqu/gender-detector": "^0.3.0"
     }

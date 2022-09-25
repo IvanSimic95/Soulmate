@@ -110,13 +110,13 @@ if ($aid % 2 == 0) {
 .white-wrapper {
 background-color: #fff;
     padding: 25px;
-    border-radius: 4px;
+    border-radius: 8px;
     margin-top: 15px;
 	margin-bottom:25px;
 }
 
 .white-wrapper img {
-border-radius: 4px;
+border-radius: 8px;
 width:100%;
 margin-top:15px;
 }

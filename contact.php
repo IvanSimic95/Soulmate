@@ -1,7 +1,7 @@
 
 
 
-<?php $title = "Contact | Melissa Psychic"; ?>
+<?php $title = "Contact | Soulmate Psychic"; ?>
 
 <?php $description = "Contact, Support, FAQ"; ?>
 
@@ -80,7 +80,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 .wrap-white{
     background-color: #fff;
     padding: 15px;
-    border-radius: 4px;
+    border-radius: 8px;
     margin-top: 15px;
 	margin-bottom:20px;
 }

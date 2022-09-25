@@ -1,7 +1,7 @@
 
 
 
-<?php $title = "Dashboard | Melissa Psychic"; ?>
+<?php $title = "Dashboard | Soulmate Psychic"; ?>
 <?php $description = "Dashboard"; ?>
 <?php $menu_order="0_0"; ?>
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>

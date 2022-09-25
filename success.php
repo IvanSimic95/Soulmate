@@ -7,7 +7,6 @@ $createChat = $genderAcc =   $skipSelect = "";
 isset($_GET['emailaddress']) ? $order_email = $_GET['emailaddress'] : $order_email = "";
 isset($_GET['order_id']) ? $order_buygoods = $_GET['order_id'] : $order_buygoods = "";
 isset($_GET['total']) ? $order_price = $_GET['total'] : $order_price = "19.99";
-isset($_GET['id']) ? $id = $_GET['id'] : $id = "12";
 
 $cookie_id = $_SESSION['user_cookie_id'];
 $lastOrderID = $_SESSION['lastorder'];
@@ -83,7 +82,7 @@ if(!isset($product)){
 
 
 
-<?php $title = "Success | Melissa Psychic"; ?>
+<?php $title = "Success | Soulmate Psychic"; ?>
 <?php $description = "Success"; ?>
 <?php $menu_order="men_0_0"; ?>
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
@@ -96,11 +95,11 @@ if(!isset($product)){
 
 <?php if($fireiframe==1){ ?>
 
-<!--<iframe src="https://newrideanddrive.com/p.ashx?a=177&e=180&f=pb&r=<?php echo $s2; ?>&t=<?php echo $orderID; ?>" height="1" width="1" frameborder="0"></iframe>-->
+<iframe src="https://newrideanddrive.com/p.ashx?a=177&e=180&f=pb&r=<?php echo $s2; ?>&t=<?php echo $orderID; ?>" height="1" width="1" frameborder="0"></iframe>
 
 <?php } ?>
 
-<?php if($product == "baby"){ ?>
+<?php if($product == "baby" OR $product == "pastlife" OR $product == "higherself" OR $product == "animal"){ ?>
   <div class="general_section">
   <div class="container" >
   <div class="white-wrapper col-md-8 offset-md-4"style="min-height:300px;padding:20px 30px 20px 30px;"> <h1>Thank you for your order!</h1>
@@ -125,7 +124,7 @@ if(!isset($product)){
 <script>
   document.addEventListener("DOMContentLoaded", function(event) {
     setTimeout(function(){
-      window.location.href = "https://<?php echo $domain; ?>/readings.php?id=<?php echo $id; ?>";
+      window.location.href = "https://<?php echo $domain; ?>/readings.php";
      }, 3000);
   });
 

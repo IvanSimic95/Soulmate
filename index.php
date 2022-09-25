@@ -1,4 +1,4 @@
-<?php $title = "Melissa Psychic | Homepage"; ?>
+<?php $title = "Soulmate Psychic | Homepage"; ?>
 <?php $description = "I can read anything for you with my psychic abilities"; ?>
 <?php $menu_order = "men_1_0"; ?>
 

@@ -17,8 +17,8 @@
 <script>
     Talk.ready.then(function() {
         var me = new Talk.User({
-            id: "administrator",
-            name: "Melissa Psychic",
+            id: "soulmateAdmin",
+            name: "Soulmate Psychic",
             email: "contact@soulmate-psychic.com",
             photoUrl: "/assets/img/avatars/admin.png",
             role: "admin"
@@ -29,7 +29,7 @@
             name: "MSebastian PPPAD",
             email: "tudor@tmdigi.com",
             photoUrl: "/assets/img/avatars/client.png",
-            role: "Scustomer"
+            role: "customer"
         });
         window.talkSession = new Talk.Session({
             appId: "ArJWsup2",

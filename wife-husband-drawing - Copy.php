@@ -1,6 +1,6 @@
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/session.php';
 
-$title = "Future Husband/Wife Drawing | Melissa Psychic";
+$title = "Future Husband/Wife Drawing | Soulmate Psychic";
 $description = "I will draw your FUTURE HUSBAND/WIFE with 100% accuracy";
 $menu_order="men_2_0";
 $bgproduct = "";
@@ -42,7 +42,7 @@ $productMETA = <<<EOT
     <meta property="og:url" content="$PRurl" />
     <meta property="og:type" content="website" />
 
-    <meta property="product:brand" content="Melissa Psychic">
+    <meta property="product:brand" content="Soulmate Psychic">
     <meta property="product:availability" content="in stock">
     <meta property="product:condition" content="new">
     <meta property="product:price:amount" content="29.99">

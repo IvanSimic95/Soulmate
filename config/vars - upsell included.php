@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
 $startpixel = 1;
-$FBPixel = "";
+$FBPixel = "3290293207717814";
 $FBPurchasePixel = "";
 $FBViewContent = "";
 $productMETA = "";

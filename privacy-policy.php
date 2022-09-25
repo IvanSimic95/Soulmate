@@ -1,4 +1,4 @@
-<?php $title = "Privacy Policy | Melissa Psychic"; ?>
+<?php $title = "Privacy Policy | Soulmate Psychic"; ?>
 <?php $description = "Privacy Policy"; ?>
 <?php $menu_order="0_0"; ?>
 <?php 
@@ -235,7 +235,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 .title_area, .paragraph_area, .sub_area{
     background-color: #fff;
     padding: 15px;
-    border-radius: 4px;
+    border-radius: 8px;
     margin-top: 15px;
 }
 

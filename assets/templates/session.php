@@ -1,8 +1,7 @@
 <?php
-//Check if session is set, if not set a new one
-if(session_id() == '' || !isset($_SESSION) || session_status() === PHP_SESSION_NONE) {
+if (session_status() === PHP_SESSION_NONE) {
   session_start();
-  }
+}
 //Check if user cookie ID is set, if not set a new one
 $randomNumber = rand(155654654,955654654);
 if(!isset($_SESSION['user_cookie_id'])) {
@@ -63,7 +62,6 @@ if(isset($_GET['subid'])){
 if(isset($_GET['subid2'])){
   $_SESSION['subid2'] = $_GET['subid2'];
 }
-
 
 $bgproduct = "";
 ?>

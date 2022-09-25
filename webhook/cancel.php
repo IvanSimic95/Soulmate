@@ -57,7 +57,7 @@ $bgID = $_GET['data'];
 
     //Error Handling for not finding order with this Cookie ID
     }else{
-      $error = "ORDER WITH THIS BG ID NOT FOUND: ".$action. " | " .$product_codename. " | " .$customer_emailaddress. " | " .$customer_phone. " | " .$subid3. " | " .$subid4. " | " .$orderID. " | " .$domain. " | " .$c1. " | " .$c2. " | " .$c3;
+      $error = "ORDER WITH THIS COOKIE ID NOT FOUND: ".$action. " | " .$product_codename. " | " .$customer_emailaddress. " | " .$customer_phone. " | " .$subid3. " | " .$subid4. " | " .$orderID. " | " .$domain. " | " .$c1. " | " .$c2. " | " .$c3;
       f($error);
       echo $error;
     }

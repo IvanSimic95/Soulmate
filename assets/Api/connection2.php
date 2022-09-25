@@ -12,10 +12,10 @@
        "Authorization: Bearer sk_live_Ncow50B9RdRQFeXBsW45c5LFRVYLCm98",
     );
     $adminData = json_encode(array(
-        "name"  => "Melissa Psychic",
+        "name"  => "Soulmate Psychic",
         "email-1" => "contact@soulmate-psychic.com",
         "photoUrl" => "https://www.soulmate-psychic.com/assets/img/avatars/1.png",
-        "welcomeMessage" => "Hey there! :-) Im Melissa Psychic :-)",
+        "welcomeMessage" => "Hey there! :-) Im Soulmate Psychic :-)",
         "roole" => "admin"
     )); 
     curl_setopt($curl, CURLOPT_POSTFIELDS, $adminData);   

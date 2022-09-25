@@ -1,4 +1,4 @@
-<?php $title = "Services | Melissa Psychic"; ?>
+<?php $title = "Services | Soulmate Psychic"; ?>
 <?php $description = "Services"; ?>
 <?php $menu_order="men_2_0"; ?>
 <?php 

@@ -72,7 +72,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/config/vars.php';
 
 
 
-<?php $title = "Past Life | Melissa Psychic"; ?>
+<?php $title = "Past Life | Soulmate Psychic"; ?>
 <?php $description = "Past Life Readings"; ?>
 <?php $menu_order = "men_0_0"; ?>
 <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/assets/templates/session.php'; ?>

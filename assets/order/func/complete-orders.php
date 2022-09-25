@@ -1,5 +1,5 @@
 <?php
-include_once '/home/melissapsychic/public_html/config/vars.php';
+include_once  $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 echo "Starting complete-orders.php...<br><br>";
 
 
@@ -45,9 +45,10 @@ echo "Starting complete-orders.php...<br><br>";
 			$interval = new \DateInterval('PT1H');
 			$periods = new \DatePeriod($start, $interval, $end);
 			$hours = iterator_count($periods);
+			$premium = $row["premium"];
 			
 			$trigger = 0;
-			//$trigger = 1;
+			#$trigger = 1;
 			$image_send = 0;
 			$randomDelay = rand(0,3);
 
@@ -69,6 +70,43 @@ $logArray[] = "
 
 		//If trigger is set to 1 (order is ready to be delivered)
 		if ($trigger == 1) {
+
+
+			
+			if($premium == 1){
+
+				$sql_pick = "SELECT * FROM premium WHERE category = 'initials' order by RAND() limit 1";
+				$sql_pick_res = $conn->query($sql_pick);
+				if($sql_pick_res->num_rows > 0) {
+					while($rowImages = $sql_pick_res->fetch_assoc()) {
+						$initials = $rowImages["text"];
+						$logArray[] = "Initials: ".$initials;
+					}
+				}else{
+					$initials = "";
+				}
+
+				$sql_pick = "SELECT * FROM premium WHERE category = 'place' order by RAND() limit 1";
+				$sql_pick_res = $conn->query($sql_pick);
+				if($sql_pick_res->num_rows > 0) {
+					while($rowImages = $sql_pick_res->fetch_assoc()) {
+						$place = $rowImages["text"];
+						$logArray[] = "Place: ".$place;
+					}
+				}else{
+					$place = "";
+				}
+
+
+				$minMonth = rand(3,4);
+				$maxMonth = rand(5,6);
+				$meetTime = $minMonth." - ".$maxMonth;
+
+				$premiumText = "\n\nYour soulmate's initials: *".$initials."*\nYou will meet at *".$place."*\n";
+
+			}else{
+				$premiumText = "";
+			}
 			
 				if ($orderProduct == "soulmate" || $orderProduct == "futurespouse" || $orderProduct =="twinflame") {
 				    $image_send = 1;
@@ -101,6 +139,127 @@ $logArray[] = "
 					}
 
 					$sql_pick = "SELECT * FROM orders_image WHERE age < '$age_max' AND age > '$age_min' AND sex = '$orderSex' order by RAND() limit 1";
+					$sql_pick_res = $conn->query($sql_pick);
+					if($sql_pick_res->num_rows == 0) {
+							 $image_name = "";
+							 $logError[] = "Missing Image";
+							 $logError[] = $orderID;
+							 $logError[] = $orderEmail;
+							 missingLog($logError);
+
+					} else {
+						while($rowImages = $sql_pick_res->fetch_assoc()) {
+							$image_name = $rowImages["name"];
+						}
+					}
+
+
+					$sql_text = "SELECT * FROM orders_text WHERE product = '$orderProduct' AND gender = '$orderSex' AND user_gender='$userSex' order by RAND() limit 1";
+					$sql_text_res = $conn->query($sql_text);
+					if($sql_text_res->num_rows == 0) {
+							 $email_text = "";
+							 $logError[] = "Missing Text";
+							 $logError[] = $orderID;
+							 $logError[] = $orderEmail;
+							 missingLog($logError);
+					} else {
+						while($rowText = $sql_text_res->fetch_assoc()) {
+							$email_text = $rowText["text"];
+						    $message = $theader.$email_text.$premiumText.$tfooter;
+						}
+					}
+
+				}elseif ($orderProduct == "pastlife")  { 
+
+					$image_send = 1;
+					$prod_type = "pastlife";
+					$img_folder_name = "pastlife";
+
+					$theader = $generalOrderHeader;
+					$tfooter = $generalOrderFooter;
+
+					$sql_pick = "SELECT * FROM orders_image WHERE product = '$orderProduct' AND sex = '$orderSex' order by RAND() limit 1";
+					$sql_pick_res = $conn->query($sql_pick);
+					if($sql_pick_res->num_rows == 0) {
+							 $image_name = "";
+							 $logError[] = "Missing Image";
+							 $logError[] = $orderID;
+							 $logError[] = $orderEmail;
+							 missingLog($logError);
+
+					} else {
+						while($rowImages = $sql_pick_res->fetch_assoc()) {
+							$image_name = $rowImages["name"];
+						}
+					}
+
+
+					$sql_text = "SELECT * FROM orders_text WHERE product = '$orderProduct' AND gender = '$orderSex' AND user_gender='$userSex' order by RAND() limit 1";
+					$sql_text_res = $conn->query($sql_text);
+					if($sql_text_res->num_rows == 0) {
+							 $email_text = "";
+							 $logError[] = "Missing Text";
+							 $logError[] = $orderID;
+							 $logError[] = $orderEmail;
+							 missingLog($logError);
+					} else {
+						while($rowText = $sql_text_res->fetch_assoc()) {
+							$email_text = $rowText["text"];
+						    $message = $theader.$email_text.$tfooter;
+						}
+					}
+
+
+				}elseif ($orderProduct == "higherself")  { 
+
+					$image_send = 1;
+					$prod_type = "higherself";
+					$img_folder_name = "higherself";
+
+					$theader = $generalOrderHeader;
+					$tfooter = $generalOrderFooter;
+
+					$sql_pick = "SELECT * FROM orders_image WHERE product = '$orderProduct' AND sex = '$orderSex' order by RAND() limit 1";
+					$sql_pick_res = $conn->query($sql_pick);
+					if($sql_pick_res->num_rows == 0) {
+							 $image_name = "";
+							 $logError[] = "Missing Image";
+							 $logError[] = $orderID;
+							 $logError[] = $orderEmail;
+							 missingLog($logError);
+
+					} else {
+						while($rowImages = $sql_pick_res->fetch_assoc()) {
+							$image_name = $rowImages["name"];
+						}
+					}
+
+
+					$sql_text = "SELECT * FROM orders_text WHERE product = '$orderProduct' AND gender = '$orderSex' AND user_gender='$userSex' order by RAND() limit 1";
+					$sql_text_res = $conn->query($sql_text);
+					if($sql_text_res->num_rows == 0) {
+							 $email_text = "";
+							 $logError[] = "Missing Text";
+							 $logError[] = $orderID;
+							 $logError[] = $orderEmail;
+							 missingLog($logError);
+					} else {
+						while($rowText = $sql_text_res->fetch_assoc()) {
+							$email_text = $rowText["text"];
+						    $message = $theader.$email_text.$tfooter;
+						}
+					}
+
+				}elseif ($orderProduct == "spiritguide")  { 
+
+					$image_send = 1;
+					$prod_type = "spiritguide";
+					$img_folder_name = "spiritguide";
+
+					$theader = $generalOrderHeader;
+					$tfooter = $generalOrderFooter;
+
+					$sql_pick = "SELECT * FROM orders_image WHERE product = '$orderProduct' AND sex = '$orderSex' order by RAND() limit 1";
 					$sql_pick_res = $conn->query($sql_pick);
 					if($sql_pick_res->num_rows == 0) {
 							 $image_name = "";
@@ -354,11 +513,11 @@ $logArray[] = "
                 $ch = curl_init();
                 $data = [[
                 "text" => $message,
-                "sender"  => "administrator",
+                "sender"  => "soulmateAdmin",
                 "type" => "UserMessage"
 				],[
 				"attachmentToken" => $Atoken_key,
-				"sender"  => "administrator",
+				"sender"  => "soulmateAdmin",
 				"type" => "UserMessage"
 				],[
 				"text" => $OrderCompleteMessage,
@@ -408,7 +567,7 @@ $logArray[] = "
 					$ch = curl_init();
 					$data = [[
 					"text" => $message,
-					"sender"  => "administrator",
+					"sender"  => "soulmateAdmin",
 					"type" => "UserMessage"
 					],[
 					"text" => $OrderCompleteMessage,

@@ -49,20 +49,17 @@
   }
   ?>
 
-<form id="ajax-form" class="form-order" name="order_form" action="javascript:void(0)" method="post" data-rewardful>
 
-<div class="form-floating form-floating-icon mb-2">
-        <input class="form-control" id="fullname" type="text" name="form_name" placeholder="First & Last Name" required="">
-        <span class="icon-inside"><i class="fas fa-user"></i></span>
-        <label for="fullname">First &amp; Last Name</label>
+<form id="ajax-form" class="form-order" name="order_form" action="javascript:void(0)" method="post">
+  
+  <div class="form_box">
+    <label for="form_name">Your First and Last Name*</label>
+    <input class="customer_name" type="text" id="fullname" name="form_name" value="" required>
+  </div>
+  <div class="form_box">
+<label for="form_email">Your Email*</label>
+<input class="customer_email" type="email" id="email" name="form_email" value="" required="">
 </div>
-
-<div class="form-floating form-floating-icon mb-2">
-        <input class="form-control" id="email" type="email" name="form_email" placeholder="Your Email" required="">
-        <span class="icon-inside"><i class="fas fa-envelope"></i></span>
-        <label for="email">Your Email</label>
-</div>
-
   <div class="form_box">
     <span>Your Birth Date*</span>
     <div class="sides">
@@ -162,15 +159,7 @@
 		<input id="prio48" type="radio" name="priority" value="48" checked="true">
         <label for="prio48"> <span><i class="fas fa-clock"></i>48 Hours</span></label>
       </div>
-	  <hr>
-
-      <div class="d-flex flex-row flex-wrap align-items-center position-relative fs-4">
-                                    <span class="badge me-0 new_prce">$29.99</span>
-                                    <span class="me-1 text-600 old_price">$299.9</span>
-                                    <div class="price-side">
-                                     You save: <span class="saveda text-success">$270 (90%)</span><span class="saved-percent"></span><span class="product-loop-down-arrow-wrap d-inline-block"></span> </div>
-                                     </div>
-<hr>
+	  
 	  
   <input class="product" type="hidden" name="product" value="">
   <input class="cookie" type="hidden" name="cookie_id" value="<?php echo $_SESSION['user_cookie_id']; ?>">
@@ -223,7 +212,7 @@
 	margin-bottom:0!important;
    }
 .input-group {
-border-radius: 4px!important;
+border-radius: 8px!important;
     height: 46px!important;
     border: 1px solid #cad1da!important;
 	display: inline-flex!important;
@@ -243,7 +232,7 @@ select:invalid { color: gray; }
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 33%;
-  padding: 11px 2px;
+  padding: 13px 2px;
   text-align:center;
   cursor: pointer;
 }
@@ -264,7 +253,7 @@ select:invalid { color: gray; }
 .input-group input:checked + label:before,
 .input-group select:focus,
 .input-group select:active {
- background: linear-gradient(to right, #243B55, #141E30);
+ background: linear-gradient(90deg,#d130eb,#4a30eb 80%,#2b216c);
   color: #fff!important;
   font-weight: bold;
   border-color: #bd8200;
@@ -273,7 +262,7 @@ select:invalid { color: gray; }
   <script>
 
 
-var product_code = $('.product_code').text()
+    var product_code = $('.product_code').text()
     $('.product').val(product_code);
 
             $(document).ready(function($){

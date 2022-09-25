@@ -72,7 +72,7 @@ $data = [
 "id" => $orderID,
 "name" => $user_name,
 "email" => [$orderEmail],
-"role" => "customer",
+"role" => "Scustomer",
 "photoUrl" => "https://avatars.dicebear.com/api/adventurer/".$orderEmail.".svg?skinColor=variant02",
 "custom" => ["email" => $orderEmail, "lastOrder" => $orderID]
 ];
@@ -129,7 +129,7 @@ echo $result2;
 	  "type" => "SystemMessage"
   ],
   [
-	  "sender"  => "administrator",
+	  "sender"  => "soulmateAdmin",
 	  "text" => $message,
 	  "type" => "UserMessage"
   ]];

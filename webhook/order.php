@@ -30,7 +30,7 @@ $data = [
 "id" => $mOrderID,
 "name" => $cName,
 "email" => [$order_email],
-"role" => "customer",
+"role" => "Scustomer",
 "photoUrl" => "https://avatars.dicebear.com/api/adventurer/".$order_email.".svg?skinColor=variant02",
 "custom" => ["email" => $order_email, "phone" => $cPhone, "lastOrder" => $mOrderID]
 ];

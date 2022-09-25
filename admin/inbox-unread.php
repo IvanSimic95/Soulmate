@@ -7,7 +7,7 @@ if(empty($email_address))
 }
 include_once $_SERVER['DOCUMENT_ROOT'].'/admin/partials/head.php';
 include_once $_SERVER['DOCUMENT_ROOT'].'/admin/partials/navbar.php';
-$signature = hash_hmac('sha256', 'administrator', 'sk_live_Ncow50B9RdRQFeXBsW45c5LFRVYLCm98');
+$signature = hash_hmac('sha256', 'soulmateAdmin', 'sk_live_Ncow50B9RdRQFeXBsW45c5LFRVYLCm98');
 ?>
 <div class="container-fluid px-4">
     <div class="row justify-content-start" style="">
@@ -30,11 +30,11 @@ $signature = hash_hmac('sha256', 'administrator', 'sk_live_Ncow50B9RdRQFeXBsW45c
 <script>
    Talk.ready.then(function() {
      var admin = new Talk.User({
-         id: "administrator",
+         id: "soulmateAdmin",
          name: "Melissa",
          email: "contact@soulmate-psychic.com",
          photoUrl: "/assets/img/avatars/admin.png",
-         role: "administrator"
+         role: "soulmateAdmin"
      });
      window.talkSession = new Talk.Session({
          appId: "ArJWsup2",

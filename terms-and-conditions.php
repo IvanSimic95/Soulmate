@@ -1,4 +1,4 @@
-<?php $title = "Terms & Conditions | Melissa Psychic"; ?>
+<?php $title = "Terms & Conditions | Soulmate Psychic"; ?>
 <?php $description = "Terms & Conditions"; ?>
 <?php $menu_order="0_0"; ?>
 <?php 
@@ -143,7 +143,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
 .title_area, .paragraph_area, .sub_area{
     background-color: #fff;
     padding: 15px;
-    border-radius: 4px;
+    border-radius: 8px;
     margin-top: 15px;
 }
 
