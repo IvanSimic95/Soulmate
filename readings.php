@@ -481,29 +481,6 @@ fbq('track', 'Purchase', {
 }, 
 {eventID: '$orderID'});
 </script>
-
-<script>
-fbq('init', '$FBPixel2');
-fbq('track', 'Purchase', {
-  value: $orderPrice , 
-  currency: 'USD',
-  content_type: 'product', 
-  content_ids: '$product'
-}, 
-{eventID: '$orderID'});
-</script>
-
-<script>
-fbq('init', '$FBPixel3');
-fbq('track', 'Purchase', {
-  value: $orderPrice , 
-  currency: 'USD',
-  content_type: 'product', 
-  content_ids: '$product'
-}, 
-{eventID: '$orderID'});
-</script>
-
 EOT;
 
 $_SESSION['fbfirepixel'] = 0;

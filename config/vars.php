@@ -5,14 +5,14 @@ error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
 $startpixel = 0;
-$FBPixel = "";
+$FBPixel = "524162389470320";
 $FBPurchasePixel = "";
 $FBViewContent = "";
 $productMETA = "";
 
 //Data for FB Conversions API
-$accessToken1 = "EAAQdSy3JN5QBAPgrqO52jtPQWl04D2nti6V5gHaiYkl50iBLu3O5jIohmZA0GsWBNqQOs";
-$accessToken2 = "MYZB9qGeZBZAZBVHkuTdj26ZAXWRMhMM9TuvTLkRKJtxxksdCLXStTWKjipEMDYY00DSfiZCS6KaaTUZCHjpYZCQBZCv8AeAgWgqQHKYARWZAqa7bu0rmT";
+$accessToken1 = "EAAL579yfZCZBsBAAD8r2rBB9WoPg2ZAdQEp52Ygcnxm9k16dr72tm75Xw0ZCayeZAfzwABDvCJwnZAouXacgw";
+$accessToken2 = "jnZCZAD58QU8rikPHErYBy4t0o6Qts22qrmltP1nEhzByfab5D8SWfWidpUsog8lIzRYOy1pCZBoIAjqQlbnZAim9Cw2JmdtYG0G7dpitqpkSYjcZD";
 $fbAccessToken = $accessToken1.$accessToken2;
 $sendFBAPI = 0; #Set to 1 to send data via api
 
