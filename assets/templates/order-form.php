@@ -301,10 +301,10 @@ select:invalid { color: gray; }
                       $("#show_message").html(DataMSG);
                       $("#show_message").fadeIn();
                       $("#submitbtn").html('<i class="fas fa-spinner fa-pulse"></i> Redirecting...');
-                      alert(Redirect);
+               
                       setTimeout(function(){
                         window.location.href = Redirect;
-                      }, 12000);
+                      }, 2000);
 
                       }else{
                       $("#error").html(DataMSG);
