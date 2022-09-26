@@ -44,7 +44,7 @@
         <h2>Sale ends in few hours</h2>
           <!--<span class="vat"> <strong>VAT included (where applicable)</strong> </span>-->
 
-          <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/order-form-spirit.php'; ?>
+          <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/order-form-spirit-weekly.php'; ?>
         <div class="disclamer">
         Your initial charge will be $19.00 after 7 day free trial. You will then be charged $19.00/month until you cancel after your initial charge has been made.
           </div> 
