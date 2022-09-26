@@ -277,7 +277,7 @@ select:invalid { color: gray; }
                 // ajax
                 $.ajax({
                     type:"POST",
-                    url: "/ajax/spirit.php",
+                    url: "/ajax/spirit-weekly.php",
                     dataType: 'json',
                     data: $(this).serialize(),
                     success: function(data){
