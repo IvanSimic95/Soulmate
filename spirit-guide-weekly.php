@@ -6,11 +6,11 @@ $description = "I will draw your Higher Self with 100% accuracy";
 $menu_order="men_2_0"; 
 $bgproduct = "spiritguide12";
 
-$price1 = "3.80";
+$price1 = "19.00";
 $price2 = "39.99";
 $price3 = "49.99";
 
-$discount1 = "19.99";
+$discount1 = "190.00";
 $discount2 = "399.99";
 $discount3 = "499.99";
 
@@ -23,6 +23,7 @@ $t_product_sales = "8700";
 $t_product_title = "SPIRIT GUIDE WEEKLY READING";
 $t_about_title =  "<center><div style='color:#ff00f3;'> <b> SPIRIT GUIDE WEEKLY READING</b></div></center>";
 $t_about_content = "
+
 <div style='font-size:120%'><p> <b> Wonder what your spirit guides want to tell you?  </b> </p>
 <br>
 <p>In this reading I will connect with your spirit guide and tell you <b>EXACTLY</b> what message(s) he have for you. </p>
@@ -56,5 +57,5 @@ EOT;
 
 
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php';
-include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/product-template-spirit.php';
+include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/product-template-spirit-weekly.php';
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/footer.php';
