@@ -441,6 +441,7 @@ $logArray[] = "
 				}
 				// end of past life
 			}elseif ($orderProduct == "spirit") {
+				$trigger = 1;
 				$image_send = 0;
 				$email_text = "";
 				$theader = $spiritOrderHeader;
