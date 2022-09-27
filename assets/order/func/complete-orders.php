@@ -68,9 +68,7 @@ $logArray[] = "
 			
 			echo ""  . $hours . " hours | <br>";
 
-			if($orderProduct == "spirit"){
-				$trigger = 1;
-			}
+		
 		//If trigger is set to 1 (order is ready to be delivered)
 		if ($trigger == 1) {
 

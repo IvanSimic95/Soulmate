@@ -27,7 +27,7 @@ $user_age = $interval->y;
 $user_name = $_POST['form_name'];
 $user_email = $_POST['form_email'];
 $order_product = $_POST['product'];
-$order_priority = "48";
+$order_priority = "24";
 $order_date = date('Y-m-d H:i:s');
 
 $affid = $_POST['aff_id'];
