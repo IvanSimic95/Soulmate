@@ -159,7 +159,7 @@ $msg_date = date('Y-m-d H:i:s');
 
 
     //Check if product is spirit
-    if($product == "spirit"){
+  if($product == "spirit"){
 
 
       //Find new message text to send
@@ -220,6 +220,7 @@ $msg_date = date('Y-m-d H:i:s');
       error_log("Bill type found but product not spirit | Order ID: #$orderID");
     }
 
+  }
 }
 
 ?>
