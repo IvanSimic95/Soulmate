@@ -46,6 +46,10 @@ $readingOrderFooter = "\n\n It was such a pleasure doing your reading, my dear. 
 $pastOrderHeader = "Dear %FIRSTNAME%\n\nFirst of all, thank you so much for giving me the opportunity to create a meaningful connection with you! As we continue, please make yourself comfortable and feel wholeheartedly everything I've seen while connecting with your aura and energy. I hope that sharing this with you will kindle a light of joy in your heart, and let you know that beautiful things are on the way.\n\n";
 $pastOrderFooter = "\n\n It was such a pleasure doing your reading, my dear. I hope that you enjoy it as much as I enjoyed connecting with your beautiful soul energy!\n\nWith Love,\n*Melissa*";
 
+//Spirit guide weekly message
+$spiritOrderHeader = "";
+$spiritOrderFooter = "";
+$spiritWeeklyHeader = "Dear %FIRSTNAME%\n\nThis is your weekly message from your Spirit Guide!\n\n";
 
 //Order Processing & Order Complete Notifications
 $OrderProcessingMessage = "Your Order status is now set to *Processing*!";
