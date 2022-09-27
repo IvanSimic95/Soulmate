@@ -587,9 +587,18 @@ $logArray[] = "
 			}else{//SEND ONLY TEXT START
 					  // curl implementation
 
+
 					$finishOrder = 1;
 
 					if($missingTest == 0){
+						if($orderProduct == "spirit"){
+							$ch = curl_init();
+							$data = [[
+							"text" => $message,
+							"sender"  => "soulmateAdmin",
+							"type" => "UserMessage"
+							]];
+						}else{
 					$ch = curl_init();
 					$data = [[
 					"text" => $message,
@@ -602,6 +611,8 @@ $logArray[] = "
 					"text" => $ContinueConvoMsg,
 					"type" => "SystemMessage"
 					]];
+
+				}
 
 					$data1 = json_encode($data);
 				  
@@ -630,6 +641,8 @@ $logArray[] = "
 					  curl_close($ch);	
 					  $logArray[] = $result;	
 					}
+
+				
 			}
 			
 
