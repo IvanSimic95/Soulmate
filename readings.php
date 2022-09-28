@@ -17,6 +17,12 @@ if(isset($_GET['updateInfo'])){
 }else{
   $showPopup = "Yes";
 }
+if(isset($_GET['email'])){
+  $FirePixel = 0;
+  header("Location: https://".$domain."/readings.php?order_ID=".$order_ID);
+  die();
+}
+
 if(isset($_POST['form_submit'])){
 
 $newGender = $_POST['gender'];
