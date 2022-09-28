@@ -145,7 +145,7 @@ $subid5 = base64_encode($subidfull5);
 $submitStatus = "Success";
 $SuccessMessage = "Information saved, Redirecting you to Payment Page Now!";
 $redirectPayment = "https://soulmateps.pay.clickbank.net/order/orderform.html?cbskin=39137&cbtimer=1593&cbfid=52075&cbitems=".$cbproduct."&name=".$user_name."&email=".$user_email."&cookie_ID=".$cookie_id."&order_ID=".$lastRowInsert;
-$redirectPayment = "https://soulmateps.pay.clickbank.net/order/?cbskin=39137&cbitems=".$cbproduct."&name=".$user_name."&email=".$user_email."&cookie_ID=".$cookie_id."&order_ID=".$lastRowInsert;
+$redirectPayment = "https://soulmateps.pay.clickbank.net/order/?cbskin=39137&cbfid=52260&cbitems=".$cbproduct."&name=".$user_name."&email=".$user_email."&cookie_ID=".$cookie_id."&order_ID=".$lastRowInsert;
 $returnData = [$submitStatus,$SuccessMessage,$redirectPayment];
 
 $_SESSION['UserEmail'] = $user_email;
