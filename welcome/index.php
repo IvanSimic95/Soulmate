@@ -28,11 +28,11 @@ require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 </head>
 <body class="body">
   <div class="header-bar wf-section">
-    <div class="logo-wrapper"><img src="images/logo2.png" loading="lazy" alt=""></div>
-  </div>
+    <div class="logo-wrapper"><img src="images/logo2-222.png" loading="lazy" alt=""></div>
+  </div> 
   <div class="body-container w-container">
     <div class="header-section">
-      <h1 class="headline"><span class="bolded-headline">This Powerful Wealth Spell</span> Will Manifest Money &amp; Riches Into Your Life</h1>
+      <h1 class="headline"><span class="bolded-headline">PSYCHIC PORTRAIT OF YOUR SOULMATE</span><br> <font color="#ff33f9 "> BY ISABELLA</font> </h1>
       <div class="video w-embed w-script">
 <style>
 .text-placeholder{
@@ -946,40 +946,37 @@ var product_code = $('.product_code').text()
   </div>
   <div class="main-body-section wf-section">
     <div class="container w-container">
-      <h1 class="headline dark-subheader">This Ancient Spell Casting Ritual Instantly Attracts Luck &amp; Good Fortune Into Your Life</h1>
-      <p class="sub-paragraph">Alice&#x27;s Spell Castings &amp; Abundance Rituals are based on ancient Wicca Magic, used by Kings and Queens for centuries to bring wealth and riches to their countries and people</p>
+      <h1 class="headline dark-subheader"> I WILL DRAW YOUR SOULMATE + BONUS </h1>
+      <p class="sub-paragraph">I am <b>Isabella</b>, the most renowned psychic artist in the world, and I guarantee that I will find your true soulmate in this lifetime and reunite both of you, as well as make sure that you two will live a life full of joy and fulfillment on all plans.</p>
       <div class="w-row">
-        <div class="w-col w-col-7 w-col-small-small-stack w-col-tiny-tiny-stack"><img src="images/polaroid.png" loading="lazy" srcset="images/polaroid-p-500.png 500w, images/polaroid.png 571w" sizes="100vw" alt="" class="image-mobile">
+        <div class="w-col w-col-7 w-col-small-small-stack w-col-tiny-tiny-stack"><center> <img src="images/polaroid2.png" loading="lazy" srcset="images/polaroid2.png 500w, images/polaroid2.png 571w" sizes="100vw" alt="" class="image-mobile"> </center>
           <div class="about mobile">&quot;My heritage extends from a centuries-old family line of spiritual healers. I learned most of my castings from my great aunt, who like myself was a spiritual healer, psychic medium and empath!&quot;<br><strong>- Priestess Alice</strong></div>
           <ul role="list" class="list">
             <li class="list-item">
-              <div class="bullet-headline">Enjoy the Riches of Life</div>
-              <div class="bullet-description">With just one spell casting, you&#x27;ll instantly start noticing changes in the abundance which comes towards you, as you finally manifest the riches and wealth you&#x27;ve always desired</div>
+              <div class="bullet-headline">DIGITAL PRODUCT</div>
+              <div class="bullet-description"> All orders are delivered digitally to your email address</div>
             </li>
             <li class="list-item">
-              <div class="bullet-headline">Attract More than just money</div>
-              <div class="bullet-description">My potent Wealth Spell Rituals not only bring you an abundance of material wealth, but also help attract abundant love, confidence, happiness</div>
+              <div class="bullet-headline">Certified psychic and clairvoyant </div>
+              <div class="bullet-description">I'm a certified Psychic Expert since 2004, specialized in Clairsentience, Clairaudience, Clairvoyance and Claircognizance </div>
             </li>
             <li class="list-item">
-              <div class="bullet-headline">Increase Your Vibration</div>
-              <div class="bullet-description">Raising your vibration naturally channels positive energy towards you, bringing you more abundance without expending energy</div>
+              <div class="bullet-headline">Colllaborations</div>
+              <div class="bullet-description">My skills were used by the police in creating robot portets in countless cases</div>
             </li>
             <li class="list-item">
-              <div class="bullet-headline">Invite Luck &amp; Fortune</div>
-              <div class="bullet-description">Begin magnetically attracting natural luck to improve your chances with job opportunities, lottery wins, gambling and </div>
+              <div class="bullet-headline">100% satisfaction or MONEY BACK </div>
+              <div class="bullet-description">If you are not happy with my services, I'm offering you a full refund, no questions asked </div>
             </li>
-            <li class="list-item">
-              <div class="bullet-headline">Manifest Business success</div>
-              <div class="bullet-description">For those of you in business, or wishing to start your own business, a wealth spell will confidently increase your ability to attract customers &amp; sales </div>
-            </li>
+           
           </ul>
         </div>
-        <div class="w-col w-col-5 w-col-small-small-stack w-col-tiny-tiny-stack"><img src="images/polaroid.png" loading="lazy" srcset="images/polaroid-p-500.png 500w, images/polaroid.png 571w" sizes="100vw" alt="" class="image-desktop">
-          <div class="about desktop">&quot;My heritage extends from a centuries-old family line of spiritual healers. I learned most of my castings from my great aunt, who like myself was a spiritual healer, psychic medium and empath!&quot;<br><strong>- Priestess Alice</strong></div>
+        <div class="w-col w-col-5 w-col-small-small-stack w-col-tiny-tiny-stack"><img src="images/polaroid2.png" loading="lazy" srcset="images/polaroid2.png 500w, images/polaroid2.png 571w" sizes="100vw" alt="" class="image-desktop">
+          <div class="about desktop">I will combine my psychic abilities that I was so fortunate to be born with with my natural artisitc talent to tansfer my vision to paper for you. All images are highly detailed and can be printed off for you own framing.</div>
         </div>
       </div>
       <div class="button-wrapper">
-        <a data-w-id="f17eb61c-a808-da56-775c-af1dea03cc4c" href="#" class="order-now-button w-button">Order A Wealth Spell Now<br><span class="btn-sub-text">And Watch Your Life Magically Change</span>‍</a>
+        <a data-w-id="f17eb61c-a808-da56-775c-af1dea03cc4c" href="#" class="order-now-button w-button">Order Now</a>
         <div class="secure-badge"><img src="images/lock.png" loading="lazy" alt="" class="lock-icon">
           <div class="secure-checkout-text inverted">Safe &amp; Secure • 365 Money Back Guarantee</div>
         </div>
@@ -989,8 +986,8 @@ var product_code = $('.product_code').text()
       <div class="w-row">
         <div class="w-col w-col-6"><img src="images/money-back-guarantee.png" loading="lazy" alt="" class="image-2"></div>
         <div class="w-col w-col-6">
-          <h1 class="headline dark-subheader inverted">Alice&#x27;s Spell Casting Are Backed By A 365 Day Money Back Guarantee</h1>
-          <p class="sub-paragraph light">Alice is so confident you&#x27;ll see results, she offers a 100% money back guarantee lasting a whole 12 months.</p>
+          <h1 class="headline dark-subheader inverted">Isabella Services Are Backed By A 30 Days Money Back Guarantee</h1>
+          <p class="sub-paragraph light">I'm so confident on my services that I'm actually offering a <b>LIFETIME<b> refund period.</p>
         </div>
       </div>
     </div>
@@ -1001,8 +998,8 @@ var product_code = $('.product_code').text()
         <div class="w-col w-col-6">
           <div class="testimonial-wrapper">
             <div class="testimonial-bubble">
-              <div class="testimonial-headline">&quot;I&#x27;m seeing the results!! It really works and I&#x27;m happy ! THANK YOU!!!&quot;</div>
-              <div class="testimonial-paragraph">The ritual was done well and quickly, I enjoyed seeing the video of the ritual. Overall a really positive experience and now I&#x27;m comfortable waiting for the results. Thank you very much!</div>
+              <div class="testimonial-headline">AMAZING</div>
+              <div class="testimonial-paragraph">This drawing blew me away, the features aligned with the man I’m seeing now, lips, nose, eyebrows, eyes, ears were identical to his. His ethnicity showed through the drawing, he is Blackfoot Native American and the drawing reflects that. The personality traits were spot on with his as well.</div>
               <div class="avatar-wrapper"><img src="images/testimonial.jpg" loading="lazy" alt="" class="image">
                 <div class="div-block">
                   <div class="name-wrapper">
@@ -1014,8 +1011,8 @@ var product_code = $('.product_code').text()
               </div>
             </div>
             <div class="testimonial-bubble">
-              <div class="testimonial-headline">&quot;OMG!! Seeing results in less than 4 weeks! Amazing!!&quot;</div>
-              <div class="testimonial-paragraph">Update: Amazing!! Since purchasing I literally had no money in my bank account. Now I was able to pay my bills next month and do a little shopping spree for myself and my family! And it&#x27;s not even the full 4 weeks for it too take fully affect. Thank you!!!</div>
+              <div class="testimonial-headline">Lovely experience</div>
+              <div class="testimonial-paragraph">I just about cried when I opened the reading and portrait. The message was just so beautiful and the man staring back at me just looks so kind and warm. Thank you so much for providing such a special reading and sharing your gifts! I am beyond words at how special this reading is!</div>
               <div class="avatar-wrapper"><img src="images/testimonial2.jpg" loading="lazy" alt="" class="image">
                 <div class="div-block">
                   <div class="name-wrapper">
@@ -1027,8 +1024,8 @@ var product_code = $('.product_code').text()
               </div>
             </div>
             <div class="testimonial-bubble">
-              <div class="testimonial-headline">&quot;Feeling blessed since purchasing! Thank you!&quot;</div>
-              <div class="testimonial-paragraph">LOVED my whole experience with Alice. I feel so much relief and have been so blessed since purchasing. Thank you so much for bringing me towards this abundance!</div>
+              <div class="testimonial-headline">Feeling blessed since purchasing! Thank you!</div>
+              <div class="testimonial-paragraph">This was a fantastic purchase. My eyes are peeled everywhere I go looking for this man. I will not rest until I find him, I wait patiently everyday to see his baby blue pearls. His brown luxurious hair lives in my dreams, and his chiseled jaw makes my mouth water. Thank you for doing this reading.</div>
               <div class="avatar-wrapper"><img src="images/testimonial5.jpg" loading="lazy" alt="" class="image">
                 <div class="div-block">
                   <div class="name-wrapper">
@@ -1043,8 +1040,8 @@ var product_code = $('.product_code').text()
         </div>
         <div class="w-col w-col-6">
           <div class="testimonial-bubble">
-            <div class="testimonial-headline">&quot;I got an extra $25 the very next day, seriously!!?&quot;</div>
-            <div class="testimonial-paragraph">I ordered and the next morning my dad called me and said he’d put $20 in my bank (totally random!) and then I got given a $5 coupon for the coffee shop next to our office. I truly believe this spell helped me with all this!</div>
+            <div class="testimonial-headline">I'm shoked</div>
+            <div class="testimonial-paragraph">My drawing looks like the person I work with, am attracted to, and I’ve had a dream telling me he’s on a spiritual journey too. We’ll see fingers crossed!</div>
             <div class="avatar-wrapper"><img src="images/testimonial6.jpg" loading="lazy" alt="" class="image">
               <div class="div-block">
                 <div class="name-wrapper">
@@ -1056,8 +1053,8 @@ var product_code = $('.product_code').text()
             </div>
           </div>
           <div class="testimonial-bubble">
-            <div class="testimonial-headline">&quot;Amazing service, felt totally different after the spell was cast!&quot;</div>
-            <div class="testimonial-paragraph">Amazing service! Alice is so sweet and able to respond answers fast. The day after the spell was cast I felt totally different. Now I&#x27;m just waiting for full result💕</div>
+            <div class="testimonial-headline">I recommend everyone Isabella's services</div>
+            <div class="testimonial-paragraph">Very happy and impressed with my purchase! The drawing and description were both very accurate and detailed. The person drawn looked very similar to someone I recently met! Isabella was really nice and responded quickly. You can tell a lot of time and effort was put into this drawing.</div>
             <div class="avatar-wrapper"><img src="images/testimonial4.jpg" loading="lazy" alt="" class="image">
               <div class="div-block">
                 <div class="name-wrapper">
@@ -1084,67 +1081,12 @@ var product_code = $('.product_code').text()
         </div>
       </div>
       <div class="button-wrapper">
-        <a data-w-id="9ca0b638-11a4-0aa1-331f-7ef8023444e2" href="#" class="order-now-button w-button">Order A Wealth Spell Now<br><span class="btn-sub-text">And Watch Your Life Magically Change</span>‍</a>
-        <div class="secure-badge"><img src="images/lock.png" loading="lazy" alt="" class="lock-icon">
-          <div class="secure-checkout-text inverted">Safe &amp; Secure • 365 Money Back Guarantee</div>
-        </div>
+        <a data-w-id="9ca0b638-11a4-0aa1-331f-7ef8023444e2" href="#" class="order-now-button w-button">ORDER NOW<br><span class="btn-sub-text">And Watch Your Life Magically Change</span>‍</a>
+        
       </div>
     </div>
     <div class="container w-container">
-      <h1 class="headline dark-subheader">How It Works...</h1>
-      <p class="sub-paragraph">Priestess Alice does all the hard work for you, all you have to do is prepare yourself to receive the wealth you want to manifest</p>
-      <div class="step-wrapper">
-        <div class="step-title">
-          <div class="step-number">
-            <div class="step-number-text">Step.1</div>
-          </div>
-          <div class="step-headline">
-            <h1 class="headline steps-header">Order Your Spell Casting Ritual</h1>
-          </div>
-        </div>
-        <div class="step-paragraph">Place an order using one of the buttons on this page. This will reserve your ritual and guarantee you a spot on Alice&#x27;s daily reservations.</div>
-      </div>
-      <div class="step-wrapper">
-        <div class="step-title">
-          <div class="step-number">
-            <div class="step-number-text">Step.2</div>
-          </div>
-          <div class="step-headline">
-            <h1 class="headline steps-header">Fill Out Your Details for Alice</h1>
-          </div>
-        </div>
-        <div class="step-paragraph">After ordering and reserving your spell, you&#x27;ll need to fill out some basic details so Alice can produce a birth chart to connect with you whilst performing your ritual. This is regular information such as your date of birth, name, location</div>
-      </div>
-      <div class="step-wrapper">
-        <div class="step-title">
-          <div class="step-number">
-            <div class="step-number-text">Step.3</div>
-          </div>
-          <div class="step-headline">
-            <h1 class="headline steps-header">Wait For Alice To Cast Your Spell</h1>
-          </div>
-        </div>
-        <div class="step-paragraph">Alice only performs a limited number of spells each day. Ensure you order quickly to reserve your slot. Once your order is confirmed and you&#x27;ve filled out your details, simply sit back and wait for Alice to complete your ritual. You&#x27;ll be notified by email when this is complete.</div>
-      </div>
-      <div class="step-wrapper">
-        <div class="step-title">
-          <div class="step-number">
-            <div class="step-number-text">Step.4</div>
-          </div>
-          <div class="step-headline">
-            <h1 class="headline steps-header">Begin Experiencing A New Richer Life</h1>
-          </div>
-        </div>
-        <div class="step-paragraph">Once the wealth spell has been cast, you will begin noticing immediate changes in your life. Money and wealth will flow towards you like never before. You will feel richer. You will enjoy the finer things in life. You will finally manifest the wealth you have always dreamed of...</div>
-      </div>
-    </div>
-    <div class="container no-padding w-container">
-      <div class="div-block-2">
-        <div class="div-block-3"><img src="images/small.jpg" loading="lazy" srcset="images/small-p-500.jpeg 500w, images/small-p-1080.jpeg 1080w, images/small.jpg 1092w" sizes="100vw" alt="" class="mobile-profile-image">
-          <h1 class="headline dark-subheader footer">Manifest Money &amp; Wealth Into Your Life Today</h1>
-          <p class="sub-paragraph footer">Priestess Alice does all the hard work for you, all you have to do is prepare yourself to receive the wealth you want to manifest</p>
-          <a data-w-id="f054452a-1b07-4bf4-023e-646829a5c456" href="#" class="order-now-button w-button">Order A Wealth Spell Now<br><span class="btn-sub-text">And Watch Your Life Magically Change</span>‍</a>
-          <div class="secure-badge"><img src="images/lock.png" loading="lazy" alt="" class="lock-icon">
+       <div class="secure-badge"><img src="images/lock.png" loading="lazy" alt="" class="lock-icon">
             <div class="secure-checkout-text inverted">Safe &amp; Secure • 365 Money Back Guarantee</div>
           </div>
         </div>
