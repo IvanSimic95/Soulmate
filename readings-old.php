@@ -128,10 +128,90 @@ $menu_order="men_0_0";
 
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; 
 ?>
+<link rel="stylesheet" href="assets/css/upsell.css">
+<style>
+  @media only screen and (min-width: 768px) {
+  .offset-md-2 {
+    margin-left: 8.333333%;
+}
+.offset-md-4 {
+    margin-left: 16.666666%;
+}
+}
+.upsale_page h1 {
+font-size: 36px;
+    font-weight: bold;
+    background: linear-gradient( 90deg,#d130eb,#4a30eb 80%,#2b216c);
+    color: #fff!important;
+    margin-top: -25px;
+    margin-left: -25px;
+    margin-right: -25px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+    padding: 15px;
+	text-transform:uppercase;
+  font-family: Nunito,sans-serif;
+    font-style: normal;
+    font-weight: 800;
+}
+.upsale_page h2 {
+  font-size: 28px!important;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#d130eb,#4a30eb 80%,#2b216c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: Nunito,sans-serif;
+    font-style: normal;
+    font-weight: 800;
+}
+.upsale_page h3 {
+  font-size: 20px!important;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#d130eb,#4a30eb 80%,#2b216c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+.fill-control-description {
+  font-size: 24px!important;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#d130eb,#4a30eb 80%,#2b216c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+.col-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
 
-<link href="/assets/css/upsell.css" rel="stylesheet" type="text/css">
+.price_box{
+text-align:center;
+}
+.gradient{
+  font-size: 18px!important;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#d130eb,#4a30eb 80%,#2b216c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom:15px;
+}
 
-<div class="body-container w-container">
+</style>
+<div class="breadcrumbs">
+  <div class="container">
+    <a href="/index.php">Melissa</a> > Readings
+  </div>
+</div>
+
+
+<div class="general_section upsale_page">
+  <div class="container">
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -170,7 +250,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php';
 
 <input class="orderID" type="hidden" name="order_ID" value="<?php echo $_GET['order_ID']; ?>">
 
-<button style="margin-top:15px; padding:15px; width:100%; font-size:130%; font-weight:bold;" id="submitbtn" type="submit" name="form_submit" class="btn" value="Save Changes!"><i class="fa fa-square-check"></i> Save Changes!</button>
+<button style="margin-top:15px; padding:15px; width:100%; font-size:130%; font-weight:bold;" id="SaveChanges" type="submit" name="form_submit" class="btn" value="Save Changes!"><i class="fa fa-square-check"></i> Save Changes!</button>
 <hr class="mb-3">
 
 </form>
@@ -180,14 +260,9 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php';
     </div>
   </div>
 </div>
-
-    <div class="header-section">
-      <h1 class="headline"><span class="bolded-headline">You Unlocked a Special Service!</span><br> THIS IS AN EXCLUSIVE SERVICE WHICH I'M ONLY OFFERING A FEW TIMES A YEAR!</h1>
-    <div class="orders-list" style="padding:25px;border-radius: 4px;box-shadow: 0 8px 15px rgb(0 0 0 / 30%);background-color:white;">
-
-    
-
-    <center> <img src="/assets/img/sitee91.jpg" alt="upsell" style="border-radius:4px;"> </center>
+  <div class="white-wrapper col-md-10 offset-md-2"> <h1>You Unlocked a Special Service!</h1>
+      <h3>THIS IS AN EXCLUSIVE SERVICE WHICH I'M ONLY OFFERING A FEW TIMES A YEAR! </h3>
+    <center> <img src="/assets/img/sitee91.jpg" alt="upsell"> </center>
 <?php if($showPopup == "Yes"){ ?>
 <script>
     $( document ).ready(function() {
@@ -195,9 +270,11 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php';
 });
 </script>
 <?php } ?>
-
+	<h3>PLEASE BE AWARE YOU CAN'T GET BACK TO THIS PAGE LATER!</h3>
    
-  
+    
+  </div>
+  <div class="white-wrapper col-md-10 offset-md-2">
   <form id="ajax-form" class="form-order" name="order_form" action="javascript:void(0)" method="post">
       <h1>Personal Psychic Reading</h1>
     
@@ -263,10 +340,10 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php';
 
         <div class="sides">
           <div class="price_box">
-            <span class="badge new_prce">$19.99</span>
+            <span class="new_prce">$19.99</span>
           </div>
           <div class="smallerText">Choose at least one option to Proceed!</div>
-          <button id="addtopurchase" type="submit" name="submit" value="Add to my Purchase" style="width:100%; margin-top:20px;">Add to my Purchase</button>
+          <button id="addtopurchase" type="submit" name="submit" value="Add to my Purchase">Add to my Purchase</button>
 
         </div>
       </div>
@@ -275,66 +352,11 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php';
       </div></div>
     </form>
    
-
-    </div>
-  </div>
 </div>
 
 
-<style>
-    #addtopurchase{
-    display: inline-block;
-    padding: 23px 57px;
-    border-top: 2px solid #ff7cb3;
-    border-radius: 6px;
-    background-color: #c52886;
-    font-family: Lato, sans-serif;
-    font-size: 30px;
-    text-align: center;
-    color: white;
-    width: 100%;
-    }
-#nothanks{
-    margin-top:20px;
-    display: inline-block;
-    padding: 13px 17px;
-    border-radius: 6px;
-    background-color: gray;
-    font-family: Lato, sans-serif;
-    font-size: 20px;
-    text-align: center;
-    color: white;
-    width: 100%;
-}
 
-.smallerText {
-    display: none;
-}
-#purchasedupsell{
-    display:none;
-}
 
-.modal-content {
-    position: relative;
-    background-color: #fff;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 1px solid #999;
-    border: 1px solid rgba(0,0,0,.2);
-    border-radius: 6px;
-    outline: 0;
-    -webkit-box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
-    box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
-}
-.modal-title{
-    font-size: 20px!important;
-    font-weight: bold;
-    background: -webkit-linear-gradient(#d130eb,#4a30eb 80%,#2b216c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-}
-</style>
 
 <script>
       var $checkboxes = $('.list-group-control input[type="checkbox"]');
