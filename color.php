@@ -376,7 +376,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php';
 
          $.ajax({
              type:"POST",
-             url: "/ajax/readings.php",
+             url: "/ajax/color.php",
              dataType: 'json',
              data: $(this).serialize(),
              success: function(data){
