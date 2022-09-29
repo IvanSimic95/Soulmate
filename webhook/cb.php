@@ -73,7 +73,25 @@ $logaArray[] = $productFullTitle;
 if($order_email) {
 include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 
-    $sql = "UPDATE `orders` SET `order_status`='paid',`cb_email`='$order_email',`premium`='$premiumReading',`buygoods_order_id`='$order_buygoods' WHERE order_id='$mOrderID'" ;
+
+if($obj->lineItems[0]->itemNo == "17"){
+
+  $sql = "UPDATE `orders` SET `color`='1' WHERE order_id='$mOrderID'" ;
+
+  if ($conn->query($sql) === TRUE) {
+    //echo "Order Status updated to Paid succesfully!";
+    $logaArray[] = "Order Updated";
+    error_log("Color Order Updated");
+  } else {
+      $logaArray[] = "Error Updating: " . $sql . "<br>" . $conn->error;
+      error_log("Error Updating Color Order: $sql <br> $conn->error");
+    //echo "Error: " . $sql . "<br>" . $conn->error;
+  }
+
+
+}else{
+
+    $sql = "UPDATE `orders` SET `order_status`='paid',`cb_email`='$order_email',`reading`='$normalReading',`premium`='$premiumReading',`buygoods_order_id`='$order_buygoods' WHERE order_id='$mOrderID'" ;
 
     if ($conn->query($sql) === TRUE) {
       //echo "Order Status updated to Paid succesfully!";
@@ -150,7 +168,7 @@ formLogNewAgain($logaArray);
 
 error_log("------------------------------");
 }
-
+}
 }elseif($type == "BILL" OR $type == "TEST_BILL"){
 $order_email = $obj->customer->billing->email;
 $order_price = $obj->totalOrderAmount;
