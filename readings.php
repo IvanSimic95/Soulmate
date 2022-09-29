@@ -76,25 +76,26 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php';
 
 <div class="body-container w-container">
     <div class="header-section">
-      <h1 class="headline"><span class="bolded-headline">You Unlocked a Special Service!</span><br> THIS IS AN EXCLUSIVE SERVICE WHICH I'M ONLY OFFERING A FEW TIMES A YEAR!</h1>
+      <h1 class="headline"><span class="bolded-headline">You Unlocked a Special Service!</span><br> PLEASE BE AWARE YOU CAN'T GET BACK TO THIS PAGE LATER!</h1>
     <div class="orders-list" style="padding:25px;border-radius: 4px;box-shadow: 0 8px 15px rgb(0 0 0 / 30%);background-color:white;">
 
     
 
-    <center> <img src="/assets/img/sitee91.jpg" alt="upsell" style="border-radius:4px;"> </center>
+
 
    
   
   <form id="ajax-form" class="form-order" name="order_form" action="javascript:void(0)" method="post">
+
       <h1>Personal Psychic Reading</h1>
     
  <br>
-          <center> <b> <div class="gradient"> <h3> WOULDN'T BE GREAT TO JUST KNOW THE TRUTH INSTEAD OF CUNSUMMING YOURSELF WITH CONSTANT THOUGHTS? </h3></span> </b> </center>
+     <center> <img src="/images/award.jpg" alt="upsell" style="border-radius:4px;"> </center>
+          <center> <b> <div class="gradient"> <h4> Performed by Isabella</h4></span> </b> </center>
            <br> </r>
-          <div class="gradient">Your personal psychic reading will help answer some important questions that you've been asking yourself for a long time. If you would like to know more about your future love life, career, health, or where your life is headed in general, this is the perfect service for you.</div>
-                   <br>
-            
-                   <div class="gradient"> You will receive your reading within 24 hours with everything you need to find out about yourself. </div>
+		   
+          <div class="gradient"><b>With an experience of 15 years in Psychic Readings and being a Certified Psychic Expert since 2008, I will perform an in-depth personal reading regards your love/health/career or general.	</b></div>
+                   
                    <br>
                    <div id="purchasedupsell" class="alert alert-succes">Awesome! We will use same payment method as for your previous order.<br> Redirecting to payment page now...</div>
                    <div class="onsubmithide">
@@ -157,7 +158,9 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php';
 
         </div>
       </div>
-      <button id="nothanks" class="nothanks" type="submit" name="submit" value="No Thanks">No Thanks!</button>
+	  <br>
+	                     <div class="gradient"> *You will receive your reading within 24 hours with everything you need to find out about yourself. </div>
+      <button id="nothanks" class="nothanks" type="submit" name="submit" value="No Thanks">No Thanks! I don't care about my future</button>
 </div>
       </div></div>
     </form>
