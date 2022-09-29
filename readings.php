@@ -65,7 +65,7 @@ $row = $result->fetch_assoc();
 }
 
 
-$title = "Readings | Melissa Psychic";
+$title = "Readings | Isabella Psychic";
 $description = "Readings";
 $menu_order="men_0_0";
 
