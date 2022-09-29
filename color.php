@@ -56,6 +56,7 @@ $_SESSION['fbfirepixel'] = 1;
 
 if(isset($_SESSION['lastorder'])){
 $lastOrderID = $_SESSION['lastorder'];
+$order_ID = $lastOrderID;
 $sql = "SELECT * FROM `orders` WHERE `order_id` = '$lastOrderID' ORDER BY `order_id` DESC LIMIT 1";
 $result = $conn->query($sql);
 $count = $result->num_rows;
@@ -228,6 +229,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php';
         <input class="partnergender" type="hidden" id="partnergender" name="partnergender" value="<?php echo $_SESSION['orderPartnerGender']; ?>">
         <input class="email" type="hidden" name="bgemail" value="<?php echo $_SESSION['BGEmail']; ?>">
         <input class="cookie" type="hidden" name="cookie_id" value="<?php echo $_SESSION['user_cookie_id2']; ?>">
+        <input class="cookie" type="hidden" name="order_id" value="<?php echo $order_ID; ?>">
         <input class="price" type="hidden" id="product_price" name="price" value="13.99">
         <input class="fbp" type="hidden" name="fbp" value="<?php echo $UserFBP; ?>">
         <input class="fbc" type="hidden" name="fbc" value="<?php echo $UserFBC; ?>">
