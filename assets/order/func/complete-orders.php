@@ -165,7 +165,13 @@ $logArray[] = "
 						$age_max = 24;
 					}
 
-					$sql_pick = "SELECT * FROM orders_image WHERE age < '$age_max' AND age > '$age_min' AND sex = '$orderSex' order by RAND() limit 1";
+					if($color == 1){
+						$productSearch = "soulmatecolor";
+					}else{
+						$productSearch = "soulmate";
+					}
+
+					$sql_pick = "SELECT * FROM orders_image WHERE product = '$productSearch' age < '$age_max' AND age > '$age_min' AND sex = '$orderSex' order by RAND() limit 1";
 					$sql_pick_res = $conn->query($sql_pick);
 					if($sql_pick_res->num_rows == 0) {
 							 $image_name = "";
@@ -668,6 +674,120 @@ $logArray[] = "
 
 				
 			}elseif($image_send == "1" && $text_send == "0"){ // Send Only Image
+				$message = $generalOrderNoReading;
+
+// define image name and new path
+$rootDir = $_SERVER['DOCUMENT_ROOT'];
+$ext = ".jpg";
+$sPath = "/assets/order/images/general/";
+$randomImageName = rand(55547,75547);
+
+// Old Paths
+$oldImagename = $image_name;
+$oldImageShortPath = "/assets/order/images/".$img_folder_name."/".$image_name.$ext;
+
+$oldImageFullPath = $base_url.$oldImageShortPath;
+
+$oldImageServerPath = $rootDir .$oldImageShortPath;
+
+// new Paths
+$newImagename = $orderProduct ."-" .$randomImageName ."-" .$orderID .$ext;
+$newImageShortPath = "/assets/email/delivery-images/".$newImagename;
+$newImageServerPath = $rootDir .$newImageShortPath;
+$newImageFullPath = $base_url .$newImageShortPath;
+
+//	echo 'New Image path = <a href="' .$newImageFullPath .'">' .$newImageFullPath ."</a><br> Old image path = ".$oldImageFullPath ."<br></a><br> ";
+echo $img_folder_name.'/'.$oldImagename.'.jpg | ';
+echo $newImagename.' | ';
+
+// Set new image path and name
+$newImageNameHash = copy($oldImageServerPath, $newImageServerPath);
+
+
+$ch = curl_init();
+$authorization = "Bearer sk_live_Ncow50B9RdRQFeXBsW45c5LFRVYLCm98";
+curl_setopt($ch, CURLOPT_URL, 'https://api.talkjs.com/v1/ArJWsup2/files');
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_POST, 1);
+
+// Set image data for upload via CURL
+
+$filename = $rootDir.'/assets/email/delivery-images/'.$newImagename;
+$finfo = new \finfo(FILEINFO_MIME_TYPE);
+$mimetype = $finfo->file($filename);
+$cfile = curl_file_create($filename, $mimetype, basename($filename));
+$imgdata = array('file' => $cfile);
+
+curl_setopt($ch, CURLOPT_POSTFIELDS, $imgdata);
+
+$headers = array();
+$headers[] = 'Content-Type: multipart/form-data';
+$headers[] = 'Authorization: ' . $authorization;
+curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+$attachment = curl_exec($ch);
+if (curl_errno($ch)) {
+	echo 'Error:' . curl_error($ch);
+	$finishOrder = 0;
+}else{
+	$finishOrder = 1;
+}
+curl_close ($ch);
+//echo $attachment;
+$token = json_decode($attachment);
+$Atoken_key = $token->attachmentToken;
+
+
+if($finishOrder == 1 && $missingTest == 0){
+// curl implementation
+$ch = curl_init();
+$data = [[
+"text" => $message,
+"sender"  => "soulmateAdmin",
+"type" => "UserMessage"
+],[
+"attachmentToken" => $Atoken_key,
+"sender"  => "soulmateAdmin",
+"type" => "UserMessage"
+],[
+"text" => $OrderCompleteMessage,
+"type" => "SystemMessage"
+],[
+"text" => $ContinueConvoMsg,
+"type" => "SystemMessage"
+]];
+
+$data1 = json_encode($data);
+
+curl_setopt($ch, CURLOPT_URL, 'https://api.talkjs.com/v1/ArJWsup2/conversations/' . $row["order_id"] . '/messages');
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
+
+curl_setopt($ch, CURLOPT_POSTFIELDS, $data1);
+
+$headers = array();
+$headers[] = 'Content-Type: application/json';
+$headers[] = 'Authorization: Bearer sk_live_Ncow50B9RdRQFeXBsW45c5LFRVYLCm98';
+curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+$result = curl_exec($ch);
+//$logArray['4'] = $message;
+
+
+if (curl_errno($ch)) {
+echo 'Error:' . curl_error($ch);
+$updateOrder = 0;
+$logArray[] = "TalkJS NOT Updated!" . curl_error($ch);
+}else{
+$updateOrder = 1;
+$logArray[] = "TalkJS Updated";
+}
+
+curl_close($ch);
+$logArray[] = $result;
+//SEND IMAGE END
+}
+
+
 
 			}
 			
