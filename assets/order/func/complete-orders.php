@@ -171,7 +171,7 @@ $logArray[] = "
 						$productSearch = "soulmate";
 					}
 
-					$sql_pick = "SELECT * FROM orders_image WHERE product = '$productSearch' age < '$age_max' AND age > '$age_min' AND sex = '$orderSex' order by RAND() limit 1";
+					$sql_pick = "SELECT * FROM orders_image WHERE product = '$productSearch' AND age < '$age_max' AND age > '$age_min' AND sex = '$orderSex' order by RAND() limit 1";
 					$sql_pick_res = $conn->query($sql_pick);
 					if($sql_pick_res->num_rows == 0) {
 							 $image_name = "";
