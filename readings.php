@@ -169,6 +169,12 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php';
     </div>
   </div>
 </div>
+<div class="disclaimer-text" style="color:white;">
+ 
+      
+
+ ClickBank is the retailer of products on this site. CLICKBANK® is a registered trademark of Click Sales, Inc., a Delaware corporation located at 1444 S. Entertainment Ave., Suite 410 Boise, ID 83709, USA and used by permission. ClickBank's role as retailer does not constitute an endorsement, approval or review of these products or any claim, statement or opinion used in promotion of these products.
+ </div>
 
 
 <style>
