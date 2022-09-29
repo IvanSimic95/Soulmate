@@ -30,6 +30,8 @@ $type = $obj->transactionType;
 
 if($type == "SALE" OR $type == "TEST_SALE"){
 
+$normalReading = 0;
+$premiumReading = 0;
 
 $order_email = $obj->customer->billing->email;
 $order_price = $obj->totalOrderAmount;
@@ -41,10 +43,25 @@ $productImage = "https://soulmate-artist.com/assets/img/14dk.jpg";
 $productFullTitle = $obj->lineItems[0]->productTitle;
 
 $countPurchase = count($obj->lineItems);
-if($countPurchase > 1){
-  $premiumReading = 1;
-}else{
+if($countPurchase == 1){
+
+  $normalReading = 0;
   $premiumReading = 0;
+
+}elseif($countPurchase == 2{
+
+    if($obj->lineItems[1]->itemNo == "16"){
+      $normalReading = 1;
+      $premiumReading = 0;
+    }elseif($obj->lineItems[1]->itemNo == "4"){
+      $normalReading = 0;
+      $premiumReading = 1;
+    }
+}elseif($countPurchase == 3){
+
+  $normalReading = 1;
+  $premiumReading = 1;
+
 }
 
 error_log("Order ID: $mOrderID");
