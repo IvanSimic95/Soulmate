@@ -45,11 +45,8 @@ echo "Starting complete-orders.php...<br><br>";
 			$interval = new \DateInterval('PT1H');
 			$periods = new \DatePeriod($start, $interval, $end);
 			$hours = iterator_count($periods);
-
 			$premium = $row["premium"];
-			$reading = $row["reading"];
-			$color = $row["color"];
-
+			
 			$trigger = 0;
 			#$trigger = 1;
 			$image_send = 0;
@@ -72,29 +69,6 @@ $logArray[] = "
 			echo ""  . $hours . " hours | <br>";
 
 		
-			//Check if text should be sent
-			if($reading == 1 OR $premium == 1){
-				$text_send = "1";
-			}else{
-				$text_send = "0";
-			}
-
-			//Check if no text should be sent
-			if($reading == 0 AND $premium == 0){
-
-				$noReadingMSG = $generalOrderNoReading;
-	
-			}
-
-			//Check if only premium text should be sent
-			if($reading == 0 AND $premium == 1){
-
-			$generalOrderHeader = $generalOrderHeaderNoReading;
-			$generalOrderFooter = $generalOrderFooterNoReading;
-
-			}
-
-
 		//If trigger is set to 1 (order is ready to be delivered)
 		if ($trigger == 1) {
 
@@ -496,7 +470,7 @@ $logArray[] = "
 			
 
 			$message = str_replace("%FIRSTNAME%", $fName, $message);
-			if ($image_send == "1" && $text_send == "1") { //SEND IMAGE START
+			if ($image_send == "1") { //SEND IMAGE START
 						// define image name and new path
 							$rootDir = $_SERVER['DOCUMENT_ROOT'];
 							$ext = ".jpg";
@@ -558,7 +532,7 @@ $logArray[] = "
                             $Atoken_key = $token->attachmentToken;
 						
 
-			if($finishOrder == 1 && $missingTest == 0){
+				if($finishOrder == 1 && $missingTest == 0){
                 // curl implementation
                 $ch = curl_init();
                 $data = [[
@@ -608,7 +582,7 @@ $logArray[] = "
                 //SEND IMAGE END
 			}
                 	
-			}elseif($image_send == "0" && $text_send == "1"){//SEND ONLY TEXT START
+			}else{//SEND ONLY TEXT START
 					  // curl implementation
 
 
@@ -667,8 +641,6 @@ $logArray[] = "
 					}
 
 				
-			}elseif($image_send == "1" && $text_send == "0"){ // Send Only Image
-
 			}
 			
 
