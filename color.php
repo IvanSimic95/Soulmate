@@ -188,13 +188,11 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php';
   </div>
 </div>
 
-    <div class="header-section">
-      <h1 class="headline"><span class="bolded-headline"></span><br> </h1>
-    <div class="orders-list" style="padding:25px;border-radius: 4px;box-shadow: 0 8px 15px rgb(0 0 0 / 30%);background-color:white;">
 
-    
+      <font color = "#FF00FF"> <center> <h1>Upgrade Your Soulmate Drawing To Color!</h1> </center> </font>
+	 <br>
 
-    <center> <img src="/images/color.jpg" alt="upsell" style="border-radius:4px;"> </center>
+    <center> <img src="/images/done2.jpg" alt="upsell" style="border-radius:4px;"> </center>
 <?php if($showPopup == "Yes"){ ?>
 <script>
     $( document ).ready(function() {
@@ -206,10 +204,10 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php';
    
   
   <form id="ajax-form" class="form-order" name="order_form" action="javascript:void(0)" method="post">
-      <h1>Upgrade Your Drawing Today</h1>
+   
     
  <br>
-          <center> <b> <div class="gradient"> <h3> Upgrade my black and white drawing to dazzling full HD color so that I can easily recognize my soulmate when I meet them. </h3></span> </b> </center>
+           <font color = " #ffffff ">  <center> <b> <div class="gradient"> <h3> <b>Isabella,</b> <br> Please upgrade my black and white drawing to dazzling full HD drawing so that I can easily recognize my Soulmate when I meet him </h3></span> </b> </center> </font>
            <br> </r>
           <div class="gradient"></div>
                    <br>
@@ -239,14 +237,14 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php';
 
         <div class="sides">
           <div class="price_box">
-            <span class="badge new_prce">$13.99</span>
+          <font color = "#FF00FF"> <center> <h2> ONLY </font><font color = "#49ff00 ">  $13.99</font> </h2> </center> </font>
           </div>
           <div class="smallerText">Choose at least one option to Proceed!</div>
-          <button id="addtopurchase" type="submit" name="submit" value="Add to my Purchase" style="width:100%; margin-top:20px;">Add to my Purchase</button>
-
+          <button id="addtopurchase" type="submit" name="submit" value="Add to my Purchase" style="width:100%; margin-top:20px;">Yes, Please Upgrade My Order</button>
+<h3 class="line-behind" lkey="or">or</h3>
         </div>
       </div>
-      <button id="nothanks" class="nothanks" type="submit" name="submit" value="No Thanks">No Thanks!</button>
+      <button id="nothanks" class="nothanks" type="submit" name="submit" value="No Thanks">No Thanks! I don't want to see the color of my soulmate's eyes</button>
 </div>
       </div></div>
     </form>
