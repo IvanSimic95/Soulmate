@@ -187,6 +187,13 @@ $logArray[] = "
 					}
 
 
+					if($reading == 0 AND $premium == 1){
+
+						$generalOrderHeader = $generalOrderHeaderNoReading;
+						$generalOrderFooter = $generalOrderFooterNoReading;
+						$message = $theader.$premiumText.$tfooter;
+					}else{
+
 					$sql_text = "SELECT * FROM orders_text WHERE product = '$orderProduct' AND gender = '$orderSex' AND user_gender='$userSex' order by RAND() limit 1";
 					$sql_text_res = $conn->query($sql_text);
 					if($sql_text_res->num_rows == 0) {
@@ -201,6 +208,8 @@ $logArray[] = "
 						    $message = $theader.$email_text.$premiumText.$tfooter;
 						}
 					}
+
+				  }
 
 				}elseif ($orderProduct == "pastlife")  { 
 
