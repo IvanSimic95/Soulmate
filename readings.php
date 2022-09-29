@@ -169,6 +169,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php';
     </div>
   </div>
 </div>
+<hr>
 <div class="disclaimer-text" style="color:white;">
  
       
