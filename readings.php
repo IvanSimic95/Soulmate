@@ -7,16 +7,22 @@ if(isset($_POST['pick_sex'])){
   $pick_sex = $_POST['pick_sex'];
   $sex_picked = "1";
 }
+
+if(isset($_GET['updateInfo'])){
+    $showPopup = "No";
+  }else{
+    $showPopup = "Yes";
+  }
+
 if(isset($_GET['order_ID'])){
   $order_ID = $_GET['order_ID'];
+
+
 }else{
   $order_ID = "";
-}
-if(isset($_GET['updateInfo'])){
   $showPopup = "No";
-}else{
-  $showPopup = "Yes";
 }
+
 if(isset($_GET['email'])){
   $FirePixel = 0;
   header("Location: https://".$domain."/readings.php?order_ID=".$order_ID);
@@ -456,7 +462,6 @@ if($FirePixel == 1){
 $FBPurchasePixel = <<<EOT
 
 <script>
-fbq('init', '$FBPixel');
 fbq('track', 'Purchase', {
   value: $orderPrice , 
   currency: 'USD',
