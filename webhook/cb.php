@@ -48,7 +48,7 @@ if($countPurchase == 1){
   $normalReading = 0;
   $premiumReading = 0;
 
-}elseif($countPurchase == 2{
+}elseif($countPurchase == 2){
 
     if($obj->lineItems[1]->itemNo == "16"){
       $normalReading = 1;
@@ -57,6 +57,7 @@ if($countPurchase == 1){
       $normalReading = 0;
       $premiumReading = 1;
     }
+
 }elseif($countPurchase == 3){
 
   $normalReading = 1;
