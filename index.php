@@ -878,7 +878,7 @@ var product_code = $('.product_code').text()
                                      </div>
 
 	  <hr>
-  <input class="product" type="hidden" name="product" value="">
+  <input class="product" type="hidden" name="product" value="soulmate">
   <input class="cookie" type="hidden" name="cookie_id" value="<?php echo $_SESSION['user_cookie_id']; ?>">
   <input class="cookie" type="hidden" name="cookie_id2" value="<?php echo $_SESSION['user_cookie_id2']; ?>">
   <input class="cookie" type="hidden" name="cookie_id3" value="<?php echo $_SESSION['user_cookie_id3']; ?>">
