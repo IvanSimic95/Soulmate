@@ -189,7 +189,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php';
 </div>
 
 
-      <font color = "#FF00FF"> <center> <h1>Upgrade Your Soulmate Drawing To Color!</h1> </center> </font>
+    <h1 class="gradient" style="text-align:center;font-size:36px!important;" >Upgrade Your Soulmate Drawing To Color!</h1>
 	 <br>
 
     <center> <img src="/images/done2.jpg" alt="upsell" style="border-radius:4px;"> </center>
@@ -204,15 +204,45 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php';
    
   
   <form id="ajax-form" class="form-order" name="order_form" action="javascript:void(0)" method="post">
-   
+   <style>
+    h3.line-behind {
+    width: auto;
+    position: relative;
+    text-align: center;
+    padding: 1em 0;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight:bold;
+    color:white;
+}
+h3.line-behind:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 150%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    background: linear-gradient(to right, #19191900 0%, #fff 45%, #fff0 46%, #fff0 55%, #fff 56%, #19191900 100%);
+
+}
+.gradient{
+  font-size: 18px!important;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#d130eb,#4a30eb 80%,#2b216c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom:15px;
+}
+    </style>
     
  <br>
-           <font color = " #ffffff ">  <center> <b> <div class="gradient"> <h3> <b>Isabella,</b> <br> Please upgrade my black and white drawing to dazzling full HD drawing so that I can easily recognize my Soulmate when I meet him </h3></span> </b> </center> </font>
-           <br> </r>
-          <div class="gradient"></div>
-                   <br>
-            
-                   <div class="gradient"> </div>
+           <center> <b> <div class="gradient"> <h3> <b>Isabella,</b> <br> Please upgrade my black and white drawing to dazzling full HD drawing so that I can easily recognize my Soulmate when I meet him </h3></span> </b> </center>
+           <br> 
+          
                    <br>
                    <div id="purchasedupsell" class="alert alert-succes">Awesome! We will use same payment method as for your previous order.<br> Redirecting to payment page now...</div>
                    <div class="onsubmithide">
@@ -235,12 +265,12 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php';
         <div id="error" class="alert alert-danger" style="display: none"></div>
       <div class="meta_part">
 
-        <div class="sides">
+        <div class="sides" style="position:relative;overflow:hidden;">
           <div class="price_box">
           <font color = "#FF00FF"> <center> <h2> ONLY </font><font color = "#49ff00 ">  $13.99</font> </h2> </center> </font>
           </div>
           <div class="smallerText">Choose at least one option to Proceed!</div>
-          <button id="addtopurchase" type="submit" name="submit" value="Add to my Purchase" style="width:100%; margin-top:20px;">Yes, Please Upgrade My Order</button>
+          <button id="addtopurchase" type="submit" name="submit" value="Add to my Purchase" style="width:100%; margin-top:20px; padding:15px; line-height:1.2;">Yes, Please Upgrade My Order</button>
 <h3 class="line-behind" lkey="or">or</h3>
         </div>
       </div>
