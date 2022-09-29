@@ -180,15 +180,16 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php';
 <style>
     #addtopurchase{
     display: inline-block;
-    padding: 23px 57px;
+    padding: 15px 25px;
     border-top: 2px solid #ff7cb3;
     border-radius: 6px;
     background-color: #c52886;
     font-family: Lato, sans-serif;
-    font-size: 30px;
+    font-size: 2rem;
     text-align: center;
     color: white;
     width: 100%;
+    line-height:1.2;
     }
 #nothanks{
     margin-top:20px;
