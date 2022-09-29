@@ -128,7 +128,7 @@ $_SESSION['fbproduct'] = $row['order_product'];
 }
 
 
-$title = "Readings | Melissa Psychic";
+$title = "Color Upgrade | Melissa Psychic";
 $description = "Readings";
 $menu_order="men_0_0";
 
