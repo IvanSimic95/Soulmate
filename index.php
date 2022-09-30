@@ -7,6 +7,12 @@
     <div class="logo-wrapper"><img src="images/logo2-222.png" loading="lazy" alt=""></div>
   </div> 
   <div class="body-container w-container">
+  
+  <div class="d-flex flex-row flex-wrap align-items-center position-relative fs-4" style="justify-content:space-between;padding-left:15px;padding-right:15px;">
+  <a href="/dashboard.php" style="color:white;text-decoration:none;">Dashboard</a> 
+  <a href="/contact.php" style="color:white;text-decoration:none;">Contact</a>
+  </div>
+
     <div class="header-section">
       <h1 class="headline"><span class="bolded-headline">PSYCHIC PORTRAIT OF YOUR SOULMATE</span><br> <font color="#ff33f9 "> BY ISABELLA</font> </h1>
       <div class="video w-embed w-script">
