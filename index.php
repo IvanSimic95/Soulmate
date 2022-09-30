@@ -1068,14 +1068,16 @@ var product_code = $('.product_code').text()
 
     <div class="container disclaimer w-container">
       <div class="disclaimer-text">
-      <div class="paragraph">
-For Product Support, please contact the seller <a href="mailto:contact@soulmate-psychic.com">HERE</a><hr>
-For Order Support, please contact ClickBank <a target="_blank" href="https://clkbank.com">HERE</a>
-</div>
-        <hr>
+        <div class="paragraph" style="margin-top:15px;">
+          To see your soulmate drawing, <a href="/dashboard.php">login here</a><br>
+          For Product Support, please contact the seller <a href="mailto:contact@soulmate-psychic.com">HERE</a><br>
+          For Order Support, please contact ClickBank <a target="_blank" href="https://clkbank.com">HERE</a>
+        </div>
+            <hr style="background-color: black;">
 
       ClickBank is the retailer of products on this site. CLICKBANK® is a registered trademark of Click Sales, Inc., a Delaware corporation located at 1444 S. Entertainment Ave., Suite 410 Boise, ID 83709, USA and used by permission. ClickBank's role as retailer does not constitute an endorsement, approval or review of these products or any claim, statement or opinion used in promotion of these products.
       </div>
+      <p class="footer__copyright" style="text-align:center;"><a href="terms-and-conditions.php">Terms & Conditions</a> | <a href="privacy-policy.php">Privacy Policy</a> | <a href="terms-and-conditions.php#refunds">Refund Policy</a> </p>
     </div>
   </div>
 
