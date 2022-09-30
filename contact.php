@@ -57,7 +57,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php';
         </div>
         <div class="form_box">
             <label for="contact_message">Message</label>
-            <textarea name="contact_message" id="message" rows="8" cols="80"></textarea>
+            <textarea name="contact_message" id="message" rows="8" cols="80" style="width:100%;border-radius:6px;"></textarea>
             <p class="help-block text-danger"></p>
         </div>
         <div id="success"></div>
