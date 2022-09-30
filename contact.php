@@ -1,5 +1,5 @@
 <?php
-$title = "Color Upgrade | Isabella Psychic";
+$title = "Contact Us | Isabella Psychic";
 $description = "Readings";
 $menu_order="men_0_0";
 
