@@ -1041,8 +1041,8 @@ var product_code = $('.product_code').text()
             </div>
           </div>
           <div class="testimonial-bubble">
-            <div class="testimonial-headline">&quot;Second time and seeing massive returns from Alice&quot;</div>
-            <div class="testimonial-paragraph">It’s only been almost a week since I purchased this spell. I won £419 from just betting £20 on a sport I didn’t really study on. It’s my second spell that I have purchased from Alice, she is truly god gifted talented. I can’t wait for the full 3-4 weeks manifestation :)</div>
+            <div class="testimonial-headline">AMAZING!</div>
+            <div class="testimonial-paragraph">I went to over 20 psychics so far but Isabella is the best by far!</div>
             <div class="avatar-wrapper"><img src="images/testimonial3.jpg" loading="lazy" alt="" class="image">
               <div class="div-block">
                 <div class="name-wrapper">
