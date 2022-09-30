@@ -1,40 +1,37 @@
+<?php
+$title = "Contact Us | Isabella Psychic";
+$description = "Readings";
+$menu_order="men_0_0";
+
+include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; 
+?>
 
 
-
-<?php $title = "Contact | Soulmate Psychic"; ?>
-
-<?php $description = "Contact, Support, FAQ"; ?>
-
-<?php $menu_order="men_5_0"; ?>
-
-<?php 
-include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
-include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
-
-<div class="breadcrumbs">
-
+<div class="general_section">
   <div class="container">
-
-    <a href="/index.php">Melissa</a> > Contact
-
-  </div>
-
-</div>
-
-<section class="contact_page">
-  <div class="container">
-<div class="row">
+    <div class="title_area"><h1 style="margin-top:0;">Contact Us</h1></div>
+    <div class="row">
     <div class="col-sm-6">
         <div class="wrap-white">
 
-            <h1>Frequently Asked Questions</h1>
+            <h2>Frequently Asked Questions</h2>
     </div>
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/faq.php'; ?>
 
   </div>
 <div class="col-sm-6">
 <div class="wrap-white">
-
+<style>
+.faq{
+    padding-left:0;
+}
+.form_box{
+    overflow:hidden;
+}
+.my-divider{
+    margin-top:10px;
+}
+    </style>
 
             <h2>Send us a Message!</h2>
 
@@ -60,72 +57,58 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
         </div>
         <div class="form_box">
             <label for="contact_message">Message</label>
-            <textarea name="contact_message" id="message" rows="8" cols="80"></textarea>
+            <textarea name="contact_message" id="message" rows="8" cols="80" style="width:100%;border-radius:6px;"></textarea>
             <p class="help-block text-danger"></p>
         </div>
         <div id="success"></div>
         <div class="form_box">
-            <input type="submit" name="contact_submit" value="Submit Message">
+            <input id="submitbtn" type="submit" name="contact_submit" value="Submit Message">
         </div>
     </form>
 	</div>
  </div>
 </div>
 </div>
+    </div>
+  </div>
 </div>
-</section>
+
+<div class="disclaimer-text" style="color:white;">
+ClickBank is the retailer of products on this site. CLICKBANK® is a registered trademark of Click Sales, Inc., a Delaware corporation located at 1444 S. Entertainment Ave., Suite 410 Boise, ID 83709, USA and used by permission. ClickBank's role as retailer does not constitute an endorsement, approval or review of these products or any claim, statement or opinion used in promotion of these products.
+</div>
 
 
 <style>
-.wrap-white{
+.title_area, .paragraph_area, .sub_area{
     background-color: #fff;
     padding: 15px;
     border-radius: 8px;
     margin-top: 15px;
-	margin-bottom:20px;
 }
-.contact_page h1{
-margin-bottom:0;
-font-size:36px;
+.container{
+  background-color:transparent;
+}
+
+h2 {
     font-weight: bold;
     background: -webkit-linear-gradient(#d130eb,#4a30eb 80%,#2b216c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-	    text-align: center;
-	}
-
-
-.contact_page h2{
+}
+.title_area > h1 {
 margin-bottom:0;
-font-size:36px!important;
     font-weight: bold;
     background: -webkit-linear-gradient(#d130eb,#4a30eb 80%,#2b216c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-	    text-align: center;
-		margin-bottom:0px!important;
-	}
-.contact_page h3{
-margin-bottom:0;
-font-size:18px!important;
-    font-weight: bold;
-    background: -webkit-linear-gradient(#d130eb,#4a30eb 80%,#2b216c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-	    text-align: center;
-		margin-bottom:15px;
-	}
+}
 
+.title_area{
+text-align:center;
+}
 
-.my-divider{
-margin-bottom:5px;
-	}
 </style>
+<?php
+include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/footer.php';
 
-
-<!--contact js file-->
-<script type="text/javascript" src="/assets/js/contact_me.js"></script>
-<!--jqBootstrapValidation js file-->
-<script src="/assets/js/jqBootstrapValidation.js"></script>
-
-<?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/footer.php'; ?>
+?>

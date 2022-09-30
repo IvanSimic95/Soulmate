@@ -1,22 +1,17 @@
-<?php $title = "Privacy Policy | Soulmate Psychic"; ?>
-<?php $description = "Privacy Policy"; ?>
-<?php $menu_order="0_0"; ?>
-<?php 
-include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
-include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
+<?php
+$title = "Privacy Policy | Isabella Psychic";
+$description = "Privacy Policy";
+$menu_order="men_0_0";
 
-<div class="breadcrumbs">
-  <div class="container">
-    <a href="/index.php">Melissa</a> > Privacy Policy
-  </div>
-</div>
+include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; 
+?>
 
 
 <div class="general_section">
   <div class="container">
-    <div class="title_area"><h1>Privacy Policy</h1></div>
+    <div class="title_area"><h1>Terms and Conditions</h1></div>
     <div class="paragraph_area">
-      <p>Welcome to https://soulmate-psychic.com and https://psychic-melissa.com (the “Site”). We understand that privacy online is important to users of our Site, especially when conducting business. This statement governs our privacy policies with respect to those users of the Site (“Visitors”) who visit without transacting business and Visitors who register to transact business on the Site and make use of the various services offered by Psychic Melissa (collectively, “Services”) (“Authorized Customers”).</p>
+    <p>Welcome to https://soulmate-psychic.com (the “Site”). We understand that privacy online is important to users of our Site, especially when conducting business. This statement governs our privacy policies with respect to those users of the Site (“Visitors”) who visit without transacting business and Visitors who register to transact business on the Site and make use of the various services offered by Psychic Isabella (collectively, “Services”) (“Authorized Customers”).</p>
       <h2>“Personally Identifiable Information”</h2>
       <p>refers to any information that identifies or can be used to identify, contact, or locate the person to whom such information pertains, including, but not limited to, name, address, phone number, fax number, email address, financial profiles, social security number, and credit card information. Personally Identifiable Information does not include information that is collected anonymously (that is, without identification of the individual user) or demographic information not connected to an identified individual.</p>
       <h2>What Personally Identifiable Information is collected?</h2>
@@ -28,19 +23,19 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
       <h2>With whom may the information may be shared?</h2>
       <p>Personally Identifiable Information about Authorized Customers may be shared with other Authorized Customers who wish to evaluate potential transactions with other Authorized Customers. We may share aggregated information about our Visitors, including the demographics of our Visitors and Authorized Customers, with our affiliated agencies and third party vendors. We also offer the opportunity to “opt out” of receiving information or being contacted by us or by any agency acting on our behalf.</p>
       <h2>How is Personally Identifiable Information stored?</h2>
-      <p>Personally Identifiable Information collected by Psychic Melissa is securely stored and is not accessible to third parties or employees of Psychic Melissa except for use as indicated above.</p>
+      <p>Personally Identifiable Information collected by Psychic Isabella is securely stored and is not accessible to third parties or employees of Psychic Isabella except for use as indicated above.</p>
       <p>What choices are available to Visitors regarding collection, use and distribution of the information?</p>
       <p>Visitors and Authorized Customers may opt out of receiving unsolicited information from or being contacted by us and/or our vendors and affiliated agencies by responding to emails as instructed, or by contacting us at</p>
       <h2>Cookies</h2>
       <p>A cookie is a string of information that a website stores on a visitor’s computer, and that the visitor’s browser provides to the website each time the visitor returns.</p>
       <h2>Are Cookies Used on the Site?</h2>
-      <p>Cookies are used for a variety of reasons. We use Cookies to obtain information about the preferences of our Visitors and the services they select. We also use Cookies for security purposes to protect our Authorized Customers. For example, if an Authorized Customer is logged on and the site is unused for more than 10 minutes, we will automatically log the Authorized Customer off. Visitors who do not wish to have cookies placed on their computers should set their browsers to refuse cookies before using https://soulmate-psychic.com and https://psychic-melissa.com, with the drawback that certain features of website may not function properly without the aid of cookies.</p>
+      <p>Cookies are used for a variety of reasons. We use Cookies to obtain information about the preferences of our Visitors and the services they select. We also use Cookies for security purposes to protect our Authorized Customers. For example, if an Authorized Customer is logged on and the site is unused for more than 10 minutes, we will automatically log the Authorized Customer off. Visitors who do not wish to have cookies placed on their computers should set their browsers to refuse cookies before using https://soulmate-psychic.com, with the drawback that certain features of website may not function properly without the aid of cookies.</p>
       <h2>Cookies used by our service providers</h2>
       <p>Our service providers use cookies and those cookies may be stored on your computer when you visit our website. You can find more details about which cookies are used in our cookies info page.</p>
-      <p>How does Psychic Melissa use login information?</p>
-      <p>Psychic Melissa uses login information, including, but not limited to, IP addresses, ISPs, and browser types, to analyze trends, administer the Site, track a user’s movement and use, and gather broad demographic information.</p>
+      <p>How does Psychic Isabella use login information?</p>
+      <p>Psychic Isabella uses login information, including, but not limited to, IP addresses, ISPs, and browser types, to analyze trends, administer the Site, track a user’s movement and use, and gather broad demographic information.</p>
       <p>What partners or service providers have access to Personally Identifiable Information from Visitors and/or Authorized Customers on the Site?</p>
-      <p>Psychic Melissa has entered into and will continue to enter into partnerships and other affiliations with a number of vendors. Such vendors may have access to certain Personally Identifiable Information on a need to know the basis for evaluating Authorized Customers for service eligibility. Our privacy policy does not cover their collection or use of this information. Disclosure of Personally Identifiable Information to comply with the law. We will disclose Personally Identifiable Information in order to comply with a court order or subpoena or a request from a law enforcement agency to release information. We will also disclose Personally Identifiable Information when reasonably necessary to protect the safety of our Visitors and Authorized Customers.</p>
+      <p>Psychic Isabella has entered into and will continue to enter into partnerships and other affiliations with a number of vendors. Such vendors may have access to certain Personally Identifiable Information on a need to know the basis for evaluating Authorized Customers for service eligibility. Our privacy policy does not cover their collection or use of this information. Disclosure of Personally Identifiable Information to comply with the law. We will disclose Personally Identifiable Information in order to comply with a court order or subpoena or a request from a law enforcement agency to release information. We will also disclose Personally Identifiable Information when reasonably necessary to protect the safety of our Visitors and Authorized Customers.</p>
       <p>How does the Site keep Personally Identifiable Information secure?</p>
       <p>All of our employees are familiar with our security policy and practices. The Personally Identifiable Information of our Visitors and Authorized Customers is only accessible to a limited number of qualified employees who are given a password in order to gain access to the information. We audit our security systems and processes on a regular basis. Sensitive information, such as credit card numbers or social security numbers, is protected by encryption protocols, in place to protect information sent over the Internet. While we take commercially reasonable measures to maintain a secure site, electronic communications and databases are subject to errors, tampering, and break-ins, and we cannot guarantee or warrant that such events will not take place and we will not be liable to Visitors or Authorized Customers for any such occurrences.</p>
       <p>How can Visitors correct any inaccuracies in Personally Identifiable Information?</p>
@@ -53,11 +48,11 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
       <h2>What happens if the Privacy Policy Changes?</h2>
       <p>We will let our Visitors and Authorized Customers know about changes to our privacy policy by posting such changes on the Site. However, if we are changing our privacy policy in a manner that might cause disclosure of Personally Identifiable Information that a Visitor or Authorized Customer has previously requested not be disclosed, we will contact such Visitor or Authorized Customer to allow such Visitor or Authorized Customer to prevent such disclosure.</p>
       <h2>Links:</h2>
-      <p>https://soulmate-psychic.com and https://psychic-melissa.com contains links to other websites. Please note that when you click on one of these links, you are moving to another website. We encourage you to read the privacy statements of these linked sites as their privacy policies may differ from ours.</p>
+      <p>https://soulmate-psychic.com contains links to other websites. Please note that when you click on one of these links, you are moving to another website. We encourage you to read the privacy statements of these linked sites as their privacy policies may differ from ours.</p>
     </div>
     <div class="sub_area" id="facebook_policy">
       <h2>Facebook Policy</h2>
-      <p>Psychic Melissa (“we,” “us,” “our”) takes its users (“user”, “you,” “your”) privacy seriously. This Privacy Policy is designed to let you know what information we collect through our Facebook App and/or Fan Page.</p>
+      <p>Psychic Isabella (“we,” “us,” “our”) takes its users (“user”, “you,” “your”) privacy seriously. This Privacy Policy is designed to let you know what information we collect through our Facebook App and/or Fan Page.</p>
       <p>We collect information in accordance with this Privacy Policy, and this Privacy Policy only applies to our information collection practices on Facebook. We intend to comply with the requirements outlined by Facebook as it pertains to Developers as outlined here <a href="https://developers.facebook.com/policy/" target="_blank" rel="noopener noreferrer">https://developers.facebook.com/policy/</a> .</p>
       <p>As required by Facebook’s Privacy Policy we have to let you know that we do not sell your data, however if we are acquired or are merged we may transfer this data. In addition, you may request the removal of your data at any time by contacting us via email but we ask that you give us a reasonable amount of time to fulfill this request once it is made.</p>
       <p>By using our Application and/or Page you agree that you are granting us the right to use, copy, display, distribute, deliver, render, and publicy perform any content that you provide to us. The use of our Application and/or Page is also prohibited in certain countries, specifically ones that have blocked the use of Facebook or where your use or our content would be prohibited.</p>
@@ -107,14 +102,14 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
     </div>
     <div class="sub_area" id="california">
       <h2>California Privacy Rights</h2>
-      <p>If you are a California resident, California Civil Code Section 1798.83 permits you to request information regarding the disclosure of your personal information by <strong>Psychic Melissa</strong> to third parties for the third parties’ direct marketing purposes. To make such a request, please send an email to contact@soulmate-psychic.com</p>
-      <p>We take great pride in the relationship of trust and we are dedicated to treating your personal information with care and respect. Pursuant to California Civil Code Section 1798.83(c)(2),<strong> Psychic Melissa</strong> does not share guests’ personal information with other companies or others outside for those parties’ direct marketing use unless a guest elects that we do so.  For more information about our privacy and data collection policies, you may wish to review our Privacy Policy.</p>
+      <p>If you are a California resident, California Civil Code Section 1798.83 permits you to request information regarding the disclosure of your personal information by <strong>Psychic Isabella</strong> to third parties for the third parties’ direct marketing purposes. To make such a request, please send an email to contact@soulmate-psychic.com</p>
+      <p>We take great pride in the relationship of trust and we are dedicated to treating your personal information with care and respect. Pursuant to California Civil Code Section 1798.83(c)(2),<strong> Psychic Isabella</strong> does not share guests’ personal information with other companies or others outside for those parties’ direct marketing use unless a guest elects that we do so.  For more information about our privacy and data collection policies, you may wish to review our Privacy Policy.</p>
       <p>If you are a California resident under the age of 18, and a registered user of any site where this policy is posted, California Business and Professions Code Section 22581 permits you to request and obtain removal of content or information you have publicly posted. To make such a request, please send an email with a detailed description of the specific content or information to <strong>contact@soulmate-psychic.com</strong>. Please be aware that such a request does not ensure complete or comprehensive removal of the content or information you have posted and that there may be circumstances in which the law does not require or allow removal even if requested.</p>
     </div>
     <div class="sub_area" id="ccpa">
       <h2>CCPA – California Consumer Privacy Act</h2>
       <h4>Definitions<br />Website</h4>
-      <p>Psychic Melissa or https://soulmate-psychic.com and https://psychic-melissa.com</p>
+      <p>Psychic Isabella or https://soulmate-psychic.com</p>
       <p>Owner (or We)</p>
       <p>Indicates the natural person(s) or legal entity that provides this Website to Users.</p>
       <p>User (or You)</p>
@@ -165,11 +160,11 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
       <p>We reserve the right to amend this privacy notice at our discretion and at any time. When we make changes to this privacy notice, we will post the updated notice on our Website and update the notice’s effective date. Your continued use of our Website following the posting of changes constitutes your acceptance of such changes.</p>
       <h4>Contact Information</h4>
       <p>If you have any questions or comments about this notice, the ways in which we collect and use your information described below and in our Privacy Policy, your choices and rights regarding such use, or wish to exercise your rights under California law, please do not hesitate to contact us at:</p>
-      <p>Website: https://soulmate-psychic.com and https://psychic-melissa.com<br />Email: contact@psychic-melissa.com</p>
+      <p>Website: https://soulmate-psychic.com<br />Email: contact@psychic-Isabella.com</p>
     </div>
     <div class="sub_area" id="coppa">
       <h2>COPPA – Children’s Online Privacy Policy</h2>
-      <p>Psychic Melissa is focused on ensuring the security of kids who utilize our site. This Children’s Online Privacy Policy clarifies our information gathering, disclosure, and parental consent practices with respect to personal information provided by children under the age of 13 (“child” or “children”), and uses terms that are defined in our Privacy Policy. It is in accordance with the U.S. Children’s Online Privacy Protection Act (“COPPA”), and outlines our practices in the United States and Latin America with respect to children’s personal information.</p>
+      <p>Psychic Isabella is focused on ensuring the security of kids who utilize our site. This Children’s Online Privacy Policy clarifies our information gathering, disclosure, and parental consent practices with respect to personal information provided by children under the age of 13 (“child” or “children”), and uses terms that are defined in our Privacy Policy. It is in accordance with the U.S. Children’s Online Privacy Protection Act (“COPPA”), and outlines our practices in the United States and Latin America with respect to children’s personal information.</p>
       <h4>Collection of Information, Use of it and Communication with Parents</h4>
       <p>Children can investigate the site, and can view and print content without giving any individual data other than the automatic collection of device “persistent identifiers,” examined in more detail beneath. Our site just gathers limited individual data if the child registers to become a member or presents a question or request to us. In the event, the data gathered does not permit contact with him or her or his or her gadget (counting, for instance, collected data), we may utilize and uncover it for any reason, to the degree allowed by applicable law.</p>
       <h4>Registration Process</h4>
@@ -182,9 +177,9 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
       <p>We additionally require the child to give a parent’s email address. We utilize the parent’s email address to look for parental consent for the child’s enrollment and to clarify what data we are gathering, how we plan to utilize it, and how the parent can renounce consent or demand whenever that we expel the record and erase any individual data gathered from the child (counting the parental contact data).</p>
       <p>In the event, that you believe your child is taking part in an action that gathers individual data and you or another parent/guardian have NOT consented, or in the event that you no longer wish for your child to take an interest as an individual from the site, please don’t hesitate to reach us at test@test.com, and we will erase your child’s record and the parental contact data.</p>
       <h4>Content Generated by Child</h4>
-      <p>Certain exercises on our site and applications permit the child to make or control content and save it. Some of these exercises don’t oblige children to give any individual data and during this time we may not bring about notice to the parents. In the event, when an activity asks the child to provide individual data, we will either ask the submitter to delete the information, or we will look for verifiable parental consent by email for collection. If in addition to collecting information that includes personal information, Psychic Melissa also plans to post the content publicly or share it with a third party for the third party’s own use, we will obtain a higher level of parental consent.</p>
+      <p>Certain exercises on our site and applications permit the child to make or control content and save it. Some of these exercises don’t oblige children to give any individual data and during this time we may not bring about notice to the parents. In the event, when an activity asks the child to provide individual data, we will either ask the submitter to delete the information, or we will look for verifiable parental consent by email for collection. If in addition to collecting information that includes personal information, Psychic Isabella also plans to post the content publicly or share it with a third party for the third party’s own use, we will obtain a higher level of parental consent.</p>
       <h4>Persistent Identifiers</h4>
-      <p>At the point when children collaborate with the site, certain technical data may consequently be gathered, both to make our site more interesting and helpful and for different internal purposes identified with our business. Examples of data that is automatically gathered include: the type of computer operating system, the device’s IP address or mobile device identifier, the web browser, the frequency with which the child visits various parts of our site, and information regarding the online or mobile service provider. This data is gathered utilizing techniques, for example, flash cookies, web beacons, and other unique identifiers (which we define under the “Cookies and Other Technologies” section of our general Privacy Policy). This data might be gathered by us or by a third party. Persistent identifier information is used by Psychic Melissa for the sole purpose of providing support for our internal operations, including in order to:</p>
+      <p>At the point when children collaborate with the site, certain technical data may consequently be gathered, both to make our site more interesting and helpful and for different internal purposes identified with our business. Examples of data that is automatically gathered include: the type of computer operating system, the device’s IP address or mobile device identifier, the web browser, the frequency with which the child visits various parts of our site, and information regarding the online or mobile service provider. This data is gathered utilizing techniques, for example, flash cookies, web beacons, and other unique identifiers (which we define under the “Cookies and Other Technologies” section of our general Privacy Policy). This data might be gathered by us or by a third party. Persistent identifier information is used by Psychic Isabella for the sole purpose of providing support for our internal operations, including in order to:</p>
       <ul>
       <li>Ensure that the site functions properly;</li>
       <li>Enable us to conduct research and analysis to understand, address and improve the use and performance of the site; and</li>
@@ -193,11 +188,11 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
       <h4>What Child’s Information is Visible on the Site?</h4>
       <p>We strictly restrict the amount of information freely available for individual who is known to us as a child. When a child posts any type of content on the site, only the age and the content is visible to others. The child’s username is not posted with this submitted content on our site. Despite the fact that the child may create a profile for his or her record (which incorporates the username, password, birth month and year, and parent’s email address), no part of the child’s profile other than the child’s age is openly visible.</p>
       <h4>What Child’s Information is Shared with Others?</h4>
-      <p>We don’t uncover to outsiders any child’s personal information that we gather other than as follows, in compliance with applicable law: (a) with a parent’s authorization, (b) as required by any relevant law, (c) to third-party services who help us work or deal with the site, (d) as part of aggregated data shared with third-party service providers, our Board of Directors, funders and different accomplices, (e) to conform to legal process, (f) to respond to legislative solicitations, (g) to implement our Terms of Service, (h) to ensure our operations, (i) for assistance in fraud detection and prevention; (j) to secure the rights, protection, well being or property of Psychic Melissa, your child or others, (k) to allow us to pursue available remedies or limit the damages that we may sustain, and (l) in connection with a disposition of all or a considerable part of our business, resources or stock, for example, a deal, merger, consolidation, redesign, joint venture, task, or bankruptcy or comparable procedures.</p>
+      <p>We don’t uncover to outsiders any child’s personal information that we gather other than as follows, in compliance with applicable law: (a) with a parent’s authorization, (b) as required by any relevant law, (c) to third-party services who help us work or deal with the site, (d) as part of aggregated data shared with third-party service providers, our Board of Directors, funders and different accomplices, (e) to conform to legal process, (f) to respond to legislative solicitations, (g) to implement our Terms of Service, (h) to ensure our operations, (i) for assistance in fraud detection and prevention; (j) to secure the rights, protection, well being or property of Psychic Isabella, your child or others, (k) to allow us to pursue available remedies or limit the damages that we may sustain, and (l) in connection with a disposition of all or a considerable part of our business, resources or stock, for example, a deal, merger, consolidation, redesign, joint venture, task, or bankruptcy or comparable procedures.</p>
       <h4>Parents Control over Child’s Information</h4>
       <p>Parents / Guardians may at any time access or change the individual data that we have gathered online from their children. Parents may likewise solicit us to stop accumulation of information from their children, or to make no further utilization of, or erase, the individual data we have gathered online from their children, in which case, the child’s record will be erased. Parents have to reach us at test@test.com, or by writing to us at the address gave underneath with their request. For your child’s protection, we may need to check your identity before actualizing your demand. We will attempt to agree to your demand when reasonably practicable.</p>
       <h4>How Parents may Raise Questions and Concerns?</h4>
-      <p>If a parent has any questions or concerns about his or her child’s use of the site, we encourage the parent to contact us at contact@psychic-melissa.com</p>
+      <p>If a parent has any questions or concerns about his or her child’s use of the site, we encourage the parent to contact us at contact@psychic-Isabella.com</p>
     </div>
     <div class="sub_area" id="confidentiality">
       <h2>Confidentiality Disclosure</h2>
@@ -227,7 +222,12 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
       <p><strong>Termination</strong></p>
       <p>This Agreement will be effective as of the Effective Date and will continue for unless terminated by each Party upon prior written the notice.</p>
     </div>
+    </div>
   </div>
+</div>
+
+<div class="disclaimer-text" style="color:white;">
+ClickBank is the retailer of products on this site. CLICKBANK® is a registered trademark of Click Sales, Inc., a Delaware corporation located at 1444 S. Entertainment Ave., Suite 410 Boise, ID 83709, USA and used by permission. ClickBank's role as retailer does not constitute an endorsement, approval or review of these products or any claim, statement or opinion used in promotion of these products.
 </div>
 
 
@@ -237,6 +237,9 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
     padding: 15px;
     border-radius: 8px;
     margin-top: 15px;
+}
+.container{
+  background-color:transparent;
 }
 
 h2 {
@@ -258,10 +261,7 @@ text-align:center;
 }
 
 </style>
+<?php
+include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/footer.php';
 
-
-
-
-
-
-<?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/footer.php'; ?>
+?>

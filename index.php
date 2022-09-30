@@ -7,6 +7,12 @@
     <div class="logo-wrapper"><img src="images/logo2-222.png" loading="lazy" alt=""></div>
   </div> 
   <div class="body-container w-container">
+  
+  <div class="d-flex flex-row flex-wrap align-items-center position-relative fs-4" style="justify-content:space-between;padding-left:15px;padding-right:15px;">
+  <a href="/dashboard.php" style="color:white;text-decoration:none;">Dashboard</a> 
+  <a href="/contact.php" style="color:white;text-decoration:none;">Contact</a>
+  </div>
+
     <div class="header-section">
       <h1 class="headline"><span class="bolded-headline">PSYCHIC PORTRAIT OF YOUR SOULMATE</span><br> <font color="#ff33f9 "> BY ISABELLA</font> </h1>
       <div class="video w-embed w-script">
@@ -1041,8 +1047,8 @@ var product_code = $('.product_code').text()
             </div>
           </div>
           <div class="testimonial-bubble">
-            <div class="testimonial-headline">&quot;Second time and seeing massive returns from Alice&quot;</div>
-            <div class="testimonial-paragraph">It’s only been almost a week since I purchased this spell. I won £419 from just betting £20 on a sport I didn’t really study on. It’s my second spell that I have purchased from Alice, she is truly god gifted talented. I can’t wait for the full 3-4 weeks manifestation :)</div>
+            <div class="testimonial-headline">AMAZING!</div>
+            <div class="testimonial-paragraph">I went to over 20 psychics so far but Isabella is the best by far!</div>
             <div class="avatar-wrapper"><img src="images/testimonial3.jpg" loading="lazy" alt="" class="image">
               <div class="div-block">
                 <div class="name-wrapper">
@@ -1068,14 +1074,16 @@ var product_code = $('.product_code').text()
 
     <div class="container disclaimer w-container">
       <div class="disclaimer-text">
-      <div class="paragraph">
-For Product Support, please contact the seller <a href="mailto:contact@soulmate-psychic.com">HERE</a><hr>
-For Order Support, please contact ClickBank <a target="_blank" href="https://clkbank.com">HERE</a>
-</div>
-        <hr>
+        <div class="paragraph" style="margin-top:15px;">
+          To see your soulmate drawing, <a href="/dashboard.php">login here</a><br>
+          For Product Support, please contact the seller <a href="mailto:contact@soulmate-psychic.com">HERE</a><br>
+          For Order Support, please contact ClickBank <a target="_blank" href="https://clkbank.com">HERE</a>
+        </div>
+            <hr style="background-color: black;">
 
       ClickBank is the retailer of products on this site. CLICKBANK® is a registered trademark of Click Sales, Inc., a Delaware corporation located at 1444 S. Entertainment Ave., Suite 410 Boise, ID 83709, USA and used by permission. ClickBank's role as retailer does not constitute an endorsement, approval or review of these products or any claim, statement or opinion used in promotion of these products.
       </div>
+      <p class="footer__copyright" style="text-align:center;"><a href="terms-and-conditions.php">Terms & Conditions</a> | <a href="privacy-policy.php">Privacy Policy</a> | <a href="terms-and-conditions.php#refunds">Refund Policy</a> </p>
     </div>
   </div>
 
