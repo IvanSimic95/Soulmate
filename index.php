@@ -932,8 +932,7 @@ var product_code = $('.product_code').text()
       <p class="sub-paragraph">I am <b>Isabella</b>, the most renowned psychic artist in the world, and I guarantee that I will find your true soulmate in this lifetime and reunite both of you, as well as make sure that you two will live a life full of joy and fulfillment on all plans.</p>
       <div class="w-row">
         <div class="w-col w-col-7 w-col-small-small-stack w-col-tiny-tiny-stack"><center> <img src="/images/polaroid2.png" loading="lazy" srcset="/images/polaroid2.png 500w, /images/polaroid2.png 571w" sizes="100vw" alt="" class="image-mobile"> </center>
-          <div class="about mobile">&quot;My heritage extends from a centuries-old family line of spiritual healers. I learned how to master my power from my great aunt, who like myself was a spiritual healer, psychic medium and empath!&quot;<br><strong>- Isabella </strong></div>
-	   
+      <br>
 		  <p  class="sub-paragraph"><b>Do you want to know who your Soulmate is? What is the character of this person? Where and when you will meet them?   </b> </p> 
 		  <br>
 		  <center> <b>  <p class="sub-paragraph">  You can find all the answers today! </p>  </b> </center>
