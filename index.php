@@ -632,13 +632,13 @@ color:white;
 <form id="ajax-form" class="form-order" name="order_form" action="javascript:void(0)" method="post" data-rewardful>
 
 <div class="form-floating form-floating-icon mb-2">
-        <input class="form-control" id="fullname" type="text" name="form_name" placeholder="First & Last Name" required="">
+        <input class="form-control" id="fullname" type="text" name="form_name" placeholder="First & Last Name" required="" pattern="[a-zA-Z]+" title="No numbers or special characters allowed!">
         <span class="icon-inside"><i class="fas fa-user"></i></span>
         <label for="fullname">First &amp; Last Name</label>
 </div>
 
 <div class="form-floating form-floating-icon mb-2">
-        <input class="form-control" id="email" type="email" name="form_email" placeholder="Your Email" required="">
+        <input class="form-control" id="email" type="email" name="form_email" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required="" title="Please enter correct email">
         <span class="icon-inside"><i class="fas fa-envelope"></i></span>
         <label for="email">Your Email</label>
 </div>
