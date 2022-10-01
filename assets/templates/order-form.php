@@ -48,21 +48,13 @@
     $s2 = "0";
   }
   ?>
- <script>
-  function checkEntry(e) {
-    var k;
-    document.all ? k = e.keyCode : k = e.which;
-    return ((k > 64 && k < 91) || (k > 96 && k < 123) || k == 8 || k == 32);
-    }
 
-    
-</script>
 
 <form id="ajax-form" class="form-order" name="order_form" action="javascript:void(0)" method="post">
   
   <div class="form_box">
     <label for="form_name">Your First and Last Name*</label>
-    <input class="customer_name" type="text" id="fullname" name="form_name" value="" required="" onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32) || (event.charCode == 222))'>
+    <input class="customer_name" type="text" id="fullname" name="form_name" value="" required>
   </div>
   <div class="form_box">
 <label for="form_email">Your Email*</label>

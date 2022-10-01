@@ -638,7 +638,7 @@ color:white;
 </div>
 
 <div class="form-floating form-floating-icon mb-2">
-        <input class="form-control" id="email" type="email" name="form_email" placeholder="Your Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required="" title="Please enter correct email">
+        <input class="form-control" id="email" type="email" name="form_email" placeholder="Your Email" required="">
         <span class="icon-inside"><i class="fas fa-envelope"></i></span>
         <label for="email">Your Email</label>
 </div>
