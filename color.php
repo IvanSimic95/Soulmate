@@ -91,7 +91,6 @@ $_SESSION['fbproduct'] = $row['order_product'];
 }else{
   if(isset($_GET['order_ID'])){
 $ord = $_GET['order_ID'];
-$order_ID = $ord;
 $sql = "SELECT * FROM `orders` WHERE `order_id` = '$ord' ORDER BY `order_id` DESC LIMIT 1";
 $result = $conn->query($sql);
 $count = $result->num_rows;
