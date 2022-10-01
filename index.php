@@ -632,7 +632,7 @@ color:white;
 <form id="ajax-form" class="form-order" name="order_form" action="javascript:void(0)" method="post" data-rewardful>
 
 <div class="form-floating form-floating-icon mb-2">
-        <input class="form-control" id="fullname" type="text" name="form_name" placeholder="First & Last Name" required="" pattern="[a-zA-Z']+" title="No numbers or special characters allowed!">
+        <input class="form-control" id="fullname" type="text" name="form_name" placeholder="First & Last Name" required="" pattern="[a-zA-Z]+" title="No numbers or special characters allowed!">
         <span class="icon-inside"><i class="fas fa-user"></i></span>
         <label for="fullname">First &amp; Last Name</label>
 </div>
