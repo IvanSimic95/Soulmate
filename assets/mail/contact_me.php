@@ -24,18 +24,18 @@ $email_address = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 
-$email_subject = "$subject:  $name";
-$email_body = "You have received a new message from your soulmate-psychic.com contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nSubject: $subject\n\nMessage:\n$message";
+$email_subject = "Order #".$subject.":  ".$name;
+$email_body = "You have received a new message from your soulmate-psychic.com contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nSubject: $subject\n\nMessage:\n$message";
 
 // Create a message
 $message = (new Swift_Message($email_subject))
-  ->setFrom(['contact@melissa-psychic.com' => 'Ivan'])
+  ->setFrom(['contact@melissa-psychic.com' => 'Melissa'])
   ->setTo(['contact@soulmate-psychic.com'])
   ->setReplyTo([$email_address])
   ->setBody($email_body)
   ;
 
 // Send the message
-$result = $mailer->send($email_body);
-		
+$result = $mailer->send($message);
+echo $result;
 ?>
