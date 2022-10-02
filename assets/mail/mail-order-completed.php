@@ -266,7 +266,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 					</script>
 					<script>
 							Talk.ready.then(function() {
-								var me = new Talk.User("soulmateAdmin");
+								var me = new Talk.User("soulmateAdminNew");
 								var other = new Talk.User(<?php echo $orderID; ?>);
 								window.talkSession = new Talk.Session({
 										appId: "ArJWsup2",
@@ -341,7 +341,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 							<script type="text/javascript">
 							let data<?php echo $orderID; ?>image =  [
 									{
-										"sender": "soulmateAdmin",
+										"sender": "soulmateAdminNew",
 										<?php echo $token; ?>,
 										"type": "UserMessage"
 									}
@@ -399,7 +399,7 @@ $noter = sb_add_note($orderChatID, 1, "Order Finished", "Image Sent");
 				<script type="text/javascript">
 				let data<?php echo $orderID; ?>text =  [
 						{
-							"sender": "soulmateAdmin",
+							"sender": "soulmateAdminNew",
 							"text": "<?php echo $email_text; ?>",
 							"type": "UserMessage"
 						}

@@ -17,7 +17,7 @@
 <script>
     Talk.ready.then(function() {
         var me = new Talk.User({
-            id: "soulmateAdmin",
+            id: "soulmateAdminNew",
             name: "Soulmate Psychic",
             email: "contact@soulmate-psychic.com",
             photoUrl: "/assets/img/avatars/admin.png",

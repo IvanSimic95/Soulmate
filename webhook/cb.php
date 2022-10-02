@@ -138,7 +138,7 @@ $logaArray[] = $result;
 $ch2 = curl_init();
 $data2 = [
 "subject" => "Order #".$mOrderID." | ".$productFullTitle,
-"participants" => ["soulmateAdmin", $mOrderID],
+"participants" => ["soulmateAdminNew", $mOrderID],
 "photoUrl" => $productImage,
 "custom" => ["status" => "Paid"]
 ];
@@ -217,7 +217,7 @@ $msg_date = date('Y-m-d H:i:s');
           $ch = curl_init();
 					$data = [[
 					"text" => $finalMessage,
-					"sender"  => "soulmateAdmin",
+					"sender"  => "soulmateAdminNew",
 					"type" => "UserMessage"
 					]];
 					$data1 = json_encode($data);

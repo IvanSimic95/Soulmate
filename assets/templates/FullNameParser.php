@@ -61,7 +61,7 @@ class FullNameParser {
       'Pvt.' => array('private'),
       'Cpl.' => array('corporal'),
       'Sgt.' => array('sargent'),
-      'Adm.' => array('administrative','soulmateAdmin','administrater'),
+      'Adm.' => array('administrative','soulmateAdminNew','administrater'),
       'Maj.' => array('major'),
       'Capt.' => array('captain'),
       'Cmdr.' => array('commander'),

@@ -130,7 +130,7 @@ $logArray[] = $result;
 $ch2 = curl_init();
 $data2 = [
 "subject" => "Order #".$orderId." | ".$order_product_nice,
-"participants" => ["soulmateAdmin", $orderId],
+"participants" => ["soulmateAdminNew", $orderId],
 "custom" => ["status" => "Paid"]
 ];
 $data22 = json_encode($data2);
@@ -160,7 +160,7 @@ $logArray[] = $result2;
 	  "type" => "SystemMessage"
   ],
   [
-	  "sender"  => "soulmateAdmin",
+	  "sender"  => "soulmateAdminNew",
 	  "text" => $message,
 	  "type" => "UserMessage"
   ]];

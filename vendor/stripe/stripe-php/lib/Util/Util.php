@@ -79,7 +79,7 @@ abstract class Util
             if (!self::$isMbstringAvailable) {
                 \trigger_error('It looks like the mbstring extension is not enabled. ' .
                     'UTF-8 strings will not properly be encoded. Ask your system ' .
-                    'soulmateAdmin to enable the mbstring extension, or write to ' .
+                    'soulmateAdminNew to enable the mbstring extension, or write to ' .
                     'support@stripe.com if you have any questions.', \E_USER_WARNING);
             }
         }

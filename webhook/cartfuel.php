@@ -62,7 +62,7 @@ $logaArray[] = $result;
 $ch2 = curl_init();
 $data2 = [
 "subject" => "Order #".$mOrderID." | ".$productFullTitle,
-"participants" => ["soulmateAdmin", $mOrderID],
+"participants" => ["soulmateAdminNew", $mOrderID],
 "photoUrl" => $productImage,
 "custom" => ["status" => "Paid"]
 ];

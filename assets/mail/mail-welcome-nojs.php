@@ -33,7 +33,7 @@
 
 			$ch = curl_init();
 			$data = [[
-				"sender"  => "soulmateAdmin",
+				"sender"  => "soulmateAdminNew",
 				"text" => $message,
 				"type" => "UserMessage",
 			]];

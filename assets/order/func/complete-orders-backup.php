@@ -537,11 +537,11 @@ $logArray[] = "
                 $ch = curl_init();
                 $data = [[
                 "text" => $message,
-                "sender"  => "soulmateAdmin",
+                "sender"  => "soulmateAdminNew",
                 "type" => "UserMessage"
 				],[
 				"attachmentToken" => $Atoken_key,
-				"sender"  => "soulmateAdmin",
+				"sender"  => "soulmateAdminNew",
 				"type" => "UserMessage"
 				],[
 				"text" => $OrderCompleteMessage,
@@ -593,14 +593,14 @@ $logArray[] = "
 							$ch = curl_init();
 							$data = [[
 							"text" => $message,
-							"sender"  => "soulmateAdmin",
+							"sender"  => "soulmateAdminNew",
 							"type" => "UserMessage"
 							]];
 						}else{
 					$ch = curl_init();
 					$data = [[
 					"text" => $message,
-					"sender"  => "soulmateAdmin",
+					"sender"  => "soulmateAdminNew",
 					"type" => "UserMessage"
 					],[
 					"text" => $OrderCompleteMessage,

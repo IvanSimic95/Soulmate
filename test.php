@@ -1,104 +1,42 @@
-<?php
-$title = "Color Upgrade | Isabella Psychic";
-$description = "Readings";
-$menu_order="men_0_0";
+<script>
+    (function(t,a,l,k,j,s){
+    s=a.createElement('script');s.async=1;s.src="https://cdn.talkjs.com/talk.js";a.head.appendChild(s)
+    ;k=t.Promise;t.Talk={v:3,ready:{then:function(f){if(k)return new k(function(r,e){l.push([f,r,e])});l
+    .push([f])},catch:function(){return k&&new k()},c:l}};})(window,document,[]);
+</script>
+<div class="body-container w-container">
+    <div class="header-section">
+ 
+        <h1 class="headline"><span class="bolded-headline">Order #512849</span><br> </h1>
+      
 
-include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; 
-?>
-
-
-<div class="general_section">
-  <div class="container">
-    <div class="title_area"><h1>Contact Us</h1></div>
-    <div class="row">
-    <div class="col-sm-6">
-        <div class="wrap-white">
-
-            <h1>Frequently Asked Questions</h1>
-    </div>
-<?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/faq.php'; ?>
-
-  </div>
-<div class="col-sm-6">
-<div class="wrap-white">
-
-
-            <h2>Send us a Message!</h2>
-
-			<div id="sb-tickets"></div>
- </div>
- <div class="wrap-white">
-	<div class="contact_form">
-    <form class="contact" name="sentMessage" id="contactForm">
-        <div class="form_box">
-            <label for="contact_name">Your Name*</label>
-            <input type="text" name="contact_name" id="name" class="form-control" required>
-            <p class="help-block text-danger"></p>
+        <div class="chat_box" style="width: 100%; margin: 0px; height: 700px;">
+            
+            <div class="chat_loader" id="talkjs-container-512849" style="width: 100%; margin: 0px; height: 700px;">
+                <i>Loading chat...</i>
+            </div>
         </div>
-        <div class="form_box">
-            <label for="contact_email">Your Email*</label>
-            <input type="email" name="contact_email" id="email" class="form-control" required>
-            <p class="help-block text-danger"></p>
-        </div>
-        <div class="form_box">
-            <label for="contact_subject">ORDER ID (if applicable) </label>
-            <input type="tel" name="contact_subject" id="subject" class="form-control">
-            <p class="help-block text-danger"></p>
-        </div>
-        <div class="form_box">
-            <label for="contact_message">Message</label>
-            <textarea name="contact_message" id="message" rows="8" cols="80"></textarea>
-            <p class="help-block text-danger"></p>
-        </div>
-        <div id="success"></div>
-        <div class="form_box">
-            <input type="submit" name="contact_submit" value="Submit Message">
-        </div>
-    </form>
-	</div>
- </div>
-</div>
-</div>
-    </div>
-  </div>
-</div>
 
-<div class="disclaimer-text" style="color:white;">
-ClickBank is the retailer of products on this site. CLICKBANK® is a registered trademark of Click Sales, Inc., a Delaware corporation located at 1444 S. Entertainment Ave., Suite 410 Boise, ID 83709, USA and used by permission. ClickBank's role as retailer does not constitute an endorsement, approval or review of these products or any claim, statement or opinion used in promotion of these products.
-</div>
+        <a href="/dashboard.php" style="margin-top:20px;text-decoration:none;" type="submit" name="form_submit" id="submitbtn" value="Place an order">Back To Orders!<br><span class="btn-sub-text">View a List of Your Orders</span></a>
+<script>
+Talk.ready.then(function() {
+var me = new Talk.User({
+  id: 'soulmateAdminNewNew',
+  name: 'Isabella',
+  email: 'contact@soulmate-psychic.com',
+  photoUrl: 'https://soulmate-psychic.com/assets/img/avatars/admin.png',
+  role: 'admin',
+});
+var other = new Talk.User(512849);
+window.talkSession = new Talk.Session({
+    appId: "ArJWsup2",
+    me: other
+});
+var conversation = talkSession.getOrCreateConversation("512849");
+conversation.setParticipant(other);
+conversation.setParticipant(me);
 
-
-<style>
-.title_area, .paragraph_area, .sub_area{
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    margin-top: 15px;
-}
-.container{
-  background-color:transparent;
-}
-
-h2 {
-    font-weight: bold;
-    background: -webkit-linear-gradient(#d130eb,#4a30eb 80%,#2b216c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.title_area > h1 {
-margin-bottom:0;
-    font-weight: bold;
-    background: -webkit-linear-gradient(#d130eb,#4a30eb 80%,#2b216c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.title_area{
-text-align:center;
-}
-
-</style>
-<?php
-include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/footer.php';
-
-?>
+var chatbox = window.talkSession.createChatbox(conversation);
+chatbox.mount(document.getElementById("talkjs-container-512849"));
+})   
+</script>

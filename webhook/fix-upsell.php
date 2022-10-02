@@ -100,7 +100,7 @@ echo $result;
 $ch2 = curl_init();
 $data2 = [
 "subject" => "Order #".$orderID." | ".$product,
-"participants" => ["soulmateAdmin", $orderID],
+"participants" => ["soulmateAdminNew", $orderID],
 "custom" => ["status" => "Paid"]
 ];
 $data22 = json_encode($data2);
@@ -129,7 +129,7 @@ echo $result2;
 	  "type" => "SystemMessage"
   ],
   [
-	  "sender"  => "soulmateAdmin",
+	  "sender"  => "soulmateAdminNew",
 	  "text" => $message,
 	  "type" => "UserMessage"
   ]];

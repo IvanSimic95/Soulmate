@@ -349,7 +349,7 @@
                 $ch = curl_init();
                 $data = [[
                   "attachmentToken" => $token_key2,
-                  "sender"  => "soulmateAdmin",
+                  "sender"  => "soulmateAdminNew",
                   "type" => "UserMessage",
                 ]];
 
@@ -395,7 +395,7 @@
 
           $ch = curl_init();
           $data = [[
-            "sender"  => "soulmateAdmin",
+            "sender"  => "soulmateAdminNew",
             "text" => $email_text,
             "type" => "UserMessage",
           ]];

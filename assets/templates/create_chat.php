@@ -96,7 +96,7 @@ $signature = hash_hmac('sha256', strval($orderID), 'sk_live_Ncow50B9RdRQFeXBsW45
           lastOrder: "<?php echo $orderID; ?>"
           }
       });
-      var me = new Talk.User("soulmateAdmin");
+      var me = new Talk.User("soulmateAdminNew");
       window.talkSession = new Talk.Session({
           appId: "ArJWsup2",
           me: other,

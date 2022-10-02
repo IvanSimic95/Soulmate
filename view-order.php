@@ -62,7 +62,7 @@ if($result->num_rows == 0) {
         <a href="/dashboard.php" style="margin-top:20px;text-decoration:none;" type="submit" name="form_submit" id="submitbtn" value="Place an order">Back To Orders!<br><span class="btn-sub-text">View a List of Your Orders</span></a>
 <script>
 Talk.ready.then(function() {
-var me = new Talk.User("soulmateAdmin");
+var me = new Talk.User("soulmateAdminNew");
 var other = new Talk.User(<?php echo $order; ?>);
 window.talkSession = new Talk.Session({
     appId: "ArJWsup2",
