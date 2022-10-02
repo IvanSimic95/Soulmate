@@ -3,7 +3,7 @@
 require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 
 // Create the Transport
-$transport = (new Swift_SmtpTransport('ssl://173.194.65.108', 465))
+$transport = (new Swift_SmtpTransport('smtp.gmail.com', 465, "ssl"))
   ->setUsername('contact@melissa-psychic.com')
   ->setPassword('Dadada123!')
 ;
