@@ -107,7 +107,15 @@ margin-bottom:0;
 text-align:center;
 }
 
+
+
 </style>
+
+<!--contact js file-->
+<script type="text/javascript" src="/assets/js/contact_me.js"></script>
+<!--jqBootstrapValidation js file-->
+<script src="/assets/js/jqBootstrapValidation.js"></script>
+
 <?php
 include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/footer.php';
 
