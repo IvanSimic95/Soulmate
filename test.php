@@ -1,12 +1,5 @@
 
 <?php
-    // Check for empty fields
-		if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['message'])	||
-				   !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
-				   {
-					echo "No arguments Provided!";
-					return false;
-				   }
 
 				   require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 
@@ -37,5 +30,5 @@ $message = (new Swift_Message($email_subject))
 
 // Send the message
 $result = $mailer->send($message);
-		
+		echo $result;
 ?>
