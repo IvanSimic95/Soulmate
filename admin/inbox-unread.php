@@ -31,7 +31,7 @@ $signature = hash_hmac('sha256', 'soulmateAdmin', 'sk_live_Ncow50B9RdRQFeXBsW45c
    Talk.ready.then(function() {
      var admin = new Talk.User({
          id: "soulmateAdmin",
-         name: "Melissa",
+         name: "Isabella",
          email: "contact@soulmate-psychic.com",
          photoUrl: "/assets/img/avatars/admin.png",
          role: "soulmateAdmin"
