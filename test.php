@@ -22,12 +22,11 @@ $mailer = new Swift_Mailer($transport);
 $name = "ivan";
 $email_address = "email@isimic.com";
 $subject = "11223344";
-$message = "this is a test message";
+$cmessage = "this is a test message";
 
-$email_subject = "$subject:  $name";
-$email_body = "You have received a new message from your soulmate-psychic.com contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nSubject: $subject\n\nMessage:\n$message";
-echo $email_body;
-echo $email_subject;
+$email_subject = $subject.":  ".$name;
+$email_body = "You have received a new message from your soulmate-psychic.com contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nSubject: $subject\n\nMessage:\n$cmessage";
+
 // Create a message
 $message = (new Swift_Message($email_subject))
   ->setFrom(['contact@melissa-psychic.com' => 'Ivan'])
@@ -37,6 +36,6 @@ $message = (new Swift_Message($email_subject))
   ;
 
 // Send the message
-$result = $mailer->send($email_body);
+$result = $mailer->send($message);
 		
 ?>
