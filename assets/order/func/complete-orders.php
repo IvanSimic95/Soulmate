@@ -684,7 +684,7 @@ $logArray[] = "
 				
 			}elseif($image_send == "1" && $text_send == "0"){ // Send Only Image
 				$message = $generalOrderNoReading;
-
+				$message = str_replace("%FIRSTNAME%", $fName, $message);
 // define image name and new path
 $rootDir = $_SERVER['DOCUMENT_ROOT'];
 $ext = ".jpg";
