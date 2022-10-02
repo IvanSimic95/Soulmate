@@ -1,6 +1,14 @@
-<?php
 
-require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
+<?php
+    // Check for empty fields
+		if(empty($_POST['name']) || empty($_POST['email']) || empty($_POST['message'])	||
+				   !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
+				   {
+					echo "No arguments Provided!";
+					return false;
+				   }
+
+				   require $_SERVER['DOCUMENT_ROOT'].'/vendor/autoload.php';
 
 // Create the Transport
 $transport = (new Swift_SmtpTransport('ssl://smtp.gmail.com', 465))
@@ -11,15 +19,24 @@ $transport = (new Swift_SmtpTransport('ssl://smtp.gmail.com', 465))
 // Create the Mailer using your created Transport
 $mailer = new Swift_Mailer($transport);
 
+$name = "ivan";
+$email_address = "email@isimic.com";
+$subject = "11223344";
+$message = "this is a test message";
+
+$email_subject = "$subject:  $name";
+$email_body = "You have received a new message from your soulmate-psychic.com contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nSubject: $subject\n\nMessage:\n$message";
+echo $email_body;
+echo $email_subject;
 // Create a message
-$message = (new Swift_Message('Test 123'))
+$message = (new Swift_Message($email_subject))
   ->setFrom(['contact@melissa-psychic.com' => 'Ivan'])
   ->setTo(['contact@soulmate-psychic.com'])
-  ->setReplyTo(['ivan.simic2903@gmail.com'])
-  ->setBody('Here is the message itself')
+  ->setReplyTo($email_address)
+  ->setBody($email_body)
   ;
 
 // Send the message
-$result = $mailer->send($message);
-echo $result;
+$result = $mailer->send($email_body);
+		
 ?>
