@@ -983,7 +983,9 @@ var product_code = $('.product_code').text()
     </div>
     <div class="container w-container">
       <h1 class="headline dark-subheader">Testimonials from Verified Clients:</h1>
-      <p class="sub-paragraph">2,244+ Verified 5* Reviews</p>
+  
+	 <br> <center><img src="/images/isap3.jpg"><br> <br> 
+           <p class="sub-paragraph">2,244+ Verified 5* Reviews</p>
       <div class="columns w-row">
         <div class="w-col w-col-6">
           <div class="testimonial-wrapper">
