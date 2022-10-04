@@ -87,6 +87,6 @@ $errorDisplay .= "Any missing variable = script can't fix up chat!";
 </div>
 <?php
 
-}
+}}
 
 ?>
