@@ -1,6 +1,6 @@
 <?php
 $errorDisplay = "";
-
+include_once $_SERVER['DOCUMENT_ROOT'].'/config/vars.php';
 
 isset($_GET['order']) ? $order_ID = $_GET['order']    : $errorDisplay .= " Missing Order ID <br>";
 
