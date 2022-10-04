@@ -61,7 +61,7 @@ $spiritWeeklyHeader = "Dear %FIRSTNAME%\n\nThis is your weekly message from your
 $OrderProcessingMessage = "Your Order status is now set to *Processing*!";
 
 $OrderCompleteMessage = "Your Order status is now set to *Complete*!";
-$ContinueConvoMsg = "If you want to chat with Melissa, simply reply to this conversation!";
+$ContinueConvoMsg = "If you want to chat with Isabella, simply reply to this conversation!";
 //END Order Messages
 
 //Save to order log function
