@@ -139,7 +139,7 @@ text-align: center!important;
 </style>
 <script>
                     function buttonClicked(conversationId) {
-                        var me = new Talk.User("soulmateAdmin");
+                        var me = new Talk.User("soulmateAdminNew");
                         var other = conversationId;
                         window.talkSession = new Talk.Session({
                             appId: "ArJWsup2",
