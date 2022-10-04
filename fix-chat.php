@@ -2,22 +2,38 @@
 $errorDisplay = "";
 
 
-isset($_GET['order']) ? $orderID        = $_GET['order']    : $errorDisplay .= " Missing Order ID <br>";
-isset($_GET['order']) ? $first_name     = $_GET['name']     : $errorDisplay .= " Missing Name <br>";
-isset($_GET['order']) ? $order_email    = $_GET['email']    : $errorDisplay .= " Missing Email <br>";
-isset($_GET['order']) ? $product        = $_GET['product']  : $errorDisplay .= " Missing Product <br>";
-isset($_GET['order']) ? $codename       = $_GET['codename'] : $errorDisplay .= " Missing Codename <br>";
+isset($_GET['order']) ? $order_ID = $_GET['order']    : $errorDisplay .= " Missing Order ID <br>";
+
+$sql = "SELECT * FROM `orders` WHERE `order_id` = '$order_ID' ORDER BY `order_id` DESC LIMIT 1";
+$result = $conn->query($sql);
+$count = $result->num_rows;
+$row = $result->fetch_assoc();
+
+//If order is found input data from BG and update status to paid
+if($result->num_rows != 0) {
 
 
-$signature = hash_hmac('sha256', strval($orderID), 'sk_live_Ncow50B9RdRQFeXBsW45c5LFRVYLCm98');
+$first_name = $row['first_name'];
+$last_name = $row['last_name'];
+$codedname = $row['order_product'];
+$product = $row['order_product_nice'];
+$order_email = $row['order_email'];
+
+
+$signature = hash_hmac('sha256', strval($order_ID), 'sk_live_Ncow50B9RdRQFeXBsW45c5LFRVYLCm98');
 
 empty($errorDisplay) ?  $testError = FALSE : $testError = TRUE;
 if($testError == TRUE){
-$errorDisplay .= "<hr> URL should be like this: https://soulmate-psychic.com/fix-chat.php?order=123&name=ivan&email=test@test.com&product=Soulmate Drawing & Reading&codename=soulmate";
+$errorDisplay .= "<hr> URL should be like this: https://soulmate-psychic.com/fix-chat.php?order=123";
 $errorDisplay .= "Any missing variable = script can't fix up chat!";
 }else{
 
-
+    $sqlupdate = "UPDATE `orders` SET `order_status`='processing' WHERE order_id='$order_ID'";
+    if ($conn->query($sqlupdate) === TRUE) {
+      echo "Updated";
+    }else{
+        echo "not updated";
+    }
 ?>
 
 
@@ -32,14 +48,14 @@ $errorDisplay .= "Any missing variable = script can't fix up chat!";
 <script>  
     Talk.ready.then(function() {
       var other = new Talk.User({
-          id: "<?php echo $orderID; ?>",
+          id: "<?php echo $order_ID; ?>",
           name: "<?php echo $first_name; ?>",
           email: "<?php echo $order_email; ?>",
           photoUrl: "https://avatars.dicebear.com/api/adventurer/<?php echo $order_email; ?>.svg?skinColor=variant02",
           role: "Scustomer",
           custom: {
           email: "<?php echo $order_email; ?>",
-          lastOrder: "<?php echo $orderID; ?>"
+          lastOrder: "<?php echo $order_ID; ?>"
           }
       });
       var me = new Talk.User("soulmateAdminNew");
@@ -48,9 +64,9 @@ $errorDisplay .= "Any missing variable = script can't fix up chat!";
           me: other,
           signature: "<?php echo $signature; ?>"
       });
-      var conversation = talkSession.getOrCreateConversation("<?php echo $orderID; ?>");
+      var conversation = talkSession.getOrCreateConversation("<?php echo $order_ID; ?>");
           conversation.setAttributes({
-          subject: "<?php echo "Order #" . $orderID . " | " .$product; ?>",
+          subject: "<?php echo "Order #" . $order_ID . " | " .$product; ?>",
           custom: { 
           category: "<?php echo $codename; ?>", 
           status: "Paid"
@@ -61,12 +77,12 @@ $errorDisplay .= "Any missing variable = script can't fix up chat!";
       conversation.setParticipant(me);
 
         var chatbox = window.talkSession.createChatbox(conversation);
-        chatbox.mount(document.getElementById("talkjs-container-<?php echo $orderID; ?>"));
+        chatbox.mount(document.getElementById("talkjs-container-<?php echo $order_ID; ?>"));
     })
 
 </script>
 
-<div id="talkjs-container-<?php echo $orderID; ?>">
+<div id="talkjs-container-<?php echo $order_ID; ?>">
 
 </div>
 <?php
