@@ -14,7 +14,7 @@
   </div>
 
     <div class="header-section">
-      <h1 class="headline"><span class="bolded-headline">PSYCHIC PORTRAIT OF YOUR FUTURE HUSBAND</span><br> <font color="#ff33f9 "> BY ISABELLA</font> </h1>
+      <h1 class="headline"><span class="bolded-headline">PSYCHIC PORTRAIT OF YOUR SOULMATE</span><br> <font color="#ff33f9 "> BY ISABELLA</font> </h1>
       <div class="video w-embed w-script">
 <style>
 .text-placeholder{
@@ -844,7 +844,7 @@ var product_code = $('.product_code').text()
                 // ajax
                 $.ajax({
                     type:"POST",
-                    url: "/ajax/order-husband.php",
+                    url: "/ajax/order.php",
                     dataType: 'json',
                     data: $(this).serialize(),
                     success: function(data){
@@ -885,7 +885,7 @@ var product_code = $('.product_code').text()
                                      </div>
 
 	  <hr>
-  <input class="product" type="hidden" name="product" value="futurespouse">
+  <input class="product" type="hidden" name="product" value="soulmate">
   <input class="cookie" type="hidden" name="cookie_id" value="<?php echo $_SESSION['user_cookie_id']; ?>">
   <input class="cookie" type="hidden" name="cookie_id2" value="<?php echo $_SESSION['user_cookie_id2']; ?>">
   <input class="cookie" type="hidden" name="cookie_id3" value="<?php echo $_SESSION['user_cookie_id3']; ?>">
