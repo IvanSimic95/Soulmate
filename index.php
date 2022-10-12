@@ -734,7 +734,7 @@ color:white;
     <div class="fs-sm text-muted">8 - 12 <span class="hours">Hours</span><span class="h">H</span></div>
     
     </div>
-    <div class="fw-bold badge bg-dark">+ $19.99</div>
+    <div class="fw-bold badge bg-dark">+ $29.99</div>
     </label>
     </div>
 
@@ -777,41 +777,41 @@ color:white;
 
 $("#helper-delivery-express").click(function(){
           $("#prio12").prop("checked", true);
-          jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$39.99').animate({'opacity': 1}, 200);});
-          jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$399.99').animate({'opacity': 1}, 300);});
-          jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('$360').animate({'opacity': 1}, 400);});	
+          jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$49.99').animate({'opacity': 1}, 200);});
+          jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$499.99').animate({'opacity': 1}, 300);});
+          jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('$450').animate({'opacity': 1}, 400);});	
   });
   
   $("#helper-delivery-fast").click(function(){
           $("#prio24").prop("checked", true);
-          jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$29.99').animate({'opacity': 1}, 200);});
-          jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$299.99').animate({'opacity': 1}, 300);});
-          jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('$270').animate({'opacity': 1}, 400);});
+          jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$39.99').animate({'opacity': 1}, 200);});
+          jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$399.99').animate({'opacity': 1}, 300);});
+          jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('$360').animate({'opacity': 1}, 400);});
   });
   
   $("#helper-delivery-standard").click(function(){
           $("#prio48").prop("checked", true);
-          jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$19.99').animate({'opacity': 1}, 200);});
-          jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$199.99').animate({'opacity': 1}, 300);});
-          jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('$180').animate({'opacity': 1}, 400);});
+          jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$29.99').animate({'opacity': 1}, 200);});
+          jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$299.99').animate({'opacity': 1}, 300);});
+          jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('$270').animate({'opacity': 1}, 400);});
   });
 
 
   jQuery('input[name="priority"]').change(function(){
     if (this.value == '12') {
-        jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$39.99').animate({'opacity': 1}, 200);});
-        jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$399.99').animate({'opacity': 1}, 300);});
-        jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('$360').animate({'opacity': 1}, 400);});	
+        jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$49.99').animate({'opacity': 1}, 200);});
+        jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$499.99').animate({'opacity': 1}, 300);});
+        jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('$450').animate({'opacity': 1}, 400);});	
     }
     if (this.value == '24') {
+        jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$39.99').animate({'opacity': 1}, 200);});
+        jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$399.99').animate({'opacity': 1}, 300);});
+        jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('$360').animate({'opacity': 1}, 400);});
+    }
+    if (this.value == '48') {
         jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$29.99').animate({'opacity': 1}, 200);});
         jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$299.99').animate({'opacity': 1}, 300);});
         jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('$270').animate({'opacity': 1}, 400);});
-    }
-    if (this.value == '48') {
-        jQuery('.new_prce').animate({'opacity' : 0}, 200, function(){jQuery('.new_prce').html('$19.99').animate({'opacity': 1}, 200);});
-        jQuery('.old_price').animate({'opacity' : 0}, 300, function(){jQuery('.old_price').html('$199.99').animate({'opacity': 1}, 300);});
-        jQuery('.saveda').animate({'opacity' : 0}, 400, function(){jQuery('.saveda').html('$180').animate({'opacity': 1}, 400);});
     }
 })
 
@@ -878,10 +878,10 @@ var product_code = $('.product_code').text()
    
 
 <div class="d-flex flex-row flex-wrap align-items-center position-relative fs-4 price-total">
-                                    <span class="badge me-0 new_prce">$19.99</span>
-                                    <span class="me-1 text-600 old_price">$199.9</span>
+                                    <span class="badge me-0 new_prce">$29.99</span>
+                                    <span class="me-1 text-600 old_price">$299.9</span>
                                     <div class="price-side">
-                                     You save: <span class="saveda text-success">$180 (90%)</span><span class="saved-percent"></span><span class="product-loop-down-arrow-wrap d-inline-block"></span> </div>
+                                     You save: <span class="saveda text-success">$270 (90%)</span><span class="saved-percent"></span><span class="product-loop-down-arrow-wrap d-inline-block"></span> </div>
                                      </div>
 
 	  <hr>
