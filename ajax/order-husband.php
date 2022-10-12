@@ -59,7 +59,12 @@ $fbAdset = $_SESSION['fbAdset'];
 $fbAd = $_SESSION['fbAd'];
 
 
-$partnerGender = "male";
+
+if($userGender=="male"){
+  $partnerGender = "female";
+  }else{
+  $partnerGender = "male";
+  }
 
 $returnURL = "https://".$domain."/success.php";
 $returnEncoded = base64_encode($returnURL);
