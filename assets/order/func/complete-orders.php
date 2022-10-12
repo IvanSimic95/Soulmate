@@ -101,6 +101,23 @@ $logArray[] = "
 
 			
 			if($premium == 1){
+				if($orderProduct == "soulmate"){
+
+					$premiumProdT = "soulmate's";
+
+				}elseif($orderProduct == "futurespouse"){
+
+					
+					if($orderSex == "male"){
+						$premiumProdT = "future husband's";
+					}else{
+						$premiumProdT = "future wife's";
+					}
+
+
+				}else{
+					$premiumProdT = "soulmate's";
+				}
 
 				$sql_pick = "SELECT * FROM premium WHERE category = 'initials' order by RAND() limit 1";
 				$sql_pick_res = $conn->query($sql_pick);
@@ -129,7 +146,7 @@ $logArray[] = "
 				$maxMonth = rand(5,6);
 				$meetTime = $minMonth." - ".$maxMonth;
 
-				$premiumText = "\n\nYour soulmate's initials: *".$initials."*\nYou will meet at *".$place."*\n";
+				$premiumText = "\n\nYour ".$premiumProdT." initials: *".$initials."*\nYou will meet at *".$place."*\n";
 
 			}else{
 				$premiumText = "";
