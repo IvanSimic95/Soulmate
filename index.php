@@ -952,7 +952,7 @@ var product_code = $('.product_code').text()
             </li>
             <li class="list-item">
               <div class="bullet-headline">Colllaborations</div>
-              <div class="bullet-description">My skills were used by the police in creating robot portets in countless cases</div>
+              <div class="bullet-description">My skills were used by the police in creating robot portraits in countless cases</div>
             </li>
             <li class="list-item">
               <div class="bullet-headline">100% satisfaction or MONEY BACK </div>
