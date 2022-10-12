@@ -931,7 +931,7 @@ var product_code = $('.product_code').text()
       <h1 class="headline dark-subheader"> I WILL DRAW YOUR Future Husband + BONUS </h1>
       <p class="sub-paragraph">I am <b>Isabella</b>, the most renowned psychic artist in the world, and I guarantee that I will find your true love in this lifetime and reunite both of you, as well as make sure that you two will live a life full of joy and fulfillment on all plans.</p>
       <div class="w-row">
-        <div class="w-col w-col-7 w-col-small-small-stack w-col-tiny-tiny-stack"><center> <img src="/images/polaroid2.png" loading="lazy" srcset="/images/polaroid2.png 500w, /images/polaroid2.png 571w" sizes="100vw" alt="" class="image-mobile"> </center>
+        <div class="w-col w-col-7 w-col-small-small-stack w-col-tiny-tiny-stack"><center> <img src="/images/sm1.png" loading="lazy" srcset="/images/sm1.png 500w, /images/sm1.png 571w" sizes="100vw" alt="" class="image-mobile"> </center>
       <br>
 		  <p  class="sub-paragraph"><b>Do you want to know who your Future Husband is? What is the character of this person? Where and when you will meet them?   </b> </p> 
 		  <br>
@@ -961,7 +961,7 @@ var product_code = $('.product_code').text()
            
           </ul>
         </div>
-        <div class="w-col w-col-5 w-col-small-small-stack w-col-tiny-tiny-stack"><img src="/images/polaroid2.png" loading="lazy" srcset="/images/polaroid2.png 500w, /images/polaroid2.png 571w" sizes="100vw" alt="" class="image-desktop">
+        <div class="w-col w-col-5 w-col-small-small-stack w-col-tiny-tiny-stack"><img src="/images/sm1.png" loading="lazy" srcset="/images/sm1.png 500w, /images/sm1.png 571w" sizes="100vw" alt="" class="image-desktop">
           <div class="about desktop">I will combine my psychic abilities that I was so fortunate to be born with with my natural artisitc talent to tansfer my vision to paper for you. All images are highly detailed and can be printed off for you own framing.</div>
         </div>
       </div>
@@ -972,6 +972,7 @@ var product_code = $('.product_code').text()
         </div>
       </div>
     </div>
+	
     <div class="container money-back-guarantee w-container">
       <div class="w-row">
         <div class="w-col w-col-6"><img src="images/money-back-guarantee.png" loading="lazy" alt="" class="image-2"></div>
@@ -981,7 +982,9 @@ var product_code = $('.product_code').text()
         </div>
       </div>
     </div>
+			 
     <div class="container w-container">
+	<br> <center><img src="/images/cert1.png"><br> <br> 
       <h1 class="headline dark-subheader">Testimonials from Verified Clients:</h1>
   
 	 <br> <center><img src="/images/isap3.jpg"><br> <br> 
