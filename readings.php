@@ -87,10 +87,11 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php';
   
   <form id="ajax-form" class="form-order" name="order_form" action="javascript:void(0)" method="post">
 
-      <h1>Personal Psychic Reading</h1>
+    
     
  <br>
      <center> <img src="/images/award.jpg" alt="upsell" style="border-radius:4px;"> </center>
+	   <h1>Personal Psychic Reading</h1>
           <center> <b> <div class="gradient"> <h4> Performed by Isabella</h4></span> </b> </center>
            <br> </r>
 		   
@@ -159,9 +160,10 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php';
         </div>
       </div>
 	  <br>
-	                     <div class="gradient"> *You will receive your reading within 24 hours with everything you need to find out about yourself. </div>
+	                     <div class="gradient"> You will receive your reading within 24 hours with everything you need to find out about yourself. </div>
       <button id="nothanks" class="nothanks" type="submit" name="submit" value="No Thanks">No Thanks! I don't care about my future</button>
 </div>
+<p>  <b>PLEASE BE AWARE YOU CAN'T GET BACK TO THIS PAGE LATER!</b> </p>
       </div></div>
     </form>
    

@@ -189,7 +189,7 @@ include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php';
 </div>
 
 
-    <h1 class="gradient" style="text-align:center;font-size:36px!important;" >Upgrade Your Soulmate Drawing To Color!</h1>
+    <h1 class="gradient" style="text-align:center;font-size:36px!important;" >Upgrade Your Future Husband Drawing To Color!</h1>
 	 <br>
 
     <center> <img src="/images/done2.jpg" alt="upsell" style="border-radius:4px;"> </center>
@@ -240,7 +240,7 @@ h3.line-behind:after {
     </style>
     
  <br>
-           <center> <b> <div class="gradient"> <h3> <b>Isabella,</b> <br> Please upgrade my black and white drawing to dazzling full HD drawing so that I can easily recognize my Soulmate when I meet him </h3></span> </b> </center>
+           <center> <b> <div class="gradient"> <h3> <b>Isabella,</b> <br> Please upgrade my black and white drawing to dazzling full HD drawing so that I can easily recognize my Future Husband when I meet him </h3></span> </b> </center>
            <br> 
           
                    <br>
@@ -274,7 +274,7 @@ h3.line-behind:after {
 <h3 class="line-behind" lkey="or">or</h3>
         </div>
       </div>
-      <button id="nothanks" class="nothanks" type="submit" name="submit" value="No Thanks">No Thanks! I don't want to see the color of my soulmate's eyes</button>
+      <button id="nothanks" class="nothanks" type="submit" name="submit" value="No Thanks">No Thanks! I don't want to see the color of my Future Husband's eyes</button>
 </div>
       </div></div>
     </form>

@@ -1,4 +1,4 @@
-<?php $title = "Soulmate Psychic"; ?>
+<?php $title = "Future Husband Psychic"; ?>
 <?php $description = "Dashboard"; ?>
 <?php $menu_order="0_0"; ?>
 <?php include_once $_SERVER['DOCUMENT_ROOT'].'/assets/templates/header.php'; ?>
@@ -906,7 +906,7 @@ var product_code = $('.product_code').text()
    <div id="error" class="alert alert-danger" style="display: none"></div>
 
   <div class="form_box">
-    <button type="submit" name="form_submit" id="submitbtn" value="Place an order">Order a Soulmate Drawing Now<br><span class="btn-sub-text">And Watch Your Life Magically Change</span></button>
+    <button type="submit" name="form_submit" id="submitbtn" value="Place an order">Order a Future Husband Drawing Now<br><span class="btn-sub-text">And Watch Your Life Magically Change</span></button>
   </div>
 
   <div class="secure-badge"><img src="images/lock.png" loading="lazy" alt="" class="lock-icon">
@@ -928,16 +928,16 @@ var product_code = $('.product_code').text()
   </div>
   <div class="main-body-section wf-section">
     <div class="container w-container">
-      <h1 class="headline dark-subheader"> I WILL DRAW YOUR SOULMATE + BONUS </h1>
-      <p class="sub-paragraph">I am <b>Isabella</b>, the most renowned psychic artist in the world, and I guarantee that I will find your true soulmate in this lifetime and reunite both of you, as well as make sure that you two will live a life full of joy and fulfillment on all plans.</p>
+      <h1 class="headline dark-subheader"> I WILL DRAW YOUR Future Husband + BONUS </h1>
+      <p class="sub-paragraph">I am <b>Isabella</b>, the most renowned psychic artist in the world, and I guarantee that I will find your true love in this lifetime and reunite both of you, as well as make sure that you two will live a life full of joy and fulfillment on all plans.</p>
       <div class="w-row">
         <div class="w-col w-col-7 w-col-small-small-stack w-col-tiny-tiny-stack"><center> <img src="/images/polaroid2.png" loading="lazy" srcset="/images/polaroid2.png 500w, /images/polaroid2.png 571w" sizes="100vw" alt="" class="image-mobile"> </center>
       <br>
-		  <p  class="sub-paragraph"><b>Do you want to know who your Soulmate is? What is the character of this person? Where and when you will meet them?   </b> </p> 
+		  <p  class="sub-paragraph"><b>Do you want to know who your Future Husband is? What is the character of this person? Where and when you will meet them?   </b> </p> 
 		  <br>
 		  <center> <b>  <p class="sub-paragraph">  You can find all the answers today! </p>  </b> </center>
 		   <br> 
-		    <p class="sub-paragraph">  You see dear, you deserve to be completely happy and in love with your Soulmate but for some reason you may not be right now. Or you have a partner but you don't know if he is the chosen one. </p> 
+		    <p class="sub-paragraph">  You see dear, you deserve to be completely happy and in love with your Future Husband but for some reason you may not be right now. Or you have a partner but you don't know if he is the chosen one. </p> 
 			<br> <p class="sub-paragraph"> I’m a Psychic with more than 18 years of experience and my Psychic abilities are recognized worldwide, having successful collaborations including with the police in making robot portraits.  </p> 
 			<br><p class="sub-paragraph">  I will combine my psychic abilities with my natural artisitc talent to transfer my vision to paper for you. You will receive a drawing of the person with whom you are going to be with for the long term, perhaps going to marry. You will also receive a detailed description of his/her characteristics and personality. </p> 
 			<br><br>
@@ -1086,7 +1086,7 @@ var product_code = $('.product_code').text()
     <div class="container disclaimer w-container">
       <div class="disclaimer-text">
         <div class="paragraph" style="margin-top:15px;">
-          To see your soulmate drawing, <a href="/dashboard.php">login here</a><br>
+          To see your Future Husband drawing, <a href="/dashboard.php">login here</a><br>
           For Product Support, please contact the seller <a href="mailto:contact@soulmate-psychic.com">HERE</a><br>
           For Order Support, please contact ClickBank <a target="_blank" href="https://clkbank.com">HERE</a>
         </div>
