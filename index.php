@@ -15,10 +15,11 @@
 
     <div class="header-section">
       <h1 class="headline"><span class="bolded-headline">PSYCHIC PORTRAIT OF YOUR FUTURE HUSBAND</span><br> <font color="#ff33f9 "> BY ISABELLA</font> </h1>
+	  <br>
       <div class="video w-embed w-script">
 	  <div class="w-row">
         <div class="w-col w-col-7 w-col-small-small-stack w-col-tiny-tiny-stack"><center> <img src="/images/final2.png" loading="lazy" srcset="/images/final2.png 500w, /images/final2.png 571w" sizes="100vw" alt="" class="image-mobile"> </center>
-    
+    <br> 
 <style>
 .text-placeholder{
   min-height:250px;
