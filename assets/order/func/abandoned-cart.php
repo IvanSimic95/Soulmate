@@ -126,7 +126,7 @@ switch ($order_product_test) {
 							"msg" => $AbandonMessage
 						]
 					);
-					$email->setTemplateId("d-7ef6c271357e4b6092f423cc1a96ab5e");
+					$email->setTemplateId("d-6a96886a08294a699c33db1d878e0374");
 					$sendgrid = new \SendGrid($sendg3);
 					try {
 						$response = $sendgrid->send($email);

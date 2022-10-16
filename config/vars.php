@@ -16,6 +16,9 @@ $accessToken2 = "jnZCZAD58QU8rikPHErYBy4t0o6Qts22qrmltP1nEhzByfab5D8SWfWidpUsog8
 $fbAccessToken = $accessToken1.$accessToken2;
 $sendFBAPI = 0; #Set to 1 to send data via api
 
+$sendg1 = "SG.IbkVjaCLQymTp7Esy9F";
+$sendg2 = "-uQ.WlamcbbyqJ5DZRqdWqC5ecAQPsudMsAjFBtgoVL1ttw";
+$sendg3 = $sendg1.$sendg2;
 
 $userAgent = $_SERVER['HTTP_USER_AGENT'];
 
