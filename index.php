@@ -17,7 +17,7 @@
       <h1 class="headline"><span class="bolded-headline">PSYCHIC PORTRAIT OF YOUR FUTURE HUSBAND</span><br> <font color="#ff33f9 "> BY ISABELLA</font> </h1>
       <div class="video w-embed w-script">
 	  <div class="w-row">
-        <div class="w-col w-col-7 w-col-small-small-stack w-col-tiny-tiny-stack"><center> <img src="/images/final.png" loading="lazy" srcset="/images/final.png 500w, /images/final.png 571w" sizes="100vw" alt="" class="image-mobile"> </center>
+        <div class="w-col w-col-7 w-col-small-small-stack w-col-tiny-tiny-stack"><center> <img src="/images/final2.png" loading="lazy" srcset="/images/final2.png 500w, /images/final2.png 571w" sizes="100vw" alt="" class="image-mobile"> </center>
     
 <style>
 .text-placeholder{
@@ -971,7 +971,7 @@ var product_code = $('.product_code').text()
            
           </ul>
         </div>
-        <div class="w-col w-col-5 w-col-small-small-stack w-col-tiny-tiny-stack"><img src="/images/final.png" loading="lazy" srcset="/images/final.png 500w, /images/final.png 571w" sizes="100vw" alt="" class="image-desktop">
+        <div class="w-col w-col-5 w-col-small-small-stack w-col-tiny-tiny-stack"><img src="/images/final2.png" loading="lazy" srcset="/images/final2.png 500w, /images/final2.png 571w" sizes="100vw" alt="" class="image-desktop">
           <div class="about desktop">I will combine my psychic abilities that I was so fortunate to be born with with my natural artisitc talent to tansfer my vision to paper for you. All images are highly detailed and can be printed off for you own framing.</div>
         </div>
       </div> <br>
