@@ -245,7 +245,7 @@ if($userSex == "male"){
 }
 
 //Facebook API conversion
-if($orderProduct == "soulmate"){
+if($orderProduct == "soulmate" OR $orderProduct == "futurespouse"){
    if($sendFBAPI == 1){
     $fixedBirthday = date("Ymd", strtotime($birthday));
 
