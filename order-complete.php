@@ -5,7 +5,7 @@ $showError = 0;
 $succesStatus = 0;
 $showSuccess = 1;
 
-
+$startpixel = 0;
 
 $successMSG = "Your order is now paid for & you will receive an email with your order details and dashboard login link.<br>";
 if(isset($_POST['form_submit'])){

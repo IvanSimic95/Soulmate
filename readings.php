@@ -5,6 +5,7 @@ $fireIframe = 0;
 $sex_picked = "";
 
 if(isset($_SESSION['lastorder'])){
+  $startpixel = 0;
 $lastOrderID = $_SESSION['lastorder'];
 $sql = "SELECT * FROM `orders` WHERE `order_id` = '$lastOrderID' ORDER BY `order_id` DESC LIMIT 1";
 $result = $conn->query($sql);
@@ -35,6 +36,7 @@ $row = $result->fetch_assoc();
     }
 }else{
   if(isset($_GET['order_ID'])){
+    $startpixel = 0;
 $ord = $_GET['order_ID'];
 $sql = "SELECT * FROM `orders` WHERE `order_id` = '$ord' ORDER BY `order_id` DESC LIMIT 1";
 $result = $conn->query($sql);
