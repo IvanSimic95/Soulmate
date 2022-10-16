@@ -18,7 +18,7 @@
 	  <br>
       <div class="video w-embed w-script">
 	  <div class="w-row">
-         <img src="/images/final2.png" style="text-align:center;margin: 0 auto;" loading="lazy" srcset="/images/final2.png 500w, /images/final2.png 571w" sizes="100vw" alt="" class="image-mobile"> 
+         <img src="/images/final2.png" style="text-align:center;margin: 0 auto;" loading="lazy" srcset="/images/final2.png 500w, /images/final2.png 571w" sizes="100vw" alt="" class=""> 
     <br> 
 <style>
 .text-placeholder{
@@ -976,9 +976,7 @@ var product_code = $('.product_code').text()
            
           </ul>
         </div>
-        <div class="container w-container"><img src="/images/final2.png" loading="lazy" srcset="/images/final2.png 500w, /images/final2.png 571w" sizes="100vw" alt="" class="image-desktop" style="width:60%; margin:0 auto;display:block;">
-          <div class="about desktop bullet-description">I will combine my psychic abilities that I was so fortunate to be born with with my natural artisitc talent to tansfer my vision to paper for you. All images are highly detailed and can be printed off for you own framing.</div>
-        </div>
+    
       </div> <br>
       <div class="button-wrapper">
         <a data-w-id="9ca0b638-11a4-0aa1-331f-7ef8023444e2" href="#" class="order-now-button w-button">ORDER NOW<br><span class="btn-sub-text">And Watch Your Life Magically Change</span>‍</a>
