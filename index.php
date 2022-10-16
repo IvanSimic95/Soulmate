@@ -16,6 +16,9 @@
     <div class="header-section">
       <h1 class="headline"><span class="bolded-headline">PSYCHIC PORTRAIT OF YOUR FUTURE HUSBAND</span><br> <font color="#ff33f9 "> BY ISABELLA</font> </h1>
       <div class="video w-embed w-script">
+	  <div class="w-row">
+        <div class="w-col w-col-7 w-col-small-small-stack w-col-tiny-tiny-stack"><center> <img src="/images/sm11.png" loading="lazy" srcset="/images/sm11.png 500w, /images/sm11.png 571w" sizes="100vw" alt="" class="image-mobile"> </center>
+    
 <style>
 .text-placeholder{
   min-height:250px;
@@ -930,43 +933,50 @@ var product_code = $('.product_code').text()
     <div class="container w-container">
       <h1 class="headline dark-subheader"> I WILL DRAW YOUR Future Husband + BONUS </h1>
       <p class="sub-paragraph">I am <b>Isabella</b>, the most renowned psychic artist in the world, and I guarantee that I will find your true love in this lifetime and reunite both of you, as well as make sure that you two will live a life full of joy and fulfillment on all plans.</p>
-      <div class="w-row">
-        <div class="w-col w-col-7 w-col-small-small-stack w-col-tiny-tiny-stack"><center> <img src="/images/sm1.png" loading="lazy" srcset="/images/sm1.png 500w, /images/sm1.png 571w" sizes="100vw" alt="" class="image-mobile"> </center>
-      <br>
-		  <p  class="sub-paragraph"><b>Do you want to know who your Future Husband is? What is the character of this person? Where and when you will meet them?   </b> </p> 
+        <br>
+		  <p  class="sub-paragraph"><b>Do you want to know who your Future Husband is? What is the character of this person? Where and when you will meet him?   </b> </p> 
 		  <br>
 		  <center> <b>  <p class="sub-paragraph">  You can find all the answers today! </p>  </b> </center>
 		   <br> 
 		    <p class="sub-paragraph">  You see dear, you deserve to be completely happy and in love with your Future Husband but for some reason you may not be right now. Or you have a partner but you don't know if he is the chosen one. </p> 
 			<br> <p class="sub-paragraph"> I’m a Psychic with more than 18 years of experience and my Psychic abilities are recognized worldwide, having successful collaborations including with the police in making robot portraits.  </p> 
 			<br><p class="sub-paragraph">  I will combine my psychic abilities with my natural artisitc talent to transfer my vision to paper for you. You will receive a drawing of the person with whom you are going to be with for the long term, perhaps going to marry. You will also receive a detailed description of his/her characteristics and personality. </p> 
+			<br><p class="sub-paragraph"> I am a strong empath and have high sensitivity to the emotional vibrations of my clients. I have extraordinary intuition and foresight when it comes to accessing and understanding the emotions and feelings of my clients on a deeper and more meaningful level.   </p>
+				<br><p class="sub-paragraph">   I have worked in important fields, and throughout my career I collaborated with the government, the law enforcement and many other institutions that needed my help to identify certain individuals. My services are appreciated by thousands of people from all over the world and I am grateful for every “thank you” message received after a Reading or a Soulmate Drawing.  </p>
+					<br><p class="sub-paragraph">   </p>
+					<center> <p class="sub-paragraph">  <b>GUARANTEED 100% ACCURACY OR MONEY BACK </p> </b>   </center>
+ <p class="sub-paragraph"> IF I DON'T SEE ANY SOULMATE FOR YOU IN MY VISION, YOUR ORDER WILL BE REFUNDED; <br>  <br>- IF MY PREDICTIONS DON’T COME TRUE WITHIN THE TIME FRAME I PROVIDE, YOU WILL RECEIVE A FULL REFUND, NO QUESTIONS ASKED. </b> </p>  
+<br>
+
+ <b> <p class="sub-paragraph">All orders are delivered to the provided email address and also can be accessed from the user dashboard. Nothing will be shipped to your home address! </b>
+<br>
 			<br><br>
 		<ul role="list" class="list">
             <li class="list-item">
-              <div class="bullet-headline">DIGITAL PRODUCT</div>
-              <div class="bullet-description"> All orders are delivered digitally to your email address</div>
+              <div class="bullet-headline">DIGITAL PRODUCT</div><br>
+              <div class="bullet-description"> All orders are delivered digitally to your email address</div><br>
             </li>
             <li class="list-item">
-              <div class="bullet-headline">Certified psychic and clairvoyant </div>
-              <div class="bullet-description">I'm a certified Psychic Expert since 2004, specialized in Clairsentience, Clairaudience, Clairvoyance and Claircognizance </div>
+              <div class="bullet-headline">Certified psychic and clairvoyant </div> <br>
+              <div class="bullet-description">I'm a certified Psychic Expert since 2004, specialized in Clairsentience, Clairaudience, Clairvoyance and Claircognizance </div><br>
             </li>
             <li class="list-item">
-              <div class="bullet-headline">Colllaborations</div>
-              <div class="bullet-description">My skills were used by the police in creating robot portraits in countless cases</div>
+              <div class="bullet-headline">Colllaborations</div><br>
+              <div class="bullet-description">My skills were used by the police in creating robot portraits in countless cases</div><br>
             </li>
             <li class="list-item">
-              <div class="bullet-headline">100% satisfaction or MONEY BACK </div>
-              <div class="bullet-description">If you are not happy with my services, I'm offering you a full refund, no questions asked </div>
+              <div class="bullet-headline">100% satisfaction or MONEY BACK </div><br>
+              <div class="bullet-description">If you are not happy with my services, I'm offering you a full refund, no questions asked </div><br>
             </li>
            
           </ul>
         </div>
-        <div class="w-col w-col-5 w-col-small-small-stack w-col-tiny-tiny-stack"><img src="/images/sm1.png" loading="lazy" srcset="/images/sm1.png 500w, /images/sm1.png 571w" sizes="100vw" alt="" class="image-desktop">
+        <div class="w-col w-col-5 w-col-small-small-stack w-col-tiny-tiny-stack"><img src="/images/sm11.png" loading="lazy" srcset="/images/sm11.png 500w, /images/sm11.png 571w" sizes="100vw" alt="" class="image-desktop">
           <div class="about desktop">I will combine my psychic abilities that I was so fortunate to be born with with my natural artisitc talent to tansfer my vision to paper for you. All images are highly detailed and can be printed off for you own framing.</div>
         </div>
-      </div>
+      </div> <br>
       <div class="button-wrapper">
-        <a data-w-id="f17eb61c-a808-da56-775c-af1dea03cc4c" href="#" class="order-now-button w-button">Order Now</a>
+        <a data-w-id="9ca0b638-11a4-0aa1-331f-7ef8023444e2" href="#" class="order-now-button w-button">ORDER NOW<br><span class="btn-sub-text">And Watch Your Life Magically Change</span>‍</a>
         <div class="secure-badge"><img src="images/lock.png" loading="lazy" alt="" class="lock-icon">
           <div class="secure-checkout-text inverted">Safe &amp; Secure • 365 Money Back Guarantee</div>
         </div>
@@ -977,7 +987,7 @@ var product_code = $('.product_code').text()
       <div class="w-row">
         <div class="w-col w-col-6"><img src="images/money-back-guarantee.png" loading="lazy" alt="" class="image-2"></div>
         <div class="w-col w-col-6">
-          <h1 class="headline dark-subheader inverted">Isabella Services Are Backed By A 30 Days Money Back Guarantee</h1>
+          <h1 class="headline dark-subheader inverted">Isabella Services Are Backed By A 365 Days Money Back Guarantee</h1>
           <p class="sub-paragraph light">I'm so confident on my services that I'm actually offering a <b>LIFETIME</b> refund period.</p>
         </div>
       </div>
