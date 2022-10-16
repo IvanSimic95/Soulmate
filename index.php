@@ -18,7 +18,7 @@
 	  <br>
       <div class="video w-embed w-script">
 	  <div class="w-row">
-        <div class="w-col w-col-7 w-col-small-small-stack w-col-tiny-tiny-stack"><center> <img src="/images/final2.png" loading="lazy" srcset="/images/final2.png 500w, /images/final2.png 571w" sizes="100vw" alt="" class="image-mobile"> </center>
+         <img src="/images/final2.png" style="text-align:center;margin: 0 auto;" loading="lazy" srcset="/images/final2.png 500w, /images/final2.png 571w" sizes="100vw" alt="" class="image-mobile"> 
     <br> 
 <style>
 .text-placeholder{
@@ -450,7 +450,11 @@ display:none;
   .option:not(:last-child) {
     margin-bottom: 4px;
   }
-  
+  .about{
+    font-size: 18px;
+    line-height: 23px;
+    text-align:center;
+  }
   @-webkit-keyframes radio {
     0%,
     17.5% {
@@ -972,8 +976,8 @@ var product_code = $('.product_code').text()
            
           </ul>
         </div>
-        <div class="w-col w-col-5 w-col-small-small-stack w-col-tiny-tiny-stack"><img src="/images/final2.png" loading="lazy" srcset="/images/final2.png 500w, /images/final2.png 571w" sizes="100vw" alt="" class="image-desktop">
-          <div class="about desktop">I will combine my psychic abilities that I was so fortunate to be born with with my natural artisitc talent to tansfer my vision to paper for you. All images are highly detailed and can be printed off for you own framing.</div>
+        <div class="container w-container"><img src="/images/final2.png" loading="lazy" srcset="/images/final2.png 500w, /images/final2.png 571w" sizes="100vw" alt="" class="image-desktop" style="width:60%; margin:0 auto;display:block;">
+          <div class="about desktop bullet-description">I will combine my psychic abilities that I was so fortunate to be born with with my natural artisitc talent to tansfer my vision to paper for you. All images are highly detailed and can be printed off for you own framing.</div>
         </div>
       </div> <br>
       <div class="button-wrapper">
