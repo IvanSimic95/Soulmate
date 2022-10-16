@@ -18,9 +18,19 @@
 	  <br>
       <div class="video w-embed w-script">
 	  <div class="w-row">
-         <img src="/images/final2.png" style="text-align:center;margin: 0 auto;" loading="lazy" srcset="/images/final2.png 500w, /images/final2.png 571w" sizes="100vw" alt="" class=""> 
+         <img src="/images/final2.png" style="text-align:center;margin: 0 auto;" loading="lazy" srcset="/images/final2.png 500w, /images/final2.png 571w" sizes="100vw" alt="" class="pc-small"> 
     <br> 
 <style>
+      .pc-small{
+width:100%;
+padding:10px;
+}
+  @media screen and (min-width: 800px) {
+    .pc-small{
+width:70%;
+}
+}
+ 
 .text-placeholder{
   min-height:250px;
   }
