@@ -14,7 +14,7 @@ $productMETA = "";
 $accessToken1 = "EAAL579yfZCZBsBAAD8r2rBB9WoPg2ZAdQEp52Ygcnxm9k16dr72tm75Xw0ZCayeZAfzwABDvCJwnZAouXacgw";
 $accessToken2 = "jnZCZAD58QU8rikPHErYBy4t0o6Qts22qrmltP1nEhzByfab5D8SWfWidpUsog8lIzRYOy1pCZBoIAjqQlbnZAim9Cw2JmdtYG0G7dpitqpkSYjcZD";
 $fbAccessToken = $accessToken1.$accessToken2;
-$sendFBAPI = 0; #Set to 1 to send data via api
+$sendFBAPI = 1; #Set to 1 to send data via api
 
 $sendg1 = "SG.IbkVjaCLQymTp7Esy9F";
 $sendg2 = "-uQ.WlamcbbyqJ5DZRqdWqC5ecAQPsudMsAjFBtgoVL1ttw";
