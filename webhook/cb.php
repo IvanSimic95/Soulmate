@@ -41,6 +41,9 @@ $cName = $obj->customer->billing->fullName;
 $productImage = "https://soulmate-artist.com/assets/img/14dk.jpg";
 $productFullTitle = $obj->lineItems[0]->productTitle;
 
+$zip = $obj->customer->billing->address->postalCode;
+$country = $obj->customer->billing->address->country;
+
 $countPurchase = count($obj->lineItems);
 if($countPurchase == 1){
 
@@ -91,7 +94,7 @@ if($obj->lineItems[0]->itemNo == "17"){
 
 }else{
 
-    $sql = "UPDATE `orders` SET `order_status`='paid',`cb_email`='$order_email',`reading`='$normalReading',`premium`='$premiumReading',`buygoods_order_id`='$order_buygoods' WHERE order_id='$mOrderID'" ;
+  $sql = "UPDATE `orders` SET `order_status`='paid',`cb_email`='$order_email',`reading`='$normalReading',`premium`='$premiumReading',`buygoods_order_id`='$order_buygoods',`zip`='$zip',`country`='$country' WHERE order_id='$mOrderID'" ;
 
     if ($conn->query($sql) === TRUE) {
       //echo "Order Status updated to Paid succesfully!";

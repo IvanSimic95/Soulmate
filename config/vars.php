@@ -16,6 +16,17 @@ $accessToken2 = "jnZCZAD58QU8rikPHErYBy4t0o6Qts22qrmltP1nEhzByfab5D8SWfWidpUsog8
 $fbAccessToken = $accessToken1.$accessToken2;
 $sendFBAPI = 0; #Set to 1 to send data via api
 
+
+$userAgent = $_SERVER['HTTP_USER_AGENT'];
+
+if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+    $userip = $_SERVER['HTTP_CLIENT_IP'];
+} elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+    $userip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+} else {
+    $userip = $_SERVER['REMOTE_ADDR'];
+}
+
 if(!isset($_SESSION['PixelDATA'])){
 $_SESSION['PixelDATA'] = 0;
 }

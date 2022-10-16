@@ -35,6 +35,11 @@ echo "Starting start-orders.php...<br><br>";
 			$fbp = $row["fbp"];
 			$message = $processingWelcome;
 			$order_product_nice = $row["order_product_nice"];
+			
+
+			
+			$zip = $row["zip"];
+			$country = strtolower($row["country"]);
 
 			$message = str_replace("%ORDERID%",   $orderId, $message);
 			$message = str_replace("%PRIORITY%",  $orderPriority, $message);
@@ -260,6 +265,10 @@ if($orderProduct == "soulmate"){
 						"ge" => hash('sha256', $usersex1),
 						"external_id" => hash('sha256', $orderId),
 						"fbc" => $fbc,
+						"client_ip_address" => $ip,
+						"client_user_agent" => $agent,
+						"zp" => hash('sha256', $zip),
+						"country" => hash('sha256', $country),
 					),
 					"contents" => array(
 						array(
@@ -294,6 +303,10 @@ if($orderProduct == "soulmate"){
 						"ge" => hash('sha256', $usersex1),
 						"external_id" => hash('sha256', $orderId),
 						"fbp" => $fbp,
+						"client_ip_address" => $ip,
+						"client_user_agent" => $agent,
+						"zp" => hash('sha256', $zip),
+						"country" => hash('sha256', $country),
 					),
 					"contents" => array(
 						array(
@@ -330,6 +343,10 @@ if($orderProduct == "soulmate"){
 						"external_id" => hash('sha256', $orderId),
 						"fbc" => $fbc,
 						"fbp" => $fbp,
+						"client_ip_address" => $ip,
+						"client_user_agent" => $agent,
+						"zp" => hash('sha256', $zip),
+						"country" => hash('sha256', $country),
 					),
 					"contents" => array(
 						array(
@@ -363,6 +380,10 @@ if($orderProduct == "soulmate"){
                     "db" => hash('sha256', $fixedBirthday),
                     "ge" => hash('sha256', $usersex1),
                     "external_id" => hash('sha256', $orderId),
+					"client_ip_address" => $ip,
+					"client_user_agent" => $agent,
+					"zp" => hash('sha256', $zip),
+					"country" => hash('sha256', $country),
                 ),
                 "contents" => array(
 					array(
