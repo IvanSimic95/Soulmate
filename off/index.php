@@ -752,7 +752,7 @@ color:white;
     <div class="fs-sm text-muted">8 - 12 <span class="hours">Hours</span><span class="h">H</span></div>
     
     </div>
-    <div class="fw-bold badge bg-dark">+ $29.99</div>
+    <div class="fw-bold badge bg-dark">+ $19.99</div>
     </label>
     </div>
 
