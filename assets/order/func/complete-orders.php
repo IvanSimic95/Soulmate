@@ -27,6 +27,7 @@ echo "Starting complete-orders.php...<br><br>";
 			$logError = array();
 			$message = "";
 			$missingTest = 0;
+			$updateOrder = 0;
 			$orderDate = $row["order_date"];
 			$orderName = $row["user_name"];
 			$ex = explode(" ",$orderName);
@@ -451,15 +452,22 @@ $logArray[] = "
 						}
 					}
 				}
+				$message = $theader.$email_text.$tfooter;
+				$countText = strlen($message);
 				if($email_text == ""){
 					$missingTest = 1;
 					$logError[] = "Missing Text";
 					$logError[] = $orderID;
 					$logError[] = $orderEmail;
 					missingLog($logError);
+				}elseif($countText > 9999) {
+					$missingTest = 1;
+					echo "Text Too Long: ".$countText;
+					$logError[] = "Text Too Long: ".$countText;
+					$logError[] = $orderID;
+					$logError[] = $orderEmail;
+					missingLog($logError);
 				}
-				
-				$message = $theader.$email_text.$tfooter;
 
 			}elseif ($orderProduct == "past") {
 				$image_send = 1;
