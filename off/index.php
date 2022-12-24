@@ -787,7 +787,14 @@ color:white;
     </div>
 
  </div>
-       
+ <script>
+    window.clickmagick_cmc = {
+        uid: '128168',
+        hid: '1574096323',
+        cmc_project: 'Soulmate Psychic',
+    }
+</script>
+<script src='//cdn.clkmc.com/cmc.js'></script>
  <script>
   $( document ).ready(function() {
     $("#prio48").prop("checked", true);
