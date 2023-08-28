@@ -14,6 +14,20 @@
       <h1 class="headline"><span class="bolded-headline">PSYCHIC PORTRAIT OF YOUR SOULMATE</span><br> </h1><br> 
       <div class="video w-embed w-script">
 <style>
+  .main-body-section {
+    background-color: transparent!important;
+}
+body > div.main-body-section.wf-section > div{
+  background-color:transparent!important;
+  box-shadow: none!important;
+}
+.sub-paragraph{
+  color:white!important;
+  margin-top:25px;
+}
+.notcenter{
+  text-align:start;
+}
 .text-placeholder{
   min-height:250px;
   }
@@ -925,16 +939,18 @@ var product_code = $('.product_code').text()
   </div>
   <div class="main-body-section wf-section">
     <div class="container w-container">
-<p>🔮✨ <strong>Discover the Face of Destiny with The Soulmate Healer</strong> ✨🔮</p>
-<p>Dive deep into the tapestry of fate and unveil the visage of your true soulmate. With the unparalleled gifts of The Soulmate Healer, the most trusted psychic and clairvoyant amongst Hollywood&apos;s elite, you&apos;re not just getting a service, you&apos;re embarking on a cosmic journey.</p>
-<p>🌟 <strong>Soulmate Psychic Drawing</strong>: Your destiny, beautifully illustrated. See the face of the one who complements your soul, before destiny brings you together.</p>
-<p>💑 <strong>Unsure About Your Current Relationship?</strong> Unravel the mysteries of the heart. Find out if the one you&apos;re with now aligns with the stars.</p>
-<p>🌌 <strong>Why the Stars Choose The Soulmate Healer</strong>:</p>
+    <p class="sub-paragraph">🔮✨ <strong>Discover the Face of Destiny with The Soulmate Healer</strong> ✨🔮</p>
+    <p class="sub-paragraph notcenter">Dive deep into the tapestry of fate and unveil the visage of your true soulmate. With the unparalleled gifts of The Soulmate Healer, the most trusted psychic and clairvoyant amongst Hollywood&apos;s elite, you&apos;re not just getting a service, you&apos;re embarking on a cosmic journey.</p>
+    <p class="sub-paragraph notcenter">🌟 <strong>Soulmate Psychic Drawing</strong>: Your destiny, beautifully illustrated. See the face of the one who complements your soul, before destiny brings you together.</p>
+    <p class="sub-paragraph notcenter">💑 <strong>Unsure About Your Current Relationship?</strong> Unravel the mysteries of the heart. Find out if the one you&apos;re with now aligns with the stars.</p>
+    <p class="sub-paragraph notcenter">🌌 <strong>Why the Stars Choose The Soulmate Healer</strong>:</p>
+    <div class="sub-paragraph notcenter">
 <ul>
     <li>Trusted by Celebrities: When Hollywood&apos;s stars seek guidance, they turn to The Soulmate Healer.</li>
     <li>Authentic and Intuitive Insights: Every stroke of the pencil is guided by intuitive visions, giving you an accurate portrayal of your future partner.</li>
     <li>Exclusivity: For those who value privacy and personalized service, The Soulmate Healer ensures a serene and confidential experience.</li>
 </ul>
+      </div>
         </div>
       </div>
     </div>
