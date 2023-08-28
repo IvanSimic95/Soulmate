@@ -24,6 +24,7 @@ body > div.main-body-section.wf-section > div{
 .sub-paragraph{
   color:white!important;
   margin-top:25px;
+font-size:14px!important;
 }
 .notcenter{
   text-align:start;
